@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/img/global/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/global/favicon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/global/favicon.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/global/favicon.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/global/favicon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/global/favicon.png" />
+    <!-- fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts end -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Ironsail - About Us</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="css/au-index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_wrapper mycontainer">
+        <nav class="navbar">
+          <a href="/"
+            ><img src="../assets/img/global/logo.png" alt="logo" class="header_logo_tablet_mob"
+          /></a>
+          <ul class="navbar_menu">
+            <li>
+              <a class="nav_elem" href="/development">Website Design & Development</a>
+            </li>
+            <li>
+              <a class="nav_elem" href="/digital-marketing">Digital Marketing</a>
+            </li>
+            <li>
+              <a class="nav_elem" href="/ai-solutions">AI & Programmatic Resources</a>
+            </li>
+            <li>
+              <a class="nav_elem" href="/about-us">About Us</a>
+            </li>
+          </ul>
+          <div class="header_button_pair">
+            <a class="main_button" href="#" data-toggle="modal" data-target="#exampleModal"
+              ><p>Apply Now</p>
+              <svg
+                class="main_but_arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="19"
+                viewBox="0 0 20 19"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_655_3457)">
+                  <path
+                    d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
+                    fill="#141751"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_655_3457">
+                    <rect width="20" height="18" fill="white" transform="translate(0 0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <div class="burger">
+            <div class="burger_space" id="burger">
+              <span class="stick"></span>
+              <span class="stick"></span>
+              <span class="stick"></span>
+            </div>
+          </div>
+        </nav>
+        <div class="popup" id="popup">
+          <div class="popup_textblock" id="popupSlide">
+            <ul class="navbar_menu_mobile">
+              <li>
+                <a class="nav_elem_mobile" href="/development">Web design & development</a>
+              </li>
+              <li>
+                <a class="nav_elem_mobile" href="/digital-marketing">Digital Marketing</a>
+              </li>
+              <li>
+                <a class="nav_elem_mobile" href="/ai-solutions/">AI & Programmatic Resources</a>
+              </li>
+              <li><a class="nav_elem_mobile" href="/about-us">About Us</a></li>
+              <div class="header_button_pair mobile_header_button_pair">
+                <a class="main_button" href="#" data-toggle="modal" data-target="#exampleModal"
+                  ><p>Apply Now</p>
+                  <svg
+                    class="main_but_arrow"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_655_3457)">
+                      <path
+                        d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
+                        fill="#141751"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_655_3457">
+                        <rect width="20" height="18" fill="white" transform="translate(0 0.5)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              id="JotFormIFrame-243053802326348"
+              title="Main form - Ironsail"
+              onload="window.parent.scrollTo(0,0)"
+              allowtransparency="true"
+              allow="geolocation; microphone; camera; fullscreen"
+              src="https://form.jotform.com/243053802326348"
+              frameborder="0"
+              style="min-width: 100%; max-width: 100%; height: 539px; border: none"
+              scrolling="no"
+            >
+            </iframe>
+            <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
+            <script>
+              window.jotformEmbedHandler(
+                "iframe[id='JotFormIFrame-243053802326348']",
+                'https://form.jotform.com/',
+              );
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="dig-main">
+      <div class="dig-main_cover"></div>
+      <div class="dig-main_cover-mob"></div>
+      <video
+        class="dig_video"
+        src="assets/img/main/dm-bg.mp4"
+        autoplay
+        muted
+        playsinline
+        loop
+      ></video>
+      <div class="dig-main_wrapper" data-aos="fade-down">
+        <h1 class="main_title dig-main_title">Redefining Innovation with a Human Touch</h1>
+        <p class="dig-main_subtitle">
+          At Ironsail, we blend advanced technology with personalized care, crafting solutions that
+          drive sustainable growth and long-term success!
+        </p>
+        <a
+          class="main_button white_button"
+          href="#values"
+          style="text-decoration: none"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          ><p>Explore More</p>
+          <svg
+            class="main_but_arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="19"
+            viewBox="0 0 20 19"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_655_3457)">
+              <path
+                d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
+                fill="#141751"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_655_3457">
+                <rect width="20" height="18" fill="white" transform="translate(0 0.5)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section class="as-meet" id="mission">
+      <div class="revenue_menu">
+        <a href="#mission">Our Mission</a>
+        <a href="#values">Our Values</a>
+        <a href="#get-started">Get Started</a>
+      </div>
+      <div class="as-meet_wrapper">
+        <img
+          src="assets/img/meet/leftimg.png"
+          alt="philip"
+          class="as-meet-left-img"
+          data-aos="fade-right"
+        />
+        <div class="as-meet-info-frame">
+          <div class="as-meet-info-texts" data-aos="fade-down">
+            <p class="as-meet-info-title">Empower Businesses with Innovation</p>
+            <p class="as-meet-info-text">
+              At Ironsail, we combine AI, software development, and digital marketing with a
+              personalized approach. We nurture brands like living organisms - fostering growth,
+              adapting to change, and delivering lasting results with tailored strategies and
+              support.
+            </p>
+          </div>
+          <img
+            src="assets/img/meet/frame-bottom.png"
+            alt="frame title"
+            class="as-meet-info-img"
+            data-aos="fade-up"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="as-cta">
+      <div class="as-cta-wrapper">
+        <div class="as-cta-texts" data-aos="fade-down">
+          <p class="as-cta-texts_title">Support You Can Trust</p>
+          <p class="as-cta-texts_text">
+            At Ironsail, open communication and dependable support are our priorities. Whether you
+            have questions, feedback, or want to discuss how we can drive your business's success,
+            we're here for you - every step of the way.
+          </p>
+        </div>
+
+        <a
+          class="main_button white_button as-cta-button"
+          href="#"
+          data-toggle="modal"
+          data-target="#exampleModal"
+          ><p>Contact Us</p>
+          <svg
+            class="main_but_arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="19"
+            viewBox="0 0 20 19"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_655_3457)">
+              <path
+                d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
+                fill="#141751"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_655_3457">
+                <rect width="20" height="18" fill="white" transform="translate(0 0.5)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section class="as-value" id="values">
+      <div class="as-value_wrapper">
+        <img
+          src="assets/img/values/left-text.png"
+          alt="left banner"
+          class="our-value-img-left"
+          data-aos="fade-right"
+        />
+        <img
+          src="assets/img/values/top-text.png"
+          alt="top banner"
+          class="top-mobile-text-img"
+          data-aos="fade-down"
+        />
+        <div class="as-value-content">
+          <div class="as-value-content_items_two" data-aos="fade-down">
+            <div class="as-value-item-column">
+              <div class="as-value-item-icon-title_wrapper">
+                <svg
+                  class="as-value-item-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <circle cx="10" cy="10" r="9" stroke="#141751" stroke-width="2" />
+                </svg>
+                <p class="as-value-item-title">Human Touch</p>
+              </div>
+              <p class="as-value-item-text">
+                Experience a personalized approach where real experts guide you at every step. We
+                prioritize human connection, ensuring your business receives the care and attention
+                it deserves.
+              </p>
+              <div class="as-value-item-image-column vv1"></div>
+            </div>
+            <div class="as-value-item-row">
+              <div class="as-value-item-row-content">
+                <div class="as-value-item-icon-title_wrapper">
+                  <svg
+                    class="as-value-item-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <circle cx="10" cy="10" r="9" stroke="#141751" stroke-width="2" />
+                  </svg>
+                  <p class="as-value-item-title">Integrated<br />Solutions</p>
+                </div>
+                <p class="as-value-item-text">
+                  Access a full suite of services—marketing, software development, and AI—all in one
+                  place. Our holistic approach drives growth and efficiency by seamlessly aligning
+                  every aspect of your digital strategy.
+                </p>
+              </div>
+              <div class="as-value-item-image-row vv2"></div>
+            </div>
+          </div>
+          <div class="as-value-content_items_two" data-aos="fade-down">
+            <div class="as-value-item-row">
+              <div class="as-value-item-row-content">
+                <div class="as-value-item-icon-title_wrapper">
+                  <svg
+                    class="as-value-item-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <circle cx="10" cy="10" r="9" stroke="#141751" stroke-width="2" />
+                  </svg>
+                  <p class="as-value-item-title">Simplified<br />Communication</p>
+                </div>
+                <p class="as-value-item-text">
+                  Enjoy streamlined communication with a single point of contact for all your needs,
+                  eliminating confusion and keeping your projects on track for faster results.
+                </p>
+              </div>
+              <div class="as-value-item-image-row vv3"></div>
+            </div>
+            <div class="as-value-item-column">
+              <div class="as-value-item-icon-title_wrapper">
+                <svg
+                  class="as-value-item-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <circle cx="10" cy="10" r="9" stroke="#141751" stroke-width="2" />
+                </svg>
+                <p class="as-value-item-title">Time Efficiency</p>
+              </div>
+              <p class="as-value-item-text">
+                Achieve more with our efficient processes designed to save you time and resources,
+                allowing you to focus on what matters most—growing your business.
+              </p>
+              <div class="as-value-item-image-column vv4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="dm-form" id="get-started">
+      <div class="dm-form_wrapper">
+        <script
+          type="text/javascript"
+          src="https://form.jotform.com/jsform/243053802326348"
+        ></script>
+      </div>
+    </section>
+    <footer>
+      <div class="footer_wrapper">
+        <a href="#" class="footer-go-up">
+          <svg
+            class="footer-go-up-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="109"
+            height="109"
+            viewBox="0 0 109 109"
+            fill="none"
+          >
+            <rect width="109" height="109" rx="54.5" fill="#3A8ACA" />
+            <path
+              d="M32.3477 52.654L54.5 30.5016L76.6524 52.654M54.5 33.5783V78.4984"
+              stroke="white"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <div class="footer_content">
+          <div class="footer-logo-links_wrapper">
+            <a href="/">
+              <img src="../assets/img/global/logo.png" alt="logo" class="footer-logo" />
+            </a>
+            <p class="footer_text">Follow us</p>
+            <div class="footer-icons_wrapper">
+              <a class="footer_icon" href="https://www.facebook.com/ironsailsolutions/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="37"
+                  height="37"
+                  viewBox="0 0 37 37"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M20.5392 32.0088V20.067H24.6242L25.2371 15.4116H20.5392V12.4399C20.5392 11.0925 20.9191 10.1742 22.8913 10.1742L25.4025 10.1732V6.00929C24.9682 5.95394 23.4775 5.82703 21.7424 5.82703C18.1193 5.82703 15.6389 7.99615 15.6389 11.9788V15.4116H11.5415V20.067H15.6389V32.0088H20.5392Z"
+                    fill="white"
+                  />
+                  <mask
+                    id="mask0_639_4927"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="5"
+                    width="15"
+                    height="28"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.5392 32.0088V20.067H24.6242L25.2371 15.4116H20.5392V12.4399C20.5392 11.0925 20.9191 10.1742 22.8913 10.1742L25.4025 10.1732V6.00929C24.9682 5.95394 23.4775 5.82703 21.7424 5.82703C18.1193 5.82703 15.6389 7.99615 15.6389 11.9788V15.4116H11.5415V20.067H15.6389V32.0088H20.5392Z"
+                      fill="white"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_639_4927)"></g>
+                </svg>
+              </a>
+
+              <a class="footer_icon" href="https://www.instagram.com/ironsail/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="37"
+                  height="37"
+                  viewBox="0 0 37 37"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.9007 4.0166H25.0984C29.5807 4.0166 33.2272 7.6631 33.227 12.145V25.3428C33.227 29.8247 29.5807 33.4711 25.0984 33.4711H11.9007C7.41878 33.4711 3.77246 29.8248 3.77246 25.3428V12.145C3.77246 7.6631 7.41878 4.0166 11.9007 4.0166ZM25.0986 30.8578C28.1397 30.8578 30.6138 28.3838 30.6138 25.3428H30.6137V12.145C30.6137 9.1041 28.1395 6.62995 25.0984 6.62995H11.9007C8.85978 6.62995 6.38581 9.1041 6.38581 12.145V25.3428C6.38581 28.3838 8.85978 30.858 11.9007 30.8578H25.0986ZM10.7852 18.7438C10.7852 14.4899 14.2457 11.0293 18.4994 11.0293C22.7532 11.0293 26.2137 14.4899 26.2137 18.7438C26.2137 22.9974 22.7532 26.4579 18.4994 26.4579C14.2457 26.4579 10.7852 22.9974 10.7852 18.7438ZM13.4417 18.7439C13.4417 21.5328 15.7109 23.8017 18.4997 23.8017C21.2886 23.8017 23.5578 21.5328 23.5578 18.7439C23.5578 15.9547 21.2888 13.6857 18.4997 13.6857C15.7107 13.6857 13.4417 15.9547 13.4417 18.7439Z"
+                    fill="white"
+                  />
+                  <mask
+                    id="mask0_639_4932"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="3"
+                    y="4"
+                    width="31"
+                    height="30"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.9007 4.0166H25.0984C29.5807 4.0166 33.2272 7.6631 33.227 12.145V25.3428C33.227 29.8247 29.5807 33.4711 25.0984 33.4711H11.9007C7.41878 33.4711 3.77246 29.8248 3.77246 25.3428V12.145C3.77246 7.6631 7.41878 4.0166 11.9007 4.0166ZM25.0986 30.8578C28.1397 30.8578 30.6138 28.3838 30.6138 25.3428H30.6137V12.145C30.6137 9.1041 28.1395 6.62995 25.0984 6.62995H11.9007C8.85978 6.62995 6.38581 9.1041 6.38581 12.145V25.3428C6.38581 28.3838 8.85978 30.858 11.9007 30.8578H25.0986ZM10.7852 18.7438C10.7852 14.4899 14.2457 11.0293 18.4994 11.0293C22.7532 11.0293 26.2137 14.4899 26.2137 18.7438C26.2137 22.9974 22.7532 26.4579 18.4994 26.4579C14.2457 26.4579 10.7852 22.9974 10.7852 18.7438ZM13.4417 18.7439C13.4417 21.5328 15.7109 23.8017 18.4997 23.8017C21.2886 23.8017 23.5578 21.5328 23.5578 18.7439C23.5578 15.9547 21.2888 13.6857 18.4997 13.6857C15.7107 13.6857 13.4417 15.9547 13.4417 18.7439Z"
+                      fill="white"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_639_4932)"></g>
+                </svg>
+              </a>
+
+              <a class="footer_icon" href="https://www.linkedin.com/company/ironsail/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                >
+                  <path
+                    d="M24.8 0.181641H3.2C1.715 0.181641 0.5 1.39664 0.5 2.88164V24.4816C0.5 25.9666 1.715 27.1816 3.2 27.1816H24.8C26.285 27.1816 27.5 25.9666 27.5 24.4816V2.88164C27.5 1.39664 26.285 0.181641 24.8 0.181641ZM8.6 23.1316H4.55V10.9816H8.6V23.1316ZM6.575 8.68664C5.225 8.68664 4.145 7.60664 4.145 6.25664C4.145 4.90664 5.225 3.82664 6.575 3.82664C7.925 3.82664 9.005 4.90664 9.005 6.25664C9.005 7.60664 7.925 8.68664 6.575 8.68664ZM23.45 23.1316H19.4V15.9766C19.4 14.8967 18.455 13.9516 17.375 13.9516C16.295 13.9516 15.35 14.8967 15.35 15.9766V23.1316H11.3V10.9816H15.35V12.6016C16.025 11.5216 17.51 10.7116 18.725 10.7116C21.29 10.7116 23.45 12.8716 23.45 15.4366V23.1316Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer_menus_wrapper">
+            <div class="footer_menu_links_wrapper">
+              <p class="footer_menu_name">MENU</p>
+
+              <div class="footer_menu_links">
+                <a href="/" class="footer_menu_item_link">Home</a
+                ><a href="/ai-solutions" class="footer_menu_item_link"
+                  >AI & Programmatic Resources</a
+                ><a href="/development" class="footer_menu_item_link"
+                  >Website Design & Development</a
+                ><a href="/digital-marketing" class="footer_menu_item_link">Digital Marketing</a
+                ><a href="/about-us" class="footer_menu_item_link">About Us</a>
+              </div>
+            </div>
+            <div class="footer_menu_ctas">
+              <p class="footer_menu_name">ABOUT US</p>
+
+              <div class="footer_menu_links">
+                <a href="tel:+15165486759" class="icon_ph_wrap">
+                  <img src="../assets/img/footer/ph.svg" alt="phone" class="footer_cta_icon" />
+                  <p class="footer_cta_text">+1 516-548-6759</p>
+                </a>
+                <a href="tel:+15165486759" class="icon_ph_wrap">
+                  <img src="../assets/img/footer/mail.svg" alt="mail" class="footer_cta_icon" />
+                  <p class="footer_cta_text">contact@ironsail.ai</p>
+                </a>
+                <a href="tel:+15165486759" class="icon_ph_wrap">
+                  <img
+                    src="../assets/img/footer/location.png"
+                    alt="location"
+                    class="footer_cta_icon"
+                  />
+                  <p class="footer_cta_text">
+                    158-01 Cross Bay Blvd, Queens, NY, United States, New York
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="../assets/img/footer/Ironsail.png" alt="ironsail" class="ironsail-tag" />
+      </div>
+      <div class="foot_copy">© 2024 Ironsail</div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/script.js"></script>
+    <script src="js/as-js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

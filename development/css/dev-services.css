@@ -1,0 +1,318 @@
+.dev-services {
+  padding-top: 220px;
+  width: 100%;
+  position: relative;
+}
+.revenue_menu {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-40%);
+  display: flex;
+  padding: 22px 15px 22px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 22px;
+  border-radius: 0px 4px 4px 0px;
+  background: #fff;
+  box-shadow: 0px 4px 54px 0px rgba(0, 0, 0, 0.05);
+  max-width: 159px;
+  z-index: 99;
+}
+.revenue_menu a {
+  color: #a5a5a7;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  text-decoration: none;
+}
+.revenue_menu a:hover {
+  opacity: 0.6;
+}
+.revenue_menu.sticky {
+  position: fixed;
+  top: 50%; /* Middle of the screen */
+  transform: translateY(-50%); /* Center the element vertically */
+}
+@media (max-width: 1780px) {
+  .revenue_menu {
+    display: none;
+  }
+}
+.dev-services_wrapper {
+  padding-left: 200px;
+  padding-right: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.dev-serv_banner {
+  height: 100%;
+  border-radius: 4px;
+  background: var(--dark-text);
+  padding: 40px 38px;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 164px;
+  font-weight: 700;
+  line-height: 110%; /* 180.4px */
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  max-height: 291px;
+  width: 100%;
+}
+.dev-serv_services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.dev-serv_services_two_wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.dev-serv_services_item {
+  height: 563px;
+  width: 591px;
+  padding: 40px;
+  border-radius: 4px;
+  background: #fff;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.dev-serv_item-imgwrap {
+  width: 511px;
+  height: 157px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+.dev-serv_item_icon_title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+  position: relative;
+  top: 0;
+  transition: all 0.5s;
+}
+.dev_serv_item_title {
+  color: var(--dark-text);
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  z-index: 3;
+  transition: all 0.5s;
+}
+.dev_serv_item_subtitle {
+  color: var(--dark-text);
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 8px;
+  transition: all 0.5s;
+}
+.dev_serv_item_text {
+  color: var(--dark-text);
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 160%;
+  z-index: 2;
+  transition: all 0.5s;
+}
+.wr1 {
+  background-image: url('../assets/img/services/d1.png');
+}
+.wr2 {
+  background-image: url('../assets/img/services/dev1.png');
+}
+.wr3 {
+  background-image: url('../assets/img/services/api1.png');
+}
+.wr4 {
+  background-image: url('../assets/img/services/swd1.png');
+}
+.dev-serv_services_item:hover .dev-serv_item-imgwrap {
+  height: 563px;
+  width: 591px;
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+  border-radius: 4px;
+  z-index: 2;
+}
+.dev-serv_services_item:hover .wr1 {
+  background-image: url('../assets/img/services/d2.png');
+}
+.dev-serv_services_item:hover .wr2 {
+  background-image: url('../assets/img/services/dev2.png');
+}
+.dev-serv_services_item:hover .wr3 {
+  background-image: url('../assets/img/services/api2.png');
+}
+.dev-serv_services_item:hover .wr4 {
+  background-image: url('../assets/img/services/swd2.png');
+}
+.dev-serv_services_item:hover .dev_serv_item_subtitle {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.dev-serv_services_item:hover .dev_serv_item_text {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.dev-serv_services_item svg {
+  z-index: 101;
+}
+svg circle {
+  display: block;
+  transition: all 0.5s;
+}
+.dev-serv_services_item:hover svg circle {
+  stroke: #fff;
+  transition: all 0.5s;
+}
+.dev-serv_services_item:hover .dev_serv_item_title {
+  color: #fff;
+  transition: all 0.5s;
+}
+.dev-serv_services_item:hover .dev-serv_item_icon_title {
+  top: -285px;
+  transition: all 0.5s;
+}
+.dev-servbannermob {
+  display: none;
+}
+.mySwiper3 {
+  display: none;
+}
+.dm-serv-scroll {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1628px) {
+  .dev-services_wrapper {
+    padding: 0;
+    gap: 20px;
+  }
+}
+@media (max-width: 1528px) {
+  .dev-services_wrapper {
+    flex-direction: column;
+  }
+  .dev-servbannerdesk {
+    transform: rotate(90deg);
+    display: none;
+  }
+  .dev-servbannermob {
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 1260px) {
+  .dev-serv_services {
+    display: none;
+  }
+  .mySwiper3 {
+    max-width: 500px;
+    display: block;
+  }
+  .dm-serv-scroll {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  .dev-serv_services_item {
+    max-width: 499px;
+  }
+  .dev-serv_item-imgwrap {
+    width: 410px;
+  }
+}
+@media (max-width: 620px) {
+  .mySwiper3 {
+    max-width: 351px;
+    display: block;
+  }
+  .dev-services_wrapper {
+    gap: 32px;
+  }
+  .dev-serv_services_item {
+    height: 566px;
+    width: 350px;
+    padding: 40px 20px;
+    border-radius: 4px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+  .dev_serv_item_title {
+    font-size: 20px;
+  }
+  .dev_serv_item_subtitle {
+    font-size: 18px;
+  }
+  .dev_serv_item_text {
+    font-size: 16px;
+  }
+  .dev-serv_item-imgwrap {
+    left: initial;
+    top: initial;
+    bottom: 40px;
+    left: 20px;
+    width: 310px;
+    height: 156px;
+  }
+  .dev-serv_services_item:hover .dev-serv_item_icon_title {
+    top: 0;
+    transition: all 0.5s;
+  }
+  .dev-serv_services_item:hover .dev-serv_item-imgwrap {
+    top: initial;
+    right: initial;
+    height: 566px;
+    width: 350px;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.5s;
+    border-radius: 4px;
+    z-index: 2;
+  }
+  .dm-serv-scroll {
+    margin-right: 0;
+    margin-left: auto;
+    padding-right: 20px;
+  }
+  .dev-services {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+}

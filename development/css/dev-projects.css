@@ -1,0 +1,163 @@
+.dev-pr {
+  width: 100%;
+  padding-top: 33px;
+  padding-bottom: 60px;
+  background: url('../assets/img/projects/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.dev-pr_wrapper {
+  width: 100%;
+  position: relative;
+}
+.mySwiper4 {
+  width: 100%;
+  max-width: 1520px;
+}
+.title-arrows-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dev-pr-title {
+  color: var(--dark-text);
+  text-align: center;
+  font-family: 'Lato';
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: absolute;
+  left: 200px;
+  top: -30px;
+}
+.sw_nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+
+.swiper-button-prev4 {
+  position: initial;
+  margin-top: initial;
+  background-image: url('../assets/img/projects/left2.png') !important;
+}
+
+.swiper-button-next4 {
+  position: initial;
+  margin-top: initial;
+  background-image: url('../assets/img/projects/left1.svg') !important;
+}
+
+.dev-pr-slide {
+  display: flex !important;
+  gap: 20px !important;
+}
+.s-l {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.s-l-l {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.s-r {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.s-r-t {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media (max-width: 1550px) {
+  .mySwiper4 {
+  }
+  .dev-pr-slide {
+    flex-direction: row;
+  }
+  .as1 {
+    height: 150px;
+    width: 167px;
+  }
+  .as2 {
+    height: 96px;
+    width: 167px;
+  }
+  .as3 {
+    width: 171px;
+    height: 256px;
+  }
+  .as4 {
+    width: 202px;
+    height: 140px;
+  }
+  .as5 {
+    width: 136px;
+    height: 140px;
+  }
+  .as6 {
+    width: 348px;
+    height: 218px;
+  }
+  .dev-pr-slide {
+    gap: 20px !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .s-l {
+    gap: 10px;
+  }
+  .s-l-l {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .s-r {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .s-r-t {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .dev-pr-title {
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: #3a8aca;
+  }
+  .sw_nav {
+    padding-right: 20px;
+    gap: 20px;
+  }
+}
+@media (max-width: 756px) {
+  .dev-pr-slide {
+    flex-direction: column;
+  }
+  .dev-pr {
+    background: url('../assets/img/projects/mobbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .sw_nav {
+    margin-top: 20px;
+  }
+  .swiper-button-prev4 {
+    height: 24px;
+    width: 24px;
+  }
+
+  .swiper-button-next4 {
+    height: 24px;
+    width: 24px;
+  }
+}

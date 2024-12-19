@@ -1,0 +1,411 @@
+.digital-marketing {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 180px;
+  gap: 70px;
+}
+
+.digital-marketing__sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 298px;
+  height: 100%;
+  padding: 10px 38px;
+  background-color: var(--accent-blue);
+  border-radius: 4px;
+}
+
+.digital-marketing__sidebar h2 {
+  color: var(--light-text);
+  font-family: Oswald;
+  font-size: 140px;
+  font-weight: 700;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin: 0;
+}
+
+.digital-marketing__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(363px, 1fr));
+  gap: 20px;
+  row-gap: 60px;
+  justify-content: center;
+  max-width: 1511px;
+}
+
+.digital-marketing__card {
+  border-radius: 4px;
+  background: #fff;
+  height: 573px !important;
+  width: 100%;
+  padding: 40px 38px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  z-index: 99;
+}
+
+.digital-marketing__wrap {
+  width: 280px;
+  height: 152px;
+  position: absolute;
+  bottom: 31px;
+  left: 38px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ads {
+  background-image: url('../../assets/img/home/digital/image-1.png');
+}
+
+.meta {
+  background-image: url('../../assets/img/home/digital/image-2.png');
+}
+
+.organic {
+  background-image: url('../../assets/img/home/digital/image-3.png');
+}
+
+.local {
+  background-image: url('../../assets/img/home/digital/image-4.png');
+}
+
+.brand {
+  background-image: url('../../assets/img/home/digital/image-5.png');
+}
+
+.power {
+  background-image: url('../../assets/img/home/digital/image-6.png');
+}
+
+.digital-marketing__card:hover .ads {
+  height: 573px;
+  width: 382px !important;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  margin: initial;
+  z-index: 1;
+  transition: all 0.5s;
+  background-image: url('../../assets/img/home/digital/img-1.png');
+}
+
+.digital-marketing__card:hover .meta {
+  height: 573px;
+  width: 382px !important;
+  bottom: 0;
+  left: 0;
+  margin: initial;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.5s;
+  background-image: url('../../assets/img/home/digital/img-2.png');
+}
+
+.digital-marketing__card:hover .organic {
+  height: 573px;
+  width: 382px !important;
+  bottom: 0;
+  left: 0;
+  margin: initial;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.5s;
+  background-image: url('../../assets/img/home/digital/img-3.png');
+}
+
+.digital-marketing__card:hover .local {
+  height: 573px;
+  width: 382px !important;
+  bottom: 0;
+  left: 0;
+  margin: initial;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.5s;
+  background-image: url('../../assets/img/home/digital/img-4.png');
+}
+
+.digital-marketing__card:hover .brand {
+  height: 573px;
+  width: 382px !important;
+  bottom: 0;
+  left: 0;
+  margin: initial;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.5s;
+  background-image: url('../../assets/img/home/digital/img-5.png');
+}
+
+.digital-marketing__card:hover .power {
+  height: 573px;
+  width: 382px !important;
+  bottom: 0;
+  left: 0;
+  margin: initial;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.5s;
+  background-image: url('../../assets/img/home/digital/img-6.png');
+}
+
+.digital-marketing__card:hover {
+  transform: translateY(0);
+}
+
+.digital-marketing__title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 10;
+}
+
+.digital-marketing__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.digital-marketing__title {
+  color: var(--dark-text);
+  font-family: Lato;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.digital-marketing__title {
+  transition: color 0.3s ease;
+}
+
+.digital-marketing__card:hover .digital-marketing__title {
+  color: var(--light-text);
+}
+
+.digital-marketing__icon circle {
+  transition: stroke 0.3s ease;
+}
+
+.digital-marketing__card:hover .digital-marketing__icon circle {
+  stroke: var(--light-text);
+}
+
+.digital-marketing__subtitle {
+  color: var(--dark-text);
+  font-family: Manrope;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.8px;
+  margin-bottom: 12px;
+}
+
+.digital-marketing__card:hover .digital-marketing__subtitle {
+  opacity: 0;
+}
+
+.digital-marketing__text {
+  color: var(--dark-text);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25.6px;
+}
+
+.digital-marketing__card:hover .digital-marketing__text {
+  opacity: 0;
+}
+
+.digital-marketing__image {
+  width: 100%;
+  max-width: 284px;
+  max-height: 182px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.digital-marketing__view-label {
+  position: absolute;
+  bottom: 18px;
+  left: 30px;
+  color: #fff;
+  font-family: Impact;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.digital-marketing__card:hover .digital-marketing__view-label {
+  opacity: 1;
+}
+
+.digital-marketing__scroll {
+  display: none;
+  cursor: pointer;
+}
+
+.link {
+  color: var(--light-text);
+  position: relative;
+  z-index: 2;
+}
+
+.digital-marketing__arrow {
+  position: relative;
+  z-index: 2;
+}
+
+.link:visited {
+  color: var(--light-text);
+}
+
+@media (max-width: 1870px) {
+  .digital-marketing {
+    grid-template-columns: 1fr 3fr;
+    padding: 120px;
+    justify-items: center;
+  }
+
+  .digital-marketing__content {
+    grid-template-columns: repeat(3, 363px);
+  }
+}
+
+@media (max-width: 1700px) {
+  .digital-marketing__content {
+    grid-template-columns: repeat(3, 350px);
+  }
+}
+
+@media (max-width: 1650px) {
+  .digital-marketing {
+    grid-template-columns: 1fr;
+    padding: 100px 50px;
+    gap: 10px;
+  }
+
+  .digital-marketing__sidebar {
+    width: 100%;
+    max-width: 1130px;
+    height: 174px;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  .digital-marketing__sidebar h2 {
+    font-size: 90px;
+    writing-mode: horizontal-tb;
+    transform: none;
+    text-align: center;
+  }
+
+  .digital-marketing__content {
+    grid-template-columns: repeat(3, 363px);
+  }
+}
+
+@media (max-width: 1230px) {
+  .digital-marketing__content {
+    grid-template-columns: repeat(2, 363px);
+  }
+
+  .digital-marketing__sidebar {
+    width: 100%;
+    max-width: 740px;
+  }
+
+  .digital-marketing__sidebar h2 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 843px) {
+  .digital-marketing {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px;
+  }
+
+  .digital-marketing__sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .digital-marketing__sidebar h2 {
+    font-size: 62px;
+    writing-mode: horizontal-tb;
+    transform: none;
+    text-align: left;
+  }
+
+  .digital-marketing__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+    gap: 20px;
+    overflow-x: auto;
+    width: 100%;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .digital-marketing__content::-webkit-scrollbar {
+    display: none;
+  }
+
+  .digital-marketing__card {
+    flex: 0 0 auto;
+    min-width: 363px;
+    max-width: 363px;
+    padding: 40px 38px 20px;
+    border-radius: 4px;
+    background-color: var(--light-text);
+    box-sizing: border-box;
+    margin-bottom: 45px;
+  }
+
+  .digital-marketing__subtitle {
+    font-size: 20px;
+  }
+
+  .digital-marketing__scroll {
+    display: block;
+    margin-left: auto;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 470px) {
+  .digital-marketing {
+    padding: 80px 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .digital-marketing__title {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,131 @@
+.as-meet {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  position: relative;
+}
+.as-meet_wrapper {
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 72px;
+}
+.as-meet-left-img {
+  max-width: 570px;
+  width: 100%;
+  height: auto;
+}
+.as-meet-info-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.as-meet-info-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 65px;
+}
+.as-meet-info-title {
+  color: var(--dark-text);
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.as-meet-info-text {
+  color: var(--dark-text);
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 160%;
+}
+.as-meet-info-img {
+  width: 100%;
+  height: auto;
+}
+
+.revenue_menu {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-40%);
+  display: flex;
+  padding: 22px 15px 22px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 22px;
+  border-radius: 0px 4px 4px 0px;
+  background: #fff;
+  box-shadow: 0px 4px 54px 0px rgba(0, 0, 0, 0.05);
+  max-width: 159px;
+  z-index: 99;
+}
+.revenue_menu a {
+  color: #a5a5a7;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  text-decoration: none;
+}
+.revenue_menu a:hover {
+  opacity: 0.6;
+}
+.revenue_menu.sticky {
+  position: fixed;
+  top: 50%; /* Middle of the screen */
+  transform: translateY(-50%); /* Center the element vertically */
+}
+@media (max-width: 1700px) {
+  .as-meet_wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (max-width: 1500px) {
+  .as-meet_wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 1400px) {
+  .as-meet_wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 1150px) {
+  .as-meet_wrapper {
+    gap: 20px;
+  }
+}
+@media (max-width: 1080px) {
+  .as-meet_wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0;
+  }
+  .as-meet-info-frame {
+    flex-direction: column-reverse;
+  }
+  .as-meet-info-img {
+    margin-bottom: 24px;
+  }
+  .as-meet-info-texts {
+    margin-bottom: 24px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  .as-meet-info-title {
+    font-size: 20px;
+  }
+  .as-meet-info-text {
+    font-size: 16px;
+  }
+  .as-meet {
+    padding-top: 65px;
+    padding-bottom: 80px;
+  }
+}

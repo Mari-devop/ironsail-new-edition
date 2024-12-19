@@ -1,0 +1,210 @@
+.departures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  background-image: url('../assets/departures/bg.png');
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 200px;
+  gap: 40px;
+}
+
+.departures__cta {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  padding: 40px 60px;
+  width: 100%;
+  max-width: 791px;
+}
+
+.departures__cta-text {
+  color: var(--light-text);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.departures__grid-container {
+  display: flex;
+  padding: 60px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  background-color: var(--light-text);
+  border-radius: 4px;
+}
+
+.departures__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  max-width: 1440px;
+  overflow-x: auto;
+}
+
+.sales,
+.hr,
+.service {
+  flex: 1 1 30%;
+  max-width: 452px;
+}
+
+.techno,
+.marketing {
+  flex: 1 1 45%;
+  max-width: 698px;
+}
+
+.departures__grid-title {
+  color: var(--dark-text);
+  font-family: Lato;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.departures__grid-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  gap: 10px;
+}
+
+.departures__grid-text {
+  color: var(--dark-text);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.departures__scroll-container {
+  display: none;
+  cursor: pointer;
+}
+
+.dem {
+  width: 201px;
+  height: 49px;
+}
+
+@media (max-width: 1588px) {
+  .departures {
+    gap: 50px;
+  }
+
+  .departures__grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .departures__grid::-webkit-scrollbar {
+    display: none;
+  }
+  .departures__grid {
+    scrollbar-width: none;
+  }
+
+  .departures__grid-container {
+    max-width: 452px;
+  }
+
+  .sales,
+  .hr,
+  .service,
+  .techno,
+  .marketing {
+    flex: 0 0 auto;
+  }
+
+  .departures__scroll-container {
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .departures__scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 1065px) {
+  .departures {
+    padding: 150px;
+  }
+}
+
+@media (max-width: 765px) {
+  .departures {
+    padding: 150px 100px;
+  }
+}
+
+@media (max-width: 665px) {
+  .departures {
+    padding: 150px 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .departures {
+    padding: 10px 20px;
+    height: 1000px;
+  }
+
+  .departures__grid-container {
+    max-width: 350px;
+    padding: 20px;
+  }
+
+  .departures__grid-title {
+    font-size: 20px;
+  }
+
+  .departures__grid-text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .departures__cta {
+    padding: 20px;
+  }
+
+  .departures__cta-text {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 22px;
+  }
+}
+
+@media (max-width: 375px) {
+  .departures {
+    background-image: url('../assets/departures/bg-mobile.png');
+    background-size: 100% 100%;
+    gap: 10px;
+  }
+
+  .departures__cta-text {
+    margin: 0;
+  }
+}

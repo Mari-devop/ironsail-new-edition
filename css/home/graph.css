@@ -1,0 +1,290 @@
+.graph {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 200px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.graph__wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.graph__wraper-sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.graph__title {
+  color: var(--dark-text);
+  font-family: Lato;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 38.4px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 52px;
+}
+
+.graph__container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  width: 100%;
+  max-width: 504px;
+}
+
+.graph__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.graph__text-container-title {
+  color: var(--dark-text);
+  font-family: Manrope;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.8px;
+}
+
+.graph__text-container-text {
+  color: var(--dark-text);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25.6px;
+}
+
+.graph__container-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.graph__description {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.graph__description-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.graph__dot {
+  width: 10px;
+  height: 10px;
+}
+
+.graph__description-text {
+  color: var(--dark-text);
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19.2px;
+}
+
+.graph__picture-container {
+  position: relative;
+}
+
+.graph__rose {
+  position: relative;
+  width: 300px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+
+.graph__blue-small {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+
+.graph__blue {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  height: 30px;
+}
+
+.graph__ten,
+.graph__ninety,
+.graph__thirtyfive,
+.graph__sixtyfive {
+  color: var(--dark-text);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.6px;
+}
+
+.graph__ten {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.graph__ninety {
+  position: relative;
+  top: 0;
+  left: 100px;
+}
+
+.graph__thirtyfive {
+  position: relative;
+  top: 0;
+  left: 40px;
+}
+
+.graph__sixtyfive {
+  position: relative;
+  top: 0;
+  left: 140px;
+}
+
+.graph__picture-container-description {
+  color: var(--dark-text);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22.4px;
+}
+
+.graph__container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 501px;
+}
+
+.graph__container-right-text {
+  display: flex;
+  width: 379px;
+  height: 209px;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--dark-text);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25.6px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 1650px) {
+  .graph {
+    padding: 60px 100px;
+  }
+
+  .graph__wraper-sections {
+    gap: 50px;
+  }
+
+  .graph__wraper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .graph__wraper {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .graph__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 870px) {
+  .graph__title {
+    font-size: 24px;
+    line-height: 28.8px;
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .graph__wraper-sections {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .graph__description-wrapper {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .graph__container-right-text {
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .graph__container-right {
+    gap: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .graph {
+    padding: 52px 20px;
+    margin: auto 20px;
+  }
+
+  .width {
+    width: 100%;
+  }
+
+  .graph__title {
+    margin-bottom: 32px;
+  }
+}

@@ -1,0 +1,146 @@
+.dm-ads {
+  width: 100%;
+  padding-top: 220px;
+  padding-bottom: 220px;
+  background-image: url('../assets/img/ads/bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.dm-ads_wrapper {
+  padding-left: 210px;
+  padding-right: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.dm-ads_item {
+  width: 33%;
+  height: 480px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.dm-ads_item:hover {
+  box-shadow: 2px 2px 54px 0px rgba(58, 138, 202, 0.6);
+  transition: all 0.3s;
+}
+.dm-ads_item_title {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px; /* Adjust to control space between bullet and text */
+}
+.dm-ads_item_title::before {
+  content: '';
+  width: 15px; /* Set circle size */
+  height: 15px;
+  border: 2px solid #ffffff; /* Outline color set to white */
+  border-radius: 50%; /* Makes it a circle */
+  position: absolute;
+  left: 0; /* Position the circle close to the text */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dm-ads_item_subtititle {
+  color: #fff;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+}
+.ad_item_short_subt_one {
+  max-width: 385px;
+}
+.ad_item_short_subt_two {
+  max-width: 290px;
+}
+.ad_item_short_subt_three {
+  max-width: 367px;
+}
+.dm_ads_one {
+  background: url('../assets/img/ads/bg1.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.dm_ads_two {
+  background: url('../assets/img/ads/bg2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.dm_ads_three {
+  background: url('../assets/img/ads/bg3.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 1880px) {
+  .dm-ads_wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+  }
+}
+@media (max-width: 1540px) {
+  .dm-ads_wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+  }
+}
+@media (max-width: 1440px) {
+  .dm-ads_wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 1380px) {
+  .dm-ads_wrapper {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1340px) {
+  .dm-ads_wrapper {
+    flex-wrap: wrap;
+  }
+  .dm-ads_item {
+    width: 40%;
+  }
+}
+@media (max-width: 1100px) {
+  .dm-ads_wrapper {
+    flex-wrap: wrap;
+  }
+  .dm-ads {
+    background-image: url('../assets/img/ads/bgmob.png');
+  }
+  .dm-ads_item {
+    width: 50%;
+  }
+}
+@media (max-width: 787px) {
+  .dm-ads_wrapper {
+    flex-wrap: wrap;
+  }
+  .dm-ads_item {
+    width: 350px;
+    height: 350px;
+  }
+  .dm-ads_item_title {
+    font-size: 20px;
+  }
+  .dm-ads_item_subtititle {
+    font-size: 16px;
+  }
+  .dm-ads {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
