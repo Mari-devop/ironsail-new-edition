@@ -34,47 +34,43 @@
     <header>
       <div class="header_wrapper mycontainer">
         <nav class="navbar">
-          <a href="/"
-            ><img src="../assets/img/global/logo.png" alt="logo" class="header_logo_tablet_mob"
-          /></a>
-          <ul class="navbar_menu">
-            <li>
-              <a class="nav_elem" href="/development">Website Design & Development</a>
-            </li>
-            <li>
-              <a class="nav_elem" href="/digital-marketing">Digital Marketing</a>
-            </li>
-            <li>
-              <a class="nav_elem" href="/ai-solutions">AI & Programmatic Resources</a>
-            </li>
-            <li>
-              <a class="nav_elem" href="/about-us">About Us</a>
-            </li>
-          </ul>
-          <div class="header_button_pair">
-            <a class="main_button" href="#" data-toggle="modal" data-target="#exampleModal"
-              ><p>Apply Now</p>
-              <svg
-                class="main_but_arrow"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="19"
-                viewBox="0 0 20 19"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_655_3457)">
-                  <path
-                    d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
-                    fill="#141751"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_655_3457">
-                    <rect width="20" height="18" fill="white" transform="translate(0 0.5)" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
+          <a href="/"><img src="../assets/img/global/logo.png" alt="logo" class="header_logo_tablet_mob" /></a>
+          <div class="navbar-wrapper">
+            <ul class="navbar_menu">
+              <li>
+                <a class="nav_elem" href="/">
+                  Services
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 10L12 15L17 10" stroke="#141751" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="nav_elem" href="/about-us">About Us</a>
+              </li>
+              <li>
+                <a class="nav_elem" href="/">Contact Us</a>
+              </li>
+            </ul>
+            <div class="header_button_pair">
+              <a class="main_button" type="button" href="#" data-toggle="modal"
+                data-target="#exampleModal">
+                <p>Get in Touch</p>
+                <svg class="main_but_arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
+                  fill="none">
+                  <g clip-path="url(#clip0_655_3457)">
+                    <path
+                      d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
+                      fill="#141751" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_655_3457">
+                      <rect width="20" height="18" fill="white" transform="translate(0 0.5)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
           </div>
           <div class="burger">
             <div class="burger_space" id="burger">
@@ -88,31 +84,60 @@
           <div class="popup_textblock" id="popupSlide">
             <ul class="navbar_menu_mobile">
               <li>
-                <a class="nav_elem_mobile" href="/development">Web design & development</a>
+                <a class="nav_elem_mobile" href="#" id="servicesMobileLink">
+                  Services
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 10L12 15L17 10" stroke="#141751" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </li>
+              <ul class="services-dropdown-mobile">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="4.5" stroke="#141751" />
+                  </svg>
+                  <a href="/development">Web Design & Development</a>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="4.5" stroke="#141751" />
+                  </svg>
+                  <a href="/digital-marketing">Digital Marketing</a>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="4.5" stroke="#141751" />
+                  </svg>
+                  <a href="/influencer-marketing">Influencer Marketing</a>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="4.5" stroke="#141751" />
+                  </svg>
+                  <a href="/ai-solutions">AI Workforce Solutions</a>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="4.5" stroke="#141751" />
+                  </svg>
+                  <a href="/software-development">Software Development</a>
+                </li>
+              </ul>
+              <li>
+                <a class="nav_elem_mobile" href="/about-us">About Us</a>
               </li>
               <li>
-                <a class="nav_elem_mobile" href="/digital-marketing">Digital Marketing</a>
+                <a class="nav_elem_mobile" href="/">Contact Us</a>
               </li>
-              <li>
-                <a class="nav_elem_mobile" href="/ai-solutions/">AI & Programmatic Resources</a>
-              </li>
-              <li><a class="nav_elem_mobile" href="/about-us">About Us</a></li>
               <div class="header_button_pair mobile_header_button_pair">
-                <a class="main_button" href="#" data-toggle="modal" data-target="#exampleModal"
-                  ><p>Apply Now</p>
-                  <svg
-                    class="main_but_arrow"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="19"
-                    viewBox="0 0 20 19"
-                    fill="none"
-                  >
+                <a class="main_button btn-mobile" href="#" data-toggle="modal" data-target="#exampleModal">
+                  <p>Get in Touch</p>
+                  <svg class="main_but_arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="19"
+                    viewBox="0 0 20 19" fill="none">
                     <g clip-path="url(#clip0_655_3457)">
                       <path
                         d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
-                        fill="#141751"
-                      />
+                        fill="#141751" />
                     </g>
                     <defs>
                       <clipPath id="clip0_655_3457">
