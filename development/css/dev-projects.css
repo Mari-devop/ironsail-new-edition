@@ -20,7 +20,7 @@
   justify-content: space-between;
 }
 .dev-pr-title {
-  color: var(--dark-text);
+  color: #3A8ACA;
   text-align: center;
   font-family: 'Lato';
   font-size: 32px;

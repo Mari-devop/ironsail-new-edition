@@ -47,6 +47,7 @@
   padding: 40px 38px;
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
 }
 .sl_img_wrap {
   width: 280px;

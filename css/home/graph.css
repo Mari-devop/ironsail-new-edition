@@ -185,17 +185,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 14px;
   width: 100%;
   max-width: 501px;
 }
 
 .graph__container-right-text {
   display: flex;
-  width: 379px;
+  width: 347px;
   height: 209px;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   color: var(--dark-text);
   font-family: Manrope;
   font-size: 16px;
@@ -286,5 +287,6 @@
 
   .graph__title {
     margin-bottom: 32px;
+    font-weight: 700;
   }
 }

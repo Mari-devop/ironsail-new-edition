@@ -78,6 +78,10 @@
     text-transform: uppercase;
 }
 
+b {
+    font-weight: 700;
+}
+
 @media (max-width: 1230px) {
     .mission-section {
         grid-template-columns: 1fr;
@@ -137,6 +141,7 @@
 
     .mission-section {
         padding: 0 20px;
+        gap: 32px;
     }
 
     .mission-section__mission {

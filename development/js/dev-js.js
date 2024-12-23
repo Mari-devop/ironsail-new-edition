@@ -46,11 +46,6 @@ document.querySelector('.dm-serv-scroll').addEventListener('click', () => {
 });
 
 
-
-
-
-
-
 //////// INDUSTRIES SECTION ////////////
 //SCROLL SWIPER + BUTTON
 
