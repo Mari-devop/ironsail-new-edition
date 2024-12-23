@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
 ////////// SETVICES SECTION ////////////
 //SCROLL SWIPER + BUTTON
 
