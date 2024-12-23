@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
           <circle cx="10" cy="10" r="4.5" stroke="#141751"/>
         </svg>
-        <a href="/development/" class="nav_elem--sub-menu">
+        <a href="./development/" class="nav_elem--sub-menu">
           Web Design & Development
         </a>
       </li>
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
           <circle cx="10" cy="10" r="4.5" stroke="#141751"/>
         </svg>
-        <a href="/digital-marketing/" class="nav_elem--sub-menu">
+        <a href="./digital-marketing/" class="nav_elem--sub-menu">
           Digital Marketing
         </a>
       </li>
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
           <circle cx="10" cy="10" r="4.5" stroke="#141751"/>
         </svg>
-        <a href="../development/" class="nav_elem--sub-menu">
+        <a href="./development/" class="nav_elem--sub-menu">
           Software Development
         </a>
       </li>
