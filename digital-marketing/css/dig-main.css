@@ -1,5 +1,5 @@
 .dig-main {
-  height: calc(100svh - 108px);
+  height: calc(99vh);
   top: 108px;
   width: 100svw;
   display: flex;
@@ -19,27 +19,26 @@
 }
 
 .dig-main_cover {
-  height: calc(100.5svh - 108px);
+  height: calc(101svh);
   width: 100svw;
   position: absolute;
-  top: 0;
+  top: -16px;
   left: 0;
   background-image: url('../assets/img/main/desktop.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: 5;
 }
+
 @media (max-width: 1480px) {
   .dig-main {
-    height: calc(100svh - 107px);
-    top: 107px;
+    height: calc(99svh);
   }
 
   .dig-main_cover {
-    height: calc(100.5svh - 107px);
+    height: calc(101svh);
     width: 100svw;
     position: absolute;
-    top: 0;
     left: 0;
     background-image: url('../assets/img/main/desktop.png');
     background-repeat: no-repeat;
@@ -49,15 +48,14 @@
 }
 @media (max-width: 1370px) {
   .dig-main {
-    height: calc(100svh - 59px);
-    top: 59px;
+    top: 58px;
+    height: 98svh;
   }
 
   .dig-main_cover {
-    height: calc(100.5svh - 59px);
+    height: calc(101svh);
     width: 100.5svw;
     position: absolute;
-    top: 0;
     left: 0;
     background-image: url('../assets/img/main/desktop.png');
     background-repeat: no-repeat;
@@ -65,11 +63,12 @@
     z-index: 5;
   }
 }
+
 .dig-main_cover-mob {
-  height: calc(100.5svh - 59px);
+  height: calc(101svh);
   width: 100.5svw;
   position: absolute;
-  top: 0;
+  top: -16px;
   left: 0;
   background-image: url('../assets/img/main/mobile2.png');
   background-repeat: no-repeat;

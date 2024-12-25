@@ -2,6 +2,25 @@
   width: 100%;
   padding-top: 90px;
   padding-bottom: 90px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.dm-ready_img_wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /* height: 1124px; */
+  height: auto;
+  padding: 20px 200px 20px 20px;
+  background-color: #fff;
+}
+
+.dm-ready_img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .dm-steps_wrapper {
@@ -11,7 +30,10 @@
   align-items: center;
   justify-content: center;
   gap: 80px;
+  background-color: #fff;
+  padding: 107px 192px 107px 332px;
 }
+
 .dig_dig_wrapper1 {
   border-color: #afcfe9;
   border-bottom-color: transparent;
@@ -23,24 +45,25 @@
   border-bottom-color: transparent;
   border-left-color: transparent;
 }
+
 .form-submit-button {
   width: 100% !important;
   margin-left: 0 !important;
 }
+
 .dig_dig_wrapper3 {
   border-color: #afcfe9;
   border-bottom-color: transparent;
   border-left-color: transparent;
 }
+
 .circle {
   width: 128px;
   height: 128px;
-  filter: drop-shadow(-1.687px 1.688px 5.063px rgba(1, 0, 41, 0.1))
-    drop-shadow(-6.75px 6.75px 9.563px rgba(1, 0, 41, 0.09))
-    drop-shadow(-27px 27px 15.188px rgba(1, 0, 41, 0.01))
-    drop-shadow(-41.625px 41.625px 16.313px rgba(1, 0, 41, 0));
+  filter: drop-shadow(-1.687px 1.688px 5.063px rgba(1, 0, 41, 0.1)) drop-shadow(-6.75px 6.75px 9.563px rgba(1, 0, 41, 0.09)) drop-shadow(-27px 27px 15.188px rgba(1, 0, 41, 0.01)) drop-shadow(-41.625px 41.625px 16.313px rgba(1, 0, 41, 0));
   transform: scale(-1, -1);
 }
+
 .im_hiw_item_number_wrapper {
   width: 208px;
   height: 208px;
@@ -56,12 +79,11 @@
   position: relative;
   transition: all 1s;
 }
+
 /* .im_hiw_item_number_wrapper:hover {
   transform: rotate(45deg);
   transition: all 1s;
 } */
-.number_in_circle {
-}
 
 .im_hiw_item_number_wrapper3 {
   width: 148px;
@@ -76,6 +98,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .im_hiw_item_number_wrapper2 {
   width: 168px;
   height: 168px;
@@ -89,6 +112,7 @@
   align-items: center;
   justify-content: center;
 }
+
 /* @keyframes rotate {
   0% {
     transform: rotate(-135deg);
@@ -112,6 +136,7 @@
   transition: all 1s;
   cursor: pointer;
 }
+
 .im_hiw {
   width: 100%;
   padding-left: 20px;
@@ -120,14 +145,68 @@
   padding-bottom: 100px;
   position: relative;
 }
+
 .im_hiw_right_ab_image {
   position: absolute;
   right: 0;
   bottom: -150px;
 }
+
+@media (max-width: 1800px) {
+  .dm-ready_img_wrapper {
+    padding: 20px 100px 20px 20px;
+  }
+
+  .dm-steps_wrapper {
+    padding: 107px 192px 107px 232px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .dm-ready_img_wrapper {
+    padding: 20px 50px 20px 20px;
+  }
+
+  .dm-steps_wrapper {
+    padding: 107px 192px 107px 132px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .dm-steps_wrapper {
+    padding: 57px 102px 107px 32px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .dm-ready_img_wrapper {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .dm-steps_wrapper {
+    padding: 107px 192px 107px 32px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .dm-steps_wrapper {
+    padding: 57px 102px 107px 32px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .dm-steps_wrapper {
+    padding: 57px 102px 107px 32px;
+  }
+}
+
 @media (max-width: 1260px) {
   .dm-steps {
     padding-bottom: 40px;
+  }
+
+  .dm-ready_img_wrapper {
+    display: none;
   }
 
   .im_hiw_right_ab_image {
@@ -138,11 +217,19 @@
     bottom: -100px;
   }
 }
+
+@media (max-width: 810px) {
+  .dm-steps_wrapper {
+    padding: 52px 20px;
+  }
+}
+
 .im_hiw_wrapper {
   max-width: 610px;
   width: 100%;
   margin: 0 auto;
 }
+
 .im_hiw_items_wrapper {
   display: flex;
   flex-direction: column;
@@ -150,6 +237,7 @@
   justify-content: center;
   gap: 50px;
 }
+
 .im_hiw_item {
   display: flex;
   flex-direction: row;
@@ -164,6 +252,7 @@
   position: relative;
   width: 392px;
 }
+
 .im_hiw_number {
   position: absolute;
   top: 15px;
@@ -175,6 +264,7 @@
   font-weight: 600;
   line-height: 120%;
 }
+
 .im_hiw_number_sec {
   position: absolute;
   top: 14px;
@@ -186,6 +276,7 @@
   font-weight: 600;
   line-height: 120%;
 }
+
 .im_hiw_number_trd {
   position: absolute;
   top: 14px;
@@ -197,17 +288,21 @@
   font-weight: 600;
   line-height: 120%;
 }
+
 .form-submit-button {
   color: #fff;
   width: 100% !important;
   margin-left: 0 !important;
 }
+
 .im_influ_wrapper {
   display: none;
 }
+
 .i_need_influ_wrapper {
   display: none;
 }
+
 .show_block {
   display: block;
 }
@@ -231,6 +326,7 @@
 .im_hiw_number_fth:hover {
   cursor: pointer;
 }
+
 .im_hiw_item_title {
   color: #141751;
   font-family: 'Lato', sans-serif;
@@ -238,6 +334,7 @@
   font-weight: 900;
   line-height: 120%;
 }
+
 .im_hiw_item_text {
   color: var(--dark-text);
   font-family: 'Manrope', sans-serif;
@@ -245,40 +342,48 @@
   font-weight: 400;
   line-height: 160%;
 }
+
 @media (max-width: 630px) {
   .im_how_title {
     max-width: 72px;
     margin-bottom: 20px;
   }
+
   .im_hiw_title {
     font-size: 32px;
     margin-bottom: 32px;
   }
+
   .im_hiw_items_wrapper {
     flex-direction: column;
     gap: 50px;
   }
+
   .im_hiw_item {
     flex-direction: column;
     gap: 12px;
     align-items: center;
     justify-content: center;
   }
+
   .im_hiw_item_title {
     font-size: 18px;
     margin-bottom: 16px;
     text-align: center;
     max-width: 100%;
   }
+
   .im_hiw_item_text {
     font-size: 16px;
     text-align: center;
     max-width: 291px;
   }
+
   .im_hiw_item_texts_wrapper {
     gap: 0;
     width: auto;
   }
+
   .im_hiw_number {
     top: -95px;
     left: 0;
@@ -286,6 +391,7 @@
     margin: auto;
     font-size: 32px;
   }
+
   .im_hiw_number_sec {
     top: -100px;
     left: 0;
@@ -293,6 +399,7 @@
     margin: auto;
     font-size: 32px;
   }
+
   .im_hiw_number_trd {
     top: -100px;
     left: 0;
@@ -300,6 +407,7 @@
     margin: auto;
     font-size: 32px;
   }
+
   .im_hiw_number_fth {
     top: -100px;
     left: 0;
@@ -307,10 +415,12 @@
     margin: auto;
     font-size: 32px;
   }
+
   .circle {
     height: 70px;
     width: 70px;
   }
+
   .dig_dig_wrapper2 {
     height: 90px;
     width: 90px;
@@ -318,6 +428,7 @@
     border-bottom-color: transparent;
     border-left-color: transparent;
   }
+
   .dig_dig_wrapper1 {
     height: 110px;
     width: 110px;
@@ -325,12 +436,15 @@
     border-bottom-color: transparent;
     border-left-color: transparent;
   }
+
   .im_hiw_number {
     top: -85px;
   }
+
   .im_hiw_number_sec {
     top: -85px;
   }
+
   .im_hiw_number_trd {
     top: -85px;
   }

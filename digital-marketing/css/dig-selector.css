@@ -163,6 +163,9 @@
   align-items: flex-start;
   justify-content: center;
   min-height: 340px;
+  background: #fff;
+  padding: 55px;
+  max-width: 624px;
 }
 .dm_sel_cont_item_title {
   color: var(--dark-text);

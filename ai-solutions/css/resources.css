@@ -1,11 +1,3 @@
-.resources-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 72px;
-  margin-bottom: 88px;
-}
 
 .resources-section__wrapper {
   display: grid;

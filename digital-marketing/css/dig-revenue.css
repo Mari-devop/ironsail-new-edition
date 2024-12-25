@@ -45,7 +45,8 @@
   border-radius: 0px 4px 4px 0px;
   background: #fff;
   box-shadow: 0px 4px 54px 0px rgba(0, 0, 0, 0.05);
-  max-width: 159px;
+  max-width: 142px;
+  height: 390px;
   z-index: 99;
 }
 .revenue_menu a {

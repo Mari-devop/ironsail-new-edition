@@ -61,6 +61,31 @@ scrollButton.addEventListener('click', () => {
 });
 
 
+////////// AGENT SECTION ////////////
+//SCROLL BUTTON
+
+const scrollBtn = document.querySelector('.agent__scroll');
+const scrollContainerBox = document.querySelector('.agent-section__scrollable-row');
+
+let scrollDirectionTo = true; 
+const scrollSize = 300; 
+
+scrollBtn.addEventListener('click', () => {
+    if (scrollDirectionTo) {
+      scrollContainerBox.scrollBy({ left: scrollSize, behavior: 'smooth' });
+    } else {
+      scrollContainerBox.scrollBy({ left: -scrollSize, behavior: 'smooth' });
+    }
+    const maxScrollLeft = scrollContainerBox.scrollWidth - scrollContainerBox.clientWidth;
+
+    if (scrollContainerBox.scrollLeft >= maxScrollLeft) {
+      scrollDirectionTo = false; 
+    } else if (scrollContainerBox.scrollLeft <= 0) {
+      scrollDirectionTo = true; 
+    }
+});
+
+
 //DROPDOWN MENU
 document.addEventListener("DOMContentLoaded", () => {
   const servicesLink = document.querySelector(".navbar_menu > li > a.nav_elem");
