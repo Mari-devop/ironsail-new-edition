@@ -75,6 +75,13 @@
     padding: 40px;
     background-color: var(--accent-rose);
     border-radius: 4px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    transform-origin: center; 
 }
 
 .cory-section__title-container h2 {
@@ -88,11 +95,14 @@
     text-align: left;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
+    -webkit-writing-mode: vertical-rl;
+    -webkit-transform: rotate(180deg); 
 }
 
 @media (max-width: 1500px) {
     .cory-section {
         margin: 0 auto 100px;
+        gap: 32px;
     }
 }
 

@@ -77,6 +77,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    transform-origin: center; 
 }
 
 .astrid-section__title-container h2 {
@@ -89,6 +96,14 @@
     text-transform: uppercase;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
+    -webkit-writing-mode: vertical-rl;
+    -webkit-transform: rotate(180deg); 
+}
+
+@media (max-width: 1500px) {
+    .astrid-section {
+        gap: 32px;
+    }
 }
 
 @media (max-width: 1250px) {
