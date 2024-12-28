@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
           <circle cx="10" cy="10" r="4.5" stroke="#141751"/>
         </svg>
-        <a href="../development/" class="nav_elem--sub-menu">
+        <a href="../software-development/" class="nav_elem--sub-menu">
           Software Development
         </a>
       </li>
@@ -165,6 +165,36 @@ document.addEventListener("DOMContentLoaded", () => {
       dropdown.classList.remove("open");
       const svgElement = servicesLink.querySelector("svg");
       svgElement.outerHTML = svgDown;
+    }
+  });
+});
+
+//DROPDOWN MENU MOBILE
+document.addEventListener("DOMContentLoaded", () => {
+  const servicesMobileLink = document.getElementById("servicesMobileLink");
+  const servicesDropdownMobile = document.querySelector(".services-dropdown-mobile");
+  
+  const svgUp = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M6 15L12 9L18 15" stroke="#141751" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  `;
+  const svgDown = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M7 10L12 15L17 10" stroke="#141751" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  `;
+
+  servicesMobileLink.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    servicesDropdownMobile.classList.toggle("open");
+
+    const svgIcon = servicesMobileLink.querySelector("svg");
+    if (servicesDropdownMobile.classList.contains("open")) {
+      svgIcon.outerHTML = svgUp;
+    } else {
+      svgIcon.outerHTML = svgDown;
     }
   });
 });
