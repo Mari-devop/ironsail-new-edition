@@ -1,47 +1,43 @@
 document.querySelectorAll('.slider__container').forEach((container) => {
-    container.addEventListener('click', () => {
-        document.querySelectorAll('.slider__container').forEach((item) => {
-            item.classList.remove('expanded');
-            item.classList.add('collapsed');
-        });
-        container.classList.remove('collapsed');
-        container.classList.add('expanded');
+  container.addEventListener('click', () => {
+    document.querySelectorAll('.slider__container').forEach((item) => {
+      item.classList.remove('expanded');
+      item.classList.add('collapsed');
     });
+    container.classList.remove('collapsed');
+    container.classList.add('expanded');
+  });
 });
-
 
 document.addEventListener('DOMContentLoaded', function () {
-    const menu = document.querySelector('.slider__menu');
-    const menuOffset = menu.getBoundingClientRect().top + window.scrollY;
+  const menu = document.querySelector('.slider__menu');
+  const menuOffset = menu.getBoundingClientRect().top + window.scrollY;
 
-    const earlyOffset = 100;
+  const earlyOffset = 100;
 
-    window.addEventListener('scroll', function () {
-        const triggerPoint = window.scrollY + window.innerHeight / 2 - earlyOffset;
+  window.addEventListener('scroll', function () {
+    const triggerPoint = window.scrollY + window.innerHeight / 2 - earlyOffset;
 
-        if (triggerPoint >= menuOffset) {
-            menu.classList.add('sticky');
-        } else {
-            menu.classList.remove('sticky');
-        }
-    });
+    if (triggerPoint >= menuOffset) {
+      menu.classList.add('sticky');
+    } else {
+      menu.classList.remove('sticky');
+    }
+  });
 });
-
 
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.digital-marketing__card');
+  const cards = document.querySelectorAll('.digital-marketing__card');
 
-    cards.forEach(card => {
-        card.addEventListener('click', () => {
-            const targetUrl = card.getAttribute('data-url');
-            if (targetUrl) {
-                window.location.href = targetUrl;
-            }
-        });
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const targetUrl = card.getAttribute('data-url');
+      if (targetUrl) {
+        window.location.href = targetUrl;
+      }
     });
+  });
 });
-
-
 
 ////////// DIGITAL MARKETING SECTION ////////////
 //SCROLL BUTTON
@@ -53,68 +49,26 @@ let scrollDirectionForward = true;
 const scrollAmount = 300;
 
 scrollButton.addEventListener('click', () => {
-    if (scrollDirectionForward) {
-        scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    } else {
-        scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-    }
-    const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+  if (scrollDirectionForward) {
+    scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  } else {
+    scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  }
+  const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
 
-    if (scrollContainer.scrollLeft >= maxScrollLeft) {
-        scrollDirectionForward = false;
-    } else if (scrollContainer.scrollLeft <= 0) {
-        scrollDirectionForward = true;
-    }
-});
-
-
-
-//////// INDUSTRIES SECTION ////////////
-//SCROLL SWIPER + BUTTON
-
-var swiper2 = new Swiper('.mySwiper2', {
-    slidesPerView: 4,
-    spaceBetween: 20,
-    freeMode: true,
-    breakpoints: {
-        330: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-        830: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        1300: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-        },
-        1600: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-        },
-    },
-});
-
-let isAtEnd = false;
-
-document.querySelector('.dm-ind-scroll').addEventListener('click', () => {
-
-    if (isAtEnd) {
-        swiper2.slidePrev();
-    } else {
-        swiper2.slideNext();
-    }
-
-    isAtEnd = swiper2.isEnd ? true : swiper2.isBeginning ? false : isAtEnd;
+  if (scrollContainer.scrollLeft >= maxScrollLeft) {
+    scrollDirectionForward = false;
+  } else if (scrollContainer.scrollLeft <= 0) {
+    scrollDirectionForward = true;
+  }
 });
 
 //DROPDOWN MENU
 document.addEventListener("DOMContentLoaded", () => {
-    const servicesLink = document.querySelector(".navbar_menu > li > a.nav_elem");
-    const dropdown = document.createElement("ul");
-    dropdown.classList.add("services-dropdown");
-    dropdown.innerHTML = `
+  const servicesLink = document.querySelector(".navbar_menu > li > a.nav_elem");
+  const dropdown = document.createElement("ul");
+  dropdown.classList.add("services-dropdown");
+  dropdown.innerHTML = `
         <li>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
             <circle cx="10" cy="10" r="4.5" stroke="#141751"/>
@@ -160,64 +114,64 @@ document.addEventListener("DOMContentLoaded", () => {
           </a>
         </li>
       `;
-    servicesLink.parentElement.appendChild(dropdown);
-  
-    const svgUp = `
+  servicesLink.parentElement.appendChild(dropdown);
+
+  const svgUp = `
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M6 15L12 9L18 15" stroke="#141751" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   `;
-  
-    const svgDown = `
+
+  const svgDown = `
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M7 10L12 15L17 10" stroke="#141751" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   `;
-  
-    servicesLink.addEventListener("click", (e) => {
-      e.preventDefault();
-      dropdown.classList.toggle("open");
-      const svgElement = servicesLink.querySelector("svg");
-      svgElement.outerHTML = dropdown.classList.contains("open") ? svgUp : svgDown;
-    });
-  
-    document.addEventListener("click", (e) => {
-      if (!servicesLink.contains(e.target) && !dropdown.contains(e.target)) {
-        dropdown.classList.remove("open");
-        const svgElement = servicesLink.querySelector("svg");
-        svgElement.outerHTML = svgDown;
-      }
-    });
+
+  servicesLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    dropdown.classList.toggle("open");
+    const svgElement = servicesLink.querySelector("svg");
+    svgElement.outerHTML = dropdown.classList.contains("open") ? svgUp : svgDown;
   });
-  
-  
-  //DROPDOWN MENU MOBILE
-  document.addEventListener("DOMContentLoaded", () => {
-    const servicesMobileLink = document.getElementById("servicesMobileLink");
-    const servicesDropdownMobile = document.querySelector(".services-dropdown-mobile");
-    
-    const svgUp = `
+
+  document.addEventListener("click", (e) => {
+    if (!servicesLink.contains(e.target) && !dropdown.contains(e.target)) {
+      dropdown.classList.remove("open");
+      const svgElement = servicesLink.querySelector("svg");
+      svgElement.outerHTML = svgDown;
+    }
+  });
+});
+
+
+//DROPDOWN MENU MOBILE
+document.addEventListener("DOMContentLoaded", () => {
+  const servicesMobileLink = document.getElementById("servicesMobileLink");
+  const servicesDropdownMobile = document.querySelector(".services-dropdown-mobile");
+
+  const svgUp = `
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <path d="M6 15L12 9L18 15" stroke="#141751" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     `;
-    const svgDown = `
+  const svgDown = `
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <path d="M7 10L12 15L17 10" stroke="#141751" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     `;
-  
-    servicesMobileLink.addEventListener("click", (e) => {
-      e.preventDefault();
-  
-      servicesDropdownMobile.classList.toggle("open");
-  
-      const svgIcon = servicesMobileLink.querySelector("svg");
-      if (servicesDropdownMobile.classList.contains("open")) {
-        svgIcon.outerHTML = svgUp;
-      } else {
-        svgIcon.outerHTML = svgDown;
-      }
-    });
+
+  servicesMobileLink.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    servicesDropdownMobile.classList.toggle("open");
+
+    const svgIcon = servicesMobileLink.querySelector("svg");
+    if (servicesDropdownMobile.classList.contains("open")) {
+      svgIcon.outerHTML = svgUp;
+    } else {
+      svgIcon.outerHTML = svgDown;
+    }
   });
+});
 
