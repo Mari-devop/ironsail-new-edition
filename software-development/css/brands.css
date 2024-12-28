@@ -1,0 +1,16 @@
+.logo-software-container {
+    margin-top: 180px !important;
+}
+
+@media (max-width: 1050px) {
+    .logo-software-container {
+        margin-top: 100px !important;
+        margin-bottom: 0px !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .logo-software-container {
+        margin-top: 80px !important;
+    }
+}

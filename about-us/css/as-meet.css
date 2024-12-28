@@ -1,54 +1,14 @@
 .as-meet {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  display: flex;
   position: relative;
-}
-.as-meet_wrapper {
-  padding-left: 200px;
-  padding-right: 200px;
-  display: flex;
-  /* align-items: center; */
+  padding: 180px 0;
   justify-content: center;
-  gap: 72px;
-}
-.as-meet-left-img {
-  max-width: 570px;
-  width: 100%;
-  height: auto;
-}
-.as-meet-info-frame {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.as-meet-info-texts {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-bottom: 65px;
-}
-.as-meet-info-title {
-  color: var(--dark-text);
-  font-family: 'Lato', sans-serif;
-  font-size: 40px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-.as-meet-info-text {
-  color: var(--dark-text);
-  font-family: 'Manrope', sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 160%;
-}
-.as-meet-info-img {
-  width: 100%;
-  height: auto;
 }
 
 .revenue_menu {
   position: absolute;
-  top: 60%;
+  top: 50%;
+  left: 0;
   transform: translateY(-40%);
   display: flex;
   padding: 22px 15px 22px 20px;
@@ -59,9 +19,11 @@
   border-radius: 0px 4px 4px 0px;
   background: #fff;
   box-shadow: 0px 4px 54px 0px rgba(0, 0, 0, 0.05);
-  max-width: 159px;
+  max-width: 124px;
+  height: 214px;
   z-index: 99;
 }
+
 .revenue_menu a {
   color: #a5a5a7;
   font-family: 'Manrope', sans-serif;
@@ -70,62 +32,146 @@
   line-height: 140%;
   text-decoration: none;
 }
+
 .revenue_menu a:hover {
   opacity: 0.6;
 }
+
 .revenue_menu.sticky {
   position: fixed;
-  top: 50%; /* Middle of the screen */
-  transform: translateY(-50%); /* Center the element vertically */
+  top: 50%;
+  transform: translateY(-50%);
 }
-@media (max-width: 1700px) {
-  .as-meet_wrapper {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
+
+.as-meet__about-us {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
 }
-@media (max-width: 1500px) {
-  .as-meet_wrapper {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+
+.as-meet_image-container {
+  width: 100%;
+  max-width: 570px;
+  height: 100%;
+  /* max-height: 621px; */
 }
-@media (max-width: 1400px) {
-  .as-meet_wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+
+.as-meet_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-@media (max-width: 1150px) {
-  .as-meet_wrapper {
-    gap: 20px;
-  }
+
+.as-meet_text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 864px;
+  box-sizing: border-box;
 }
-@media (max-width: 1080px) {
-  .as-meet_wrapper {
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 0;
-  }
-  .as-meet-info-frame {
-    flex-direction: column-reverse;
-  }
-  .as-meet-info-img {
-    margin-bottom: 24px;
-  }
-  .as-meet-info-texts {
-    margin-bottom: 24px;
-    padding-left: 23px;
-    padding-right: 23px;
-  }
-  .as-meet-info-title {
-    font-size: 20px;
-  }
-  .as-meet-info-text {
-    font-size: 16px;
-  }
+
+.as-meet_text-container-btn {
+  display: block;
+  padding: 12px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 1px solid #A65CA5;
+  color: #A65CA5;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 42px;
+  background: transparent;
+}
+
+.as-meet_text-container-btn:active {
+  background: transparent;
+  border: 1px solid #A65CA5 !important;
+}
+
+.as-meet_text-container-btn:hover {
+  background: #A65CA5;
+  color: #fff;
+}
+
+.as-meet_text-container-btn:visited {
+  background: transparent;
+  border: 1px solid #A65CA5 !important;
+}
+
+.as-meet_text {
+  color: #141751;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 831px;
+}
+
+.as-meet_text-last {
+  margin-bottom: 0;
+  color: #141751;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+@media (max-width: 1600px) {
   .as-meet {
-    padding-top: 65px;
-    padding-bottom: 80px;
+    padding: 180px 50px;
   }
 }
+
+@media (max-width: 1440px) {
+  .as-meet__about-us {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1320px) {
+  .as-meet {
+    padding: 90px 20px;
+  }
+
+  .as-meet__about-us {
+    flex-direction: column;
+    gap: 42px;
+  }
+
+  .as-meet_image-container {
+    order: 2;
+  }
+
+  .as-meet_text-container {
+    order: 1;
+  }
+
+  .as-meet_text-container-btn {
+    margin-bottom: 24px;
+  }
+
+  .as-meet_text {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .as-meet {
+    padding: 120px 20px;
+  }
+}
+
