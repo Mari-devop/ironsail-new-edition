@@ -87,7 +87,6 @@ document.querySelector('.dm-ind-scroll').addEventListener('click', () => {
   isAtEnd = swiper2.isEnd ? true : swiper2.isBeginning ? false : isAtEnd;
 });
 
-
 //DROPDOWN MENU
 document.addEventListener("DOMContentLoaded", () => {
   const servicesLink = document.querySelector(".navbar_menu > li > a.nav_elem");
@@ -116,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
           <circle cx="10" cy="10" r="4.5" stroke="#141751"/>
         </svg>
-        <a href="/" class="nav_elem--sub-menu">
+        <a href="../influencer/" class="nav_elem--sub-menu">
           Influencer Marketing
         </a>
       </li>

@@ -1,0 +1,15 @@
+.industries-influencer {
+    margin-bottom: 180px !important;
+}
+
+@media (max-width: 1370px) {
+    .industries-influencer {
+        margin-bottom: 100px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .industries-influencer {
+        margin-bottom: 80px !important;
+    }
+}
