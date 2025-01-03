@@ -43,9 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
 // });
 
 
-
-
-
 //DROPDOWN MENU
 document.addEventListener("DOMContentLoaded", () => {
   const servicesLink = document.querySelector(".navbar_menu > li > a.nav_elem");

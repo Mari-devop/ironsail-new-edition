@@ -2,17 +2,9 @@
     padding: 180px 0 0 !important;
 }
 
-.im_hiw_items_wrapper_title {
-    color: #141751;
-    font-family: Lato;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-bottom: 96px;
+.infl-stteps-title {
+    margin-bottom: 0 !important;
 }
-
 .dm-steps_wrapper {
     padding: 45px 192px 45px 332px !important;
     gap: 54px !important;
@@ -73,7 +65,6 @@
 
     .im_hiw_items_wrapper_title {
         font-size: 30px;
-        margin-bottom: 48px;
     }
 
     .im_hiw_item {

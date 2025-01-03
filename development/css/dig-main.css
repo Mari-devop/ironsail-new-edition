@@ -1,5 +1,5 @@
 .dig-main {
-  height: calc(99svh);
+  height: calc(100svh);
   top: 108px;
   width: 100svw;
   display: flex;
@@ -11,27 +11,28 @@
   z-index: 3;
   min-width: 100%;
   min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: -16px;
 }
 
 .dig-main_cover {
-  height: calc(101svh);
-  width: 100svw;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  top: -16px;
+  top: 0;
   left: 0;
   background-image: url('../assets/img/main/desktop.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   z-index: 5;
+  overflow: hidden;
 }
 
 @media (max-width: 1480px) {
-   .dig-main_cover {
+  .dig-main_cover {
     width: 100svw;
     position: absolute;
     left: 0;
@@ -45,16 +46,14 @@
 @media (max-width: 1370px) {
   .dig-main {
     top: 58px;
-    height: 98svh;
   }
 
   .dig-main_cover {
     width: 100.5svw;
-    height: 101svh;
     position: absolute;
     top: -16px;
     left: 0;
-    background-image: url('../assets/img/main/desktop.png');
+    height: 102svh;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     z-index: 5;
@@ -73,6 +72,7 @@
   z-index: 5;
   display: none;
 }
+
 .dig-main_wrapper {
   padding: 11% 0 0 11%;
   z-index: 9;
@@ -83,6 +83,7 @@
   max-width: 911px;
   margin-bottom: 12px;
 }
+
 .dig-main_subtitle {
   color: #fff;
   font-family: 'Manrope', sans-serif;
@@ -98,10 +99,12 @@
   color: #034387;
   width: 216px;
 }
+
 .white_button:hover {
   background-color: #d5ebfd;
   color: #034387;
 }
+
 .white_button:hover svg g path {
   fill: #3a8aca;
   transition: all 0.3s;
@@ -112,6 +115,7 @@
     align-items: flex-end;
     justify-content: center;
   }
+
   .dig-main_wrapper {
     padding: 0;
     padding-bottom: 150px;
@@ -122,17 +126,20 @@
     text-align: center;
   }
 }
+
 @media (max-width: 1050px) {
   .dig-main_title {
     font-size: 20px;
     max-width: 310px;
     font-weight: 700;
   }
+
   .dig-main_subtitle {
     font-size: 16px;
     max-width: 269px;
     font-weight: 300;
   }
+
   .white_button {
     width: 309px;
     padding-top: 10px;
@@ -140,22 +147,24 @@
     font-size: 16px;
   }
 }
+@media (max-width: 650px) {
+
+}
+
 @media (max-width: 500px) {
   .dig-main_cover {
     display: none;
   }
+
   .dig-main_cover-mob {
     display: block;
     height: calc(101svh);
-  width: 100svw;
-  position: absolute;
-  top: -16px;
-  }
-  .dig-main_wrapper {
-    padding-bottom: 140px;
+    width: 100svw;
+    position: absolute;
+    top: -16px;
   }
 
-  .dev-main_subtittle {
-    margin-bottom: 0;
+  .dig-main_wrapper {
+    padding-bottom: 140px;
   }
 }

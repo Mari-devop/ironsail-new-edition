@@ -225,6 +225,7 @@
 
 .dm_sel_cont_item_wrapper.fade-in {
   opacity: 1;
+  transition: opacity 1s ease;
 }
 @media (max-width: 1700px) {
   .dm-selector_wrapper {

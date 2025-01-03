@@ -184,8 +184,7 @@
         Build, Design, and Innovate with Custom Web Solutions
       </h1>
       <p class="dig-main_subtitle dev-main_subtittle">
-        Crafting high-performance websites with seamless design, we create digital platforms that
-        engage users, drive conversions, and accelerate growth.
+        Crafting high-performance websites with seamless design! We create digital platforms that engage users, drive conversions, and accelerate growth.
       </p>
       <a class="main_button white_button" href="#" data-toggle="modal" data-target="#exampleModal">
         <p>Get in Touch</p>
@@ -207,8 +206,10 @@
   </section>
   <section class="dev-services" id="services">
     <div class="revenue_menu">
-      <a href="#services">Services</a>
       <a href="#solutions">Custom Solutions</a>
+      <a href="#branding">Branding</a>
+      <a href="#web-design">Web design</a>
+      <a href="#design">UI\UX Design</a>
       <a href="#projects">Projects</a>
       <a href="#reviews">Reviews</a>
       <a href="#industries">Industries</a>
@@ -235,7 +236,7 @@
       </div>
     </div>
   </section>
-  <section class="dev-brand" id="solutions">
+  <section class="dev-brand" id="branding">
     <div class="dev-brand__content-container">
       <h4 class="dev-brand__content-title">
         Branding
@@ -271,7 +272,7 @@
       <img src="./assets/img/brand/main.png" class="dev-brand__image" alt="branding" />
     </div>
   </section>
-  <section class="dev-brand">
+  <section class="dev-brand" id="web-design">
     <div class="dev-brand__content-image order-img">
       <img src="./assets/img/brand/main-aspire.png" class="dev-brand__image" alt="branding" />
     </div>
@@ -304,7 +305,7 @@
       </ul>
     </div>
   </section>
-  <section class="dev-brand dev-brand-bottom">
+  <section class="dev-brand dev-brand-bottom" id="design">
     <div class="dev-brand__content-container">
       <h4 class="dev-brand__content-title">
         UI\UX Design
@@ -944,7 +945,7 @@
             <p class="footer_menu_name">MENU</p>
 
             <div class="footer_menu_links">
-              <a href="../development/" class="footer_menu_item_link">Website Design & Development</a>
+              <a href="../development/" class="footer_menu_item_link">Web Design & Development</a>
               <a href="../digital-marketing/" class="footer_menu_item_link">Digital Marketing</a>
               <a href="../influencer/" class="footer_menu_item_link">Influencer Marketing</a>
               <a href="../ai-solutions/" class="footer_menu_item_link">AI Workforce Solutions</a>
@@ -990,6 +991,20 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
+    var swiper = new Swiper('.mySwiper', {
+      speed: 1000,
+      loop: true,
+      autoplay: true,
+      navigation: {
+        nextEl: '.dm-but-next',
+        prevEl: '.dm-but-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+  <script>
     var swiper2 = new Swiper('.mySwiper2', {
       slidesPerView: 4,
       spaceBetween: 20,
@@ -1025,6 +1040,19 @@
       }
 
       isAtEnd = swiper2.isEnd ? true : swiper2.isBeginning ? false : isAtEnd;
+    });
+  </script>
+   <script>
+    var swiper = new Swiper('.mySwiper4', {
+      speed: 2000,
+      autoplay: true,
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-prev4',
+        prevEl: '.swiper-button-next4',
+      },
     });
   </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -1,6 +1,11 @@
 .dm-industries {
   width: 100%;
 }
+
+.home-industries {
+  margin-bottom: 180px;
+}
+
 .dm_ind_title {
   color: var(--dark-text);
   font-family: 'Lato', sans-serif;
@@ -11,6 +16,7 @@
   text-transform: uppercase;
   margin-bottom: 50px;
 }
+
 .dm_ind_wrapper {
   display: flex;
   flex-direction: column;
@@ -30,6 +36,7 @@
   border: 1px solid transparent;
   border-radius: 4px;
 }
+
 .mySwiper2 {
   width: auto !important;
   max-width: 1520px;
@@ -37,6 +44,7 @@
   flex-direction: column;
   gap: 40px;
 }
+
 .dm-ind-slide {
   border-radius: 4px;
   background: #fff;
@@ -46,6 +54,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .sl_img_wrap {
   width: 280px;
   height: 182px;
@@ -57,24 +66,31 @@
   transition: all 0.5s;
   border-radius: 4px;
 }
+
 .hw {
   background-image: url('../../assets/img/home/industries/hw1.png');
 }
+
 .cons {
   background-image: url('../../assets/img/home/industries/c1.png');
 }
+
 .hs {
   background-image: url('../../assets/img/home/industries/hs1.png');
 }
+
 .pic {
   background-image: url('../../assets/img/home/industries/pic.png');
 }
+
 .it {
   background-image: url('../../assets/img/home/industries/it1.png');
 }
+
 .ind {
   background-image: url('../../assets/img/home/industries/ind1.png');
 }
+
 .dm-ind-slide:hover .hw {
   height: 530px;
   width: 363px;
@@ -85,6 +101,7 @@
   transition: all 0.5s;
   background-image: url('../../assets/img/home/industries/hw2.png');
 }
+
 .dm-ind-slide:hover .cons {
   height: 530px;
   width: 363px;
@@ -106,6 +123,7 @@
   transition: all 0.5s;
   background-image: url('../../assets/img/home/industries/hs2.png');
 }
+
 .dm-ind-slide:hover .pic {
   height: 530px;
   width: 363px;
@@ -116,6 +134,7 @@
   transition: all 0.5s;
   background-image: url('../../assets/img/home/industries/pic2.png');
 }
+
 .dm-ind-slide:hover .it {
   height: 530px;
   width: 363px;
@@ -126,6 +145,7 @@
   transition: all 0.5s;
   background-image: url('../../assets/img/home/industries/it2.png');
 }
+
 .dm-ind-slide:hover .ind {
   height: 530px;
   width: 363px;
@@ -136,17 +156,21 @@
   transition: all 0.5s;
   background-image: url('../../assets/img/home/industries/ind2.png');
 }
+
 .dm-ind-slide .svg1 {
   transition: all 0.5s;
 }
+
 .dm-ind-slide .svg2 {
   transition: all 0.5s;
 }
+
 .dm-ind-slide:hover .svg2 path {
   stroke: #fff;
 
   transition: all 0.5s;
 }
+
 .dm-ind-slide:hover .svg1 path {
   fill: #fff;
 
@@ -162,6 +186,7 @@
   margin-bottom: 22px;
   transition: all 0.5s;
 }
+
 .layer {
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
@@ -171,10 +196,12 @@
   height: 100%;
   transition: all 0.5s;
 }
+
 .dm-ind-slide:hover .layer {
   background-color: rgba(0, 0, 0, 0.5);
   transition: all 0.5s;
 }
+
 .dm_ind-slide_text {
   color: var(--dark-text);
   font-family: 'Manrope', sans-serif;
@@ -183,78 +210,103 @@
   line-height: 160%;
   transition: all 0.5s;
 }
+
 .dm-ind-slide:hover .dm_ind-slide_title {
   color: #fff;
   transition: all 0.5s;
 }
+
 .dm-ind-slide:hover .dm_ind-slide_text {
   color: #fff;
   transition: all 0.5s;
 }
+
 .dm-ind-slide:hover .sl_svg_back {
   background-color: transparent;
   transition: all 0.3s;
   border: 1px solid #fff;
 }
+
 .dm-ind-scroll {
   margin-left: auto;
   padding-right: 10px;
   cursor: pointer;
 }
+
 @media (max-width: 1880px) {
   .dm_ind_wrapper {
     padding-left: 100px;
     padding-right: 100px;
   }
 }
+
 @media (max-width: 1700px) {
   .dm_ind_wrapper {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
+
 @media (max-width: 1600px) {
   .mySwiper2 {
     max-width: 1140px;
   }
 }
+
 @media (max-width: 1220px) {
   .mySwiper2 {
     max-width: 760px;
   }
+
+  .home-industries {
+    margin-bottom: 100px;
+  }
 }
+
 @media (max-width: 830px) {
   .mySwiper2 {
     max-width: 380px;
   }
+
   .dm-industries {
     padding-top: 80px;
   }
 }
+
 @media (max-width: 500px) {
   .mySwiper2 {
     max-width: 370px;
   }
+
   .dm-ind-slide {
     height: 514px;
     width: 350px !important;
   }
+
   .dm_ind_wrapper {
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .dm_ind_title {
     font-size: 32px;
     text-align: center;
     max-width: 200px;
   }
+
   .dm-ind-slide {
     padding: 40px 28px;
   }
+
   .dm-ind-slide:first-child {
     margin-left: 10px;
   }
+
+  .home-industries {
+    margin-bottom: 80px;
+  }
 }
+
 @media (max-width: 389px) {
   .dm-ind-slide:first-child {
     margin-left: 0;
