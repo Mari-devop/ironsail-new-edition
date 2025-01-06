@@ -110,13 +110,13 @@
   .img4 {
     bottom: 30px;
     left: 40px;
-    height: 240px;
-    width: 270px;
+    height: 220px;
+    width: 250px;
     background-image: url('../assets/img/advertising/image-4.png');
   }
   
   .ads_item:hover .img1 {
-    height: 350px;
+    height: 300px;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -132,7 +132,7 @@
   }
   
   .ads_item:hover .img2 {
-    height: 370px;
+    height: 340px;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -155,9 +155,9 @@
 
   .ads_item:hover .img4 {
     height: 270px;
-    width: 80%;
+    width: 90%;
     bottom: 30px;
-    left: 30px;
+    left: 20px;
     margin: initial;
     z-index: -1;
     transition: all 0.5s;
@@ -269,8 +269,16 @@
       height: 470px;
     }
 
-    .ads_item:hover .img4 {
+    .ads_item:hover .img3 {
       height: 300px;
+      width: 60%;
+      left: 100px;
+    }
+
+    .ads_item:hover .img4 {
+      height: 270px;
+      width: 60%;
+      left: 100px;
     }
 
     .img3 {
@@ -283,7 +291,18 @@
       left: 100px;
     }
   }
-  
+  @media (max-width: 1200px) {
+    .ads_item:hover .img1 {
+      height: 440px;
+    }
+
+    .ads_item:hover .img4 {
+      height: 250px;
+      width: 70%;
+      left: 70px;
+    }
+  }
+
   @media (max-width: 1100px) {
     .ads_wrapper {
       flex-direction: column;
@@ -303,6 +322,11 @@
     }
     .img2 {
       width: 440px;
+    }
+    .ads_item:hover .img4 {
+      height: 280px;
+      width: 70%;
+      left: 70px;
     }
   }
   
@@ -330,6 +354,12 @@
 
     .ads_item:hover .img2 {
       height: 400px;
+    }
+
+    .ads_item:hover .img4 {
+      height: 250px;
+      width: 70%;
+      left: 70px;
     }
   }
 
@@ -383,11 +413,14 @@
       height: 330px;
     }
     .ads_item:hover .img3 {
-      height: 370px;
+      height: 280px;
+      left: 60px;
     }
   
     .ads_item:hover .img4 {
-      height: 270px;
+      height: 250px;
+      width: 80%;
+      left: 40px;
     }
 
     .img4 {

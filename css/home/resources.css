@@ -54,7 +54,7 @@
 
 .resources__wrap {
     width: 630px;
-    height: 156px;
+    height: 175px;
     position: absolute;
     bottom: 40px;
     left: 60px;
@@ -311,7 +311,7 @@
 
     .resources__wrap {
         width: 470px;
-        height: 156px;
+        height: 175px;
         left: 40px;
     }
 
@@ -431,6 +431,9 @@
         gap: 20px;
     }
 
+    .resources__wrap {
+        height: 156px;
+    }
     .resources-section__sidebar {
         width: 350px;
     }

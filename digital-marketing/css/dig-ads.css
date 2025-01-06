@@ -103,11 +103,12 @@
 .img3 {
   height: 410px;
   width: 401px;
+  bottom: 10px;
   background-image: url('../assets/img/ads/image-3.png');
 }
 
 .dm-ads_item:hover .img1 {
-  height: 430px;
+  height: 400px;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -218,6 +219,14 @@
   }
   .img3 {
     width: 401px;
+  }
+
+  .dm-ads_item:hover .img1 {
+    height: 350px;
+  }
+
+  .dm-ads_item:hover .img3 {
+    height: 450px;
   }
 }
 
