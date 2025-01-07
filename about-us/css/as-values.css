@@ -107,7 +107,6 @@
 }
 .as-value-item-row {
   display: flex;
-
   padding: 40px;
   position: relative;
   min-width: 649px;
@@ -311,7 +310,7 @@
   .as-value-item-image-column,
   .as-value-item-image-row {
     width: 310px;
-    height: 180px;
+    /* height: 180px; */
     left: 20px;
 
     bottom: 40px;

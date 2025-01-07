@@ -173,7 +173,6 @@
 
 .dm-ind-slide:hover .svg1 path {
   fill: #fff;
-
   transition: all 0.5s;
 }
 
@@ -265,7 +264,7 @@
 
 @media (max-width: 830px) {
   .mySwiper2 {
-    max-width: 380px;
+    max-width: 370px;
   }
 
   .dm-industries {
@@ -273,9 +272,15 @@
   }
 }
 
+@media (max-width: 570px) {
+  .mySwiper2 {
+    max-width: 365px;
+  }
+}
+
 @media (max-width: 500px) {
   .mySwiper2 {
-    max-width: 370px;
+    max-width: 360px;
   }
 
   .dm-ind-slide {
@@ -310,5 +315,9 @@
 @media (max-width: 389px) {
   .dm-ind-slide:first-child {
     margin-left: 0;
+  }
+
+  .mySwiper2 {
+    max-width: 350px;
   }
 }

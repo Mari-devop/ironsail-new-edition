@@ -100,10 +100,9 @@
   width: 148px;
   height: 148px;
   border-radius: 50%;
-  border: 3px solid #f8feff8e;
-
+  /* border: 3px solid #f8feff8e;
   border-bottom-color: #f9f9f9;
-  border-left-color: #f9f9f9;
+  border-left-color: #f9f9f9; */
   animation: back 1s linear;
   display: flex;
   align-items: center;

@@ -92,14 +92,16 @@
   }
   
   .img1 {
-    background-image: url('../assets/img/advertising/image-1.png');
-    width: 100%;
+    background-image: url('../assets/img/advertising/image-1-1.png');
+    width: 330px;
+    height: 280px;
+    left: 20px;
   }
   .img2 {
     left: 10px;
     height: 301px;
     width: 330px;
-    background-image: url('../assets/img/advertising/image-2.png');
+    background-image: url('../assets/img/advertising/image-2-2.png');
   }
   .img3 {
     left: 70px;
@@ -116,10 +118,10 @@
   }
   
   .ads_item:hover .img1 {
-    height: 300px;
+    height: 320px;
     width: 100%;
-    bottom: 0;
-    left: 0;
+    bottom: 10px;
+    left: 0px;
     margin: initial;
     z-index: -1;
     transition: all 0.5s;
@@ -132,10 +134,10 @@
   }
   
   .ads_item:hover .img2 {
-    height: 340px;
+    height: 350px;
     width: 100%;
     bottom: 0;
-    left: 0;
+    left: -10px;
     margin: initial;
     z-index: -1;
     transition: all 0.5s;
@@ -385,10 +387,11 @@
     }
     .img1 {
       width: 342px;
-      height: 200px;
+      height: 260px;
+      left: 0;
     }
     .img2 {
-      width: 360px;
+      width: 330px;
       height: 270px;
     }
     .img3 {

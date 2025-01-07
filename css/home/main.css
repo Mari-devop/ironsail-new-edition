@@ -223,7 +223,7 @@ a {
   }
 }
 
-@media (max-width: 432px) {
+/* @media (max-width: 432px) {
   .home-main__text {
     margin-bottom: 0;
   }
@@ -233,4 +233,4 @@ a {
     left: 35%;
     transform: translate(-35%, -50%);
   }
-}
+} */
