@@ -1,6 +1,6 @@
 .dig-main {
   height: calc(100svh);
-  top: 108px;
+  top: 110px;
   width: 100svw;
   display: flex;
   position: relative;
@@ -22,7 +22,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 0;
+  top: -10px;
   left: 0;
   background-image: url('../assets/img/main/desktop.png');
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@
 }
 @media (max-width: 1480px) {
   .dig-main {
-    top: 107px;
+    top: 110px;
   }
 }
 @media (max-width: 1370px) {

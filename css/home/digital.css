@@ -304,13 +304,14 @@
   }
 
   .digital-marketing__card {
-    flex: 0 0 auto;
-    min-width: 363px;
-    max-width: 363px;
+    /* flex: 0 0 auto; */
+    width: 363px;
+    height: 483px;
     border-radius: 4px;
     background-color: var(--light-text);
     box-sizing: border-box;
     margin-bottom: 45px;
+    overflow: hidden
   }
 
   .digital-marketing__wrap {
@@ -328,6 +329,8 @@
   .digital-marketing__card:hover .local,
   .digital-marketing__card:hover .brand,
   .digital-marketing__card:hover .power {
+    background-size: 140% 100%;
+    background-position: center;
     width: 363px;
   }
 

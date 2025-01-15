@@ -215,7 +215,7 @@
 }
 
 .dm_sel_cont_item_button {
-  width: 314px;
+  width: 370px;
 }
 .dm_sel_cont_item_wrapper {
   /* display: none; */
@@ -305,5 +305,8 @@
   .dm_sel_cont_item_wrapper {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .dm_sel_cont_item_button {
+    width: 360px;
   }
 }

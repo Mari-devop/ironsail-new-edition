@@ -11,6 +11,7 @@
   background-image: url('../assets/img/form/form-bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
+  
 }
 @media (max-width: 1870px) {
   .dm-form {
