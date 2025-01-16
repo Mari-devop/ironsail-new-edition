@@ -23,32 +23,6 @@
     transform: translate(-50%, -50%);
 }
 
-/* 
-.main-contact_cover {
-    height: calc(101svh);
-    width: 100svw;
-    position: absolute;
-    top: -16px;
-    left: 0;
-    background-image: url('../../digital-marketing/assets/img/main/desktop.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    z-index: 5;
-} */
-/* 
-.main-contact_cover-mob {
-    height: 101svh;
-    width: 100.5svw;
-    position: absolute;
-    top: -16px;
-    left: 0;
-    background-image: url('../../digital-marketing/assets/img/main/mobile2.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    z-index: 5;
-    display: none;
-} */
-
 .main-contact_title {
     color: #FFF;
     text-align: center;
