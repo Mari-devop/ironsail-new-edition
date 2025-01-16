@@ -15,7 +15,7 @@
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    background-image: url('../../digital-marketing/assets/img/form/form-bg.svg');
+    background-image: url('../assets/img/form/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -27,17 +27,10 @@
     }
 }
 
-@media (max-width: 1200px) {
-    .form {
-        margin-top: 100px;
-    }
-}
-
 @media (max-width: 800px) {
     .form {
         padding-left: 0;
         padding-right: 0;
-        padding-top: 80px;
     }
 
     .form_wrapper {
@@ -48,8 +41,14 @@
         padding-right: 10px;
         width: 100%;
         height: 100%;
-        /* background-image: url('../../digital-marketing/assets/img/form/mob.svg'); */
+        background-image: url('../assets/img/form/bg-mob.png');
         background-size: cover;
         background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 400px) {
+    .form_wrapper {
+        padding-bottom: 360px;
     }
 }
