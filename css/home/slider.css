@@ -21,31 +21,31 @@
 }
 
 .slider__container--hero1 {
-  background-image: url('../../assets/img/home/slider/hero-1.png');
+  background-image: url('../../assets/img/home/slider/hero-1.webp');
   background-size: cover;
   background-position: center;
 }
 
 .slider__container--hero2 {
-  background-image: url('../../assets/img/home/slider/hero-2.png');
+  background-image: url('../../assets/img/home/slider/hero-2.webp');
   background-size: cover;
   background-position: center;
 }
 
 .slider__container--hero3 {
-  background-image: url('../../assets/img/home/slider/hero-3.png');
+  background-image: url('../../assets/img/home/slider/hero-3.webp');
   background-size: cover;
   background-position: center;
 }
 
 .slider__container--hero4 {
-  background-image: url('../../assets/img/home/slider/hero-4.png');
+  background-image: url('../../assets/img/home/slider/hero-4.webp');
   background-size: cover;
   background-position: center;
 }
 
 .slider__container--hero5 {
-  background-image: url('../../assets/img/home/slider/hero-5.png');
+  background-image: url('../../assets/img/home/slider/hero-5.webp');
   background-size: cover;
   background-position: center;
 }
@@ -161,27 +161,27 @@
 }
 
 .slider__container--hero1.collapsed {
-  background: url('../../assets/img/home/slider/hero-1-1.png') center / cover no-repeat;
+  background: url('../../assets/img/home/slider/hero-1-1.webp') center / cover no-repeat;
   transition: all 1s;
 }
 
 .slider__container--hero2.collapsed {
-  background: url('../../assets/img/home/slider/hero-2-1.png') center / cover no-repeat;
+  background: url('../../assets/img/home/slider/hero-2-1.webp') center / cover no-repeat;
   transition: all 1s;
 }
 
 .slider__container--hero3.collapsed {
-  background: url('../../assets/img/home/slider/hero-3-1.png') center / cover no-repeat;
+  background: url('../../assets/img/home/slider/hero-3-1.webp') center / cover no-repeat;
   transition: all 1s;
 }
 
 .slider__container--hero4.collapsed {
-  background: url('../../assets/img/home/slider/hero-4-1.png') center / cover no-repeat;
+  background: url('../../assets/img/home/slider/hero-4-1.webp') center / cover no-repeat;
   transition: all 1s;
 }
 
 .slider__container--hero5.collapsed {
-  background: url('../../assets/img/home/slider/hero-5-1.png') center / cover no-repeat;
+  background: url('../../assets/img/home/slider/hero-5-1.webp') center / cover no-repeat;
   transition: all 1s;
 }
 

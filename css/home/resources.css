@@ -3,6 +3,7 @@
     flex-direction: column;
     padding: 180px;
     gap: 50px;
+    justify-items: center;
 }
 
 .resources-section__sidebar {
@@ -100,7 +101,7 @@
     margin: initial;
     z-index: -1;
     transition: all 0.5s;
-    background-image: url('../../assets/img/home/resources/img-1.png');
+    background-image: url('../../assets/img/home/resources/img-1.webp');
 }
 
 .resources-card:hover .software {
@@ -111,7 +112,7 @@
     margin: initial;
     z-index: -1;
     transition: all 0.5s;
-    background-image: url('../../assets/img/home/resources/img-2.png');
+    background-image: url('../../assets/img/home/resources/img-2.webp');
 }
 
 .resources-card:hover .prog {
@@ -123,7 +124,7 @@
     margin: initial;
     z-index: -1;
     transition: all 0.5s;
-    background-image: url('../../assets/img/home/resources/img-3.png');
+    background-image: url('../../assets/img/home/resources/img-3.webp');
 }
 
 .resources-card:hover .ai {
@@ -134,7 +135,7 @@
     margin: initial;
     z-index: -1;
     transition: all 0.5s;
-    background-image: url('../../assets/img/home/resources/img-4.png');
+    background-image: url('../../assets/img/home/resources/img-4.webp');
 }
 
 .resources-card__wrapper {

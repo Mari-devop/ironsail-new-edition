@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
             <circle cx="10" cy="10" r="4.5" stroke="#141751"/>
           </svg>
-          <a href="../development/" class="nav_elem--sub-menu">
+          <a href="../web-design-and-development/" class="nav_elem--sub-menu">
             Web Design & Development
           </a>
         </li>
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
             <circle cx="10" cy="10" r="4.5" stroke="#141751"/>
           </svg>
-          <a href="../influencer/" class="nav_elem--sub-menu">
+          <a href="../influencer-marketing/" class="nav_elem--sub-menu">
             Influencer Marketing
           </a>
         </li>

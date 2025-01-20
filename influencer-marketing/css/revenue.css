@@ -1,0 +1,449 @@
+.ads {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    margin-top: 220px;
+    background-image: url('../../digital-marketing/assets/img/ads/bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+  }
+  
+  .ads_main-title {
+    color: #141751;
+    font-family: Lato;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+  }
+  
+  .ads_wrapper {
+    padding-left: 200px;
+    padding-right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 21px;
+  }
+  
+  .ads_item {
+    width: 33%;
+    width: 365px;
+    height: 506px;
+    padding-top: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFF;
+    transition: all 0.3s;
+    display: flex;
+  }
+  
+  .ads_item_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  
+  .ads_item_title {
+    color: #141751;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    max-width: 270px;
+  }
+  
+  .ads_item_subtititle {
+    color: #141751;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+  }
+  
+  .ad_item_short_subt_two {
+    max-width: 180px;
+  }
+  
+  .ad_item_short_subt_three {
+    max-width: 234px;
+  } 
+  
+  .ads_item_img_wrapper {
+    width: 365px;
+    height: 293px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .img1 {
+    background-image: url('../assets/img/advertising/image-1-1.png');
+    width: 330px;
+    height: 280px;
+    left: 20px;
+  }
+  .img2 {
+    left: 10px;
+    height: 301px;
+    width: 330px;
+    background-image: url('../assets/img/advertising/image-2-2.png');
+  }
+  .img3 {
+    left: 70px;
+    height: 250px;
+    width: 226px;
+    background-image: url('../assets/img/advertising/image-3.png');
+  }
+  .img4 {
+    bottom: 30px;
+    left: 40px;
+    height: 220px;
+    width: 250px;
+    background-image: url('../assets/img/advertising/image-4.png');
+  }
+  
+  .ads_item:hover .img1 {
+    height: 320px;
+    width: 100%;
+    bottom: 10px;
+    left: 0px;
+    margin: initial;
+    z-index: -1;
+    transition: all 0.5s;
+    background-image: url('../assets/img/advertising/image-1-1.png');
+  }
+  
+  .ads_item:hover .ads_item_subtititle {
+    color: transparent;
+    transition: all 0.5s;
+  }
+  
+  .ads_item:hover .img2 {
+    height: 350px;
+    width: 100%;
+    bottom: 0;
+    left: -10px;
+    margin: initial;
+    z-index: -1;
+    transition: all 0.5s;
+    background-image: url('../assets/img/advertising/image-2-2.png');
+  }
+  
+  .ads_item:hover .img3 {
+    height: 300px;
+    width: 80%;
+    bottom: 0;
+    left: 50px;
+    margin: initial;
+    z-index: -1;
+    transition: all 0.5s;
+    background-image: url('../assets/img/advertising/image-3-2.png');
+  }
+
+  .ads_item:hover .img4 {
+    height: 270px;
+    width: 90%;
+    bottom: 30px;
+    left: 20px;
+    margin: initial;
+    z-index: -1;
+    transition: all 0.5s;
+    background-image: url('../assets/img/advertising/image-4-2.png');
+  }
+
+  .revenue_menu {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-40%);
+    display: flex;
+    padding: 22px 15px 22px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 22px;
+    border-radius: 0px 4px 4px 0px;
+    background: #fff;
+    box-shadow: 0px 4px 54px 0px rgba(0, 0, 0, 0.05);
+    max-width: 175px;
+    height: 252px;
+    z-index: 99;
+  }
+  .revenue_menu a {
+    color: #a5a5a7;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    text-decoration: none;
+  }
+  .revenue_menu a:hover {
+    opacity: 0.6;
+  }
+  .revenue_menu.sticky {
+    position: fixed;
+    top: 50%; 
+    transform: translateY(-50%); 
+  }
+  
+  @media (max-width: 1880px) {
+    .ads_wrapper {
+      padding-left: 100px;
+      padding-right: 100px;
+      display: flex;
+    }
+  }
+
+  @media (max-width: 1600px) {
+    .img1 {
+      height: 240px;
+    }
+  }
+  
+  @media (max-width: 1540px) {
+    .ads_wrapper {
+      padding-left: 50px;
+      padding-right: 50px;
+      display: flex;
+    }
+    .ads_main-title {
+      left: 150px;
+    }
+  }
+  
+  @media (max-width: 1440px) {
+    .ads_wrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  @media (max-width: 1380px) {
+    .ads_wrapper {
+      flex-wrap: wrap;
+    }
+    .ads_main-title {
+      left: 100px;
+    }
+  }
+  
+  @media (max-width: 1340px) {
+    .ads {
+      margin-top: 150px;
+    }
+    .ads_wrapper {
+      flex-wrap: wrap;
+    }
+  
+    .ads_item {
+      width: 40%;
+    }
+
+    .img1 {
+      height: 340px;
+    }
+
+    .ads_item:hover .img1 {
+      height: 490px;
+    }
+
+    .img2 {
+      left: 10px;
+      height: 351px;
+      width: 380px;
+    }
+
+    .ads_item:hover .img2 {
+      height: 470px;
+    }
+
+    .ads_item:hover .img3 {
+      height: 300px;
+      width: 60%;
+      left: 100px;
+    }
+
+    .ads_item:hover .img4 {
+      height: 270px;
+      width: 60%;
+      left: 100px;
+    }
+
+    .img3 {
+      left: 100px;
+      height: 250px;
+      width: 300px;
+    }
+
+    .img4 {
+      left: 100px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .ads_item:hover .img1 {
+      height: 440px;
+    }
+
+    .ads_item:hover .img4 {
+      height: 250px;
+      width: 70%;
+      left: 70px;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .ads_wrapper {
+      flex-direction: column;
+    }
+    .ads_main-title {
+      left: 50px;
+    }
+    .ads {
+      background-image: url('../../digital-marketing/assets/img/ads/bg-mob.png');
+    }
+    .ads_item {
+      width: 50%;
+    }
+    .ads {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+    .img2 {
+      width: 440px;
+    }
+    .ads_item:hover .img4 {
+      height: 280px;
+      width: 70%;
+      left: 70px;
+    }
+  }
+  
+  @media (max-width: 950px) {
+    .img2 {
+      width: 401px;
+      height: 330px;
+    }
+  }
+  
+  @media (max-width: 860px) {
+    .img3 {
+      left: 70px;
+      height: 230px;
+      width: 250px;
+    }
+
+    .img4 {
+      left: 70px;
+    }
+
+    .ads_item:hover .img1 {
+      height: 400px;
+    }
+
+    .ads_item:hover .img2 {
+      height: 400px;
+    }
+
+    .ads_item:hover .img4 {
+      height: 250px;
+      width: 70%;
+      left: 70px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .ads {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    .ads_main-title {
+      font-size: 24px;
+      left: 200px;
+    }
+    .ads_item {
+      flex-shrink: 0;
+      height: 448px;
+      width: 342px;
+    }
+    .ads_item_title {
+      font-size: 20px;
+    }
+    .ads_item_wrapper {
+      padding: 0 20px;
+    }
+    .img1 {
+      width: 342px;
+      height: 260px;
+      left: 0;
+    }
+    .img2 {
+      width: 330px;
+      height: 270px;
+    }
+    .img3 {
+      left: 50px;
+    }
+    .img4 {
+      left: 30px;
+    }
+    .ad_item_short_subt_one {
+      max-width: 225px;
+    }
+    .ad_item_short_subt_two {
+      max-width: 150px;
+    }
+    .ad_item_short_subt_three {
+      max-width: 150px;
+    }
+    .ads_item:hover .img1 {
+      height: 300px;
+    }
+    .ads_item:hover .img2 {
+      height: 330px;
+    }
+    .ads_item:hover .img3 {
+      height: 280px;
+      left: 60px;
+    }
+  
+    .ads_item:hover .img4 {
+      height: 250px;
+      width: 80%;
+      left: 40px;
+    }
+
+    .img4 {
+      left: 50px;
+      height: 210px;
+      width: 240px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .ads_main-title {
+      font-size: 24px;
+      left: 100px;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .ads_main-title {
+      font-size: 24px;
+      left: 50px;
+    }
+  }
+  

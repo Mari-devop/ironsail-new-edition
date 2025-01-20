@@ -1,0 +1,23 @@
+.dev-main-title {
+  max-width: 700px;
+}
+.dev-main_subtittle {
+  max-width: 555px;
+  font-weight: 400;
+}
+@media (max-width: 650px) {
+  .dev-main-title {
+    max-width: 309px;
+  }
+  .dev-main_subtittle {
+    max-width: 309px;
+    margin-bottom: 42px;
+  }
+}
+
+@media (max-width: 530px) {
+  .dev-main_subtittle {
+    margin-bottom: 22px;
+  }
+}
+
