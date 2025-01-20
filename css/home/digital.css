@@ -101,7 +101,7 @@
   margin: initial;
   z-index: 1;
   transition: all 0.5s;
-  background-image: url('../../assets/img/home/digital/img-1.webp');
+  background-image: url('../../assets/img/home/digital/img-1.png');
 }
 
 .digital-marketing__card:hover .meta {
@@ -113,7 +113,7 @@
   cursor: pointer;
   z-index: 1;
   transition: all 0.5s;
-  background-image: url('../../assets/img/home/digital/img-2.webp');
+  background-image: url('../../assets/img/home/digital/img-2.png');
 }
 
 .digital-marketing__card:hover .organic {
@@ -125,7 +125,7 @@
   cursor: pointer;
   z-index: 1;
   transition: all 0.5s;
-  background-image: url('../../assets/img/home/digital/img-3.webp');
+  background-image: url('../../assets/img/home/digital/img-3.png');
 }
 
 .digital-marketing__card:hover .local {
@@ -137,7 +137,7 @@
   cursor: pointer;
   z-index: 1;
   transition: all 0.5s;
-  background-image: url('../../assets/img/home/digital/img-4.webp');
+  background-image: url('../../assets/img/home/digital/img-4.png');
 }
 
 .digital-marketing__card:hover .brand {
@@ -149,7 +149,7 @@
   cursor: pointer;
   z-index: 1;
   transition: all 0.5s;
-  background-image: url('../../assets/img/home/digital/img-5.webp');
+  background-image: url('../../assets/img/home/digital/img-5.png');
 }
 
 .digital-marketing__card:hover .power {
@@ -161,7 +161,7 @@
   cursor: pointer;
   z-index: 1;
   transition: all 0.5s;
-  background-image: url('../../assets/img/home/digital/img-6.webp');
+  background-image: url('../../assets/img/home/digital/img-6.png');
 }
 
 .digital-marketing__card:hover {

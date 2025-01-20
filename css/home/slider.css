@@ -21,31 +21,31 @@
 }
 
 .slider__container--hero1 {
-  background-image: url('../../assets/img/home/slider/hero-1.webp');
+  background-image: url('../../assets/img/home/slider/hero-1.png');
   background-size: cover;
   background-position: center;
 }
 
 .slider__container--hero2 {
-  background-image: url('../../assets/img/home/slider/hero-2.webp');
+  background-image: url('../../assets/img/home/slider/hero-2.png');
   background-size: cover;
   background-position: center;
 }
 
 .slider__container--hero3 {
-  background-image: url('../../assets/img/home/slider/hero-3.webp');
+  background-image: url('../../assets/img/home/slider/hero-3.png');
   background-size: cover;
   background-position: center;
 }
 
 .slider__container--hero4 {
-  background-image: url('../../assets/img/home/slider/hero-4.webp');
+  background-image: url('../../assets/img/home/slider/hero-4.png');
   background-size: cover;
   background-position: center;
 }
 
 .slider__container--hero5 {
-  background-image: url('../../assets/img/home/slider/hero-5.webp');
+  background-image: url('../../assets/img/home/slider/hero-5.png');
   background-size: cover;
   background-position: center;
 }
