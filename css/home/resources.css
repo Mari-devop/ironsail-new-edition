@@ -3,7 +3,7 @@
     flex-direction: column;
     padding: 180px;
     gap: 50px;
-    justify-items: center;
+    align-items: center;
 }
 
 .resources-section__sidebar {
