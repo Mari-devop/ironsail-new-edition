@@ -1,94 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../assets/img/global/favicon.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/global/favicon.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/global/favicon.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/global/favicon.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/global/favicon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/global/favicon.png" />
-    <!-- fonts start -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- fonts end -->
-    <title>Ironsail - AI Solutions</title>
-    <!-- Slider-swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <!-- Slider-swiper -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" href="../ai-solutions/css/index.css" />
-    <!-- Meta Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '890292989287010');
-      fbq('track', 'PageView');
-    </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=890292989287010&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
-  </head>
 
-  <body>
-    <header>
-      <div class="header_wrapper mycontainer">
-        <nav class="navbar">
-          <a href="../"><img src="../assets/img/global/logo.png" alt="logo" class="header_logo_tablet_mob" /></a>
-          <div class="navbar-wrapper">
-            <ul class="navbar_menu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="../assets/img/global/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/global/favicon.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/global/favicon.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/global/favicon.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/global/favicon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/global/favicon.png" />
+  <!-- fonts start -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet" />
+  <!-- fonts end -->
+  <title>Ironsail - AI Solutions</title>
+  <!-- Slider-swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- Slider-swiper -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../ai-solutions/css/index.css" />
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T7W43X5Z');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '890292989287010');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display: none"
+      src="https://www.facebook.com/tr?id=890292989287010&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7W43X5Z" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <div class="header_wrapper mycontainer">
+      <nav class="navbar">
+        <a href="../"><img src="../assets/img/global/logo.png" alt="logo" class="header_logo_tablet_mob" /></a>
+        <div class="navbar-wrapper">
+          <ul class="navbar_menu">
+            <li>
+              <a class="nav_elem" href="/">
+                Services
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 10L12 15L17 10" stroke="#141751" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="nav_elem" href="../about-us/">About Us</a>
+            </li>
+            <li>
+              <a class="nav_elem" href="../contact-us/">Contact Us</a>
+            </li>
+          </ul>
+          <div class="header_button_pair">
+            <a class="main_button" type="button" href="#" data-toggle="modal" data-target="#exampleModal">
+              <p>Get in Touch</p>
+              <svg class="main_but_arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
+                fill="none">
+                <g clip-path="url(#clip0_655_3457)">
+                  <path
+                    d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
+                    fill="#141751" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_655_3457">
+                    <rect width="20" height="18" fill="white" transform="translate(0 0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="burger">
+          <div class="burger_space" id="burger">
+            <span class="stick"></span>
+            <span class="stick"></span>
+            <span class="stick"></span>
+          </div>
+        </div>
+      </nav>
+      <div class="popup" id="popup">
+        <div class="popup_textblock" id="popupSlide">
+          <ul class="navbar_menu_mobile">
+            <li>
+              <a class="nav_elem_mobile" href="#" id="servicesMobileLink">
+                Services
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 10L12 15L17 10" stroke="#141751" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <ul class="services-dropdown-mobile">
               <li>
-                <a class="nav_elem" href="/">
-                  Services
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M7 10L12 15L17 10" stroke="#141751" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="4.5" stroke="#141751" />
+                </svg>
+                <a href="../web-design-and-development/">Web Design & Development</a>
               </li>
               <li>
-                <a class="nav_elem" href="../about-us/">About Us</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="4.5" stroke="#141751" />
+                </svg>
+                <a href="../digital-marketing/">Digital Marketing</a>
               </li>
               <li>
-                <a class="nav_elem" href="../contact-us/">Contact Us</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="4.5" stroke="#141751" />
+                </svg>
+                <a href="../influencer-marketing/">Influencer Marketing</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="4.5" stroke="#141751" />
+                </svg>
+                <a href="../ai-solutions/">AI Workforce Solutions</a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="4.5" stroke="#141751" />
+                </svg>
+                <a href="../software-development/">Software Development</a>
               </li>
             </ul>
-            <div class="header_button_pair">
-              <a class="main_button" type="button" href="#" data-toggle="modal"
-                data-target="#exampleModal">
+            <li>
+              <a class="nav_elem_mobile" href="../about-us/">About Us</a>
+            </li>
+            <li>
+              <a class="nav_elem_mobile" href="../contact-us/">Contact Us</a>
+            </li>
+            <div class="header_button_pair mobile_header_button_pair">
+              <a class="main_button btn-mobile" href="#" data-toggle="modal" data-target="#exampleModal">
                 <p>Get in Touch</p>
-                <svg class="main_but_arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
-                  fill="none">
+                <svg class="main_but_arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="19"
+                  viewBox="0 0 20 19" fill="none">
                   <g clip-path="url(#clip0_655_3457)">
                     <path
                       d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
@@ -102,290 +182,60 @@
                 </svg>
               </a>
             </div>
-          </div>
-          <div class="burger">
-            <div class="burger_space" id="burger">
-              <span class="stick"></span>
-              <span class="stick"></span>
-              <span class="stick"></span>
-            </div>
-          </div>
-        </nav>
-        <div class="popup" id="popup">
-          <div class="popup_textblock" id="popupSlide">
-            <ul class="navbar_menu_mobile">
-              <li>
-                <a class="nav_elem_mobile" href="#" id="servicesMobileLink">
-                  Services
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M7 10L12 15L17 10" stroke="#141751" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </a>
-              </li>
-              <ul class="services-dropdown-mobile">
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <circle cx="10" cy="10" r="4.5" stroke="#141751" />
-                  </svg>
-                  <a href="../web-design-and-development/">Web Design & Development</a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <circle cx="10" cy="10" r="4.5" stroke="#141751" />
-                  </svg>
-                  <a href="../digital-marketing/">Digital Marketing</a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <circle cx="10" cy="10" r="4.5" stroke="#141751" />
-                  </svg>
-                  <a href="../influencer-marketing/">Influencer Marketing</a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <circle cx="10" cy="10" r="4.5" stroke="#141751" />
-                  </svg>
-                  <a href="../ai-solutions/">AI Workforce Solutions</a>
-                </li>
-                <li>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <circle cx="10" cy="10" r="4.5" stroke="#141751" />
-                  </svg>
-                  <a href="../software-development/">Software Development</a>
-                </li>
-              </ul>
-              <li>
-                <a class="nav_elem_mobile" href="../about-us/">About Us</a>
-              </li>
-              <li>
-                <a class="nav_elem_mobile" href="../contact-us/">Contact Us</a>
-              </li>
-              <div class="header_button_pair mobile_header_button_pair">
-                <a class="main_button btn-mobile" href="#" data-toggle="modal" data-target="#exampleModal">
-                  <p>Get in Touch</p>
-                  <svg class="main_but_arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="19"
-                    viewBox="0 0 20 19" fill="none">
-                    <g clip-path="url(#clip0_655_3457)">
-                      <path
-                        d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
-                        fill="#141751" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_655_3457">
-                        <rect width="20" height="18" fill="white" transform="translate(0 0.5)" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </a>
-              </div>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"></h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <iframe
-              id="JotFormIFrame-243053802326348"
-              title="Main form - Ironsail"
-              onload="window.parent.scrollTo(0,0)"
-              allowtransparency="true"
-              allow="geolocation; microphone; camera; fullscreen"
-              src="https://form.jotform.com/243053802326348"
-              frameborder="0"
-              style="min-width: 100%; max-width: 100%; height: 539px; border: none"
-              scrolling="no"
-            >
-            </iframe>
-            <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
-            <script>
-              window.jotformEmbedHandler(
-                "iframe[id='JotFormIFrame-243053802326348']",
-                'https://form.jotform.com/',
-              );
-            </script>
-          </div>
+          </ul>
         </div>
       </div>
     </div>
+  </header>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe id="JotFormIFrame-243053802326348" title="Main form - Ironsail" onload="window.parent.scrollTo(0,0)"
+            allowtransparency="true" allow="geolocation; microphone; camera; fullscreen"
+            src="https://form.jotform.com/243053802326348" frameborder="0"
+            style="min-width: 100%; max-width: 100%; height: 539px; border: none" scrolling="no">
+          </iframe>
+          <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
+          <script>
+            window.jotformEmbedHandler(
+              "iframe[id='JotFormIFrame-243053802326348']",
+              'https://form.jotform.com/',
+            );
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <section class="dig-main" id="resources">
-      <div class="dig-main_cover"></div>
-      <div class="dig-main_cover-mob"></div>
-      <video
-        class="dig_video"
-        src="assets/main/aivideo.mp4"
-        autoplay
-        muted
-        playsinline
-        loop
-      ></video>
-      <div class="dig-main_wrapper">
-        <h1 class="main_title dig-main_title" data-aos="fade-down">
-          Transform Your Business with AI workforce Solutions
-        </h1>
-        <p class="dig-main_subtitle" data-aos="fade-down" data-aos-delay="300">
-          Leverage AI to automate processes, optimize ad spend, and enhance efficiency with intelligent workforce solutions for smarter results.
-        </p>
-        <a
-          class="main_button white_button"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-          href="#resources"
-          data-aos="fade-down"
-          data-aos-delay="600"
-        >
-          <p>Explore More</p>
-          <svg
-            class="main_but_arrow"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="19"
-            viewBox="0 0 20 19"
-            fill="none"
-          >
-            <g clip-path="url(#clip0_655_3457)">
-              <path
-                d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
-                fill="#141751"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_655_3457">
-                <rect width="20" height="18" fill="white" transform="translate(0 0.5)" />
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-      </div>
-    </section>
-    <section class="about-section" id="blending-resources">
-      <h2 class="about-section__main-title">Integrating Human Expertise with Programmatic Efficiency</h2>
-      <div class="resources-section__wrapper">
-        <div class="resources-section__human" data-aos="flip-right">
-          <h2 class="resources-section__human-title">HUMAN RESOURCES</h2>
-          <div class="resources-section__item">
-            <div class="resources-section__title-container" data-aos="fade-down">
-              <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
-              <h3 class="resources-section__item-title">NATURE</h3>
-            </div>
-            <p class="resources-section__item-text" data-aos="fade-down">
-              People with creativity, intuition, and critical thinking
-            </p>
-          </div>
-          <div class="resources-section__item" data-aos="fade-down">
-            <div class="resources-section__title-container">
-              <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
-              <h3 class="resources-section__item-title">FUNCTION</h3>
-            </div>
-            <p class="resources-section__item-text" data-aos="fade-down">
-              Bring strategic insights, creativity, and problem-solving
-            </p>
-          </div>
-          <div class="resources-section__item" data-aos="fade-down">
-            <div class="resources-section__title-container">
-              <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
-              <h3 class="resources-section__item-title">CAPABILITIES</h3>
-            </div>
-            <p class="resources-section__item-text" data-aos="fade-down">
-              Offer empathy, relationship-building, and adaptability
-            </p>
-          </div>
-          <div class="resources-section__item">
-            <div class="resources-section__title-container" data-aos="fade-down">
-              <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
-              <h3 class="resources-section__item-title">APPLICATION</h3>
-            </div>
-            <p class="resources-section__item-text" data-aos="fade-down">
-              Essential for complex decision-making, creativity, and client relationships
-            </p>
-          </div>
-        </div>
-        <div class="resources-section__plus">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="137"
-            height="141"
-            viewBox="0 0 137 141"
-            fill="none"
-            class="resources-section__plus-image"
-          >
-            <path
-              d="M49.8811 140.706V86.0443H0.686035V53.5892H49.8811V0.294495H86.7775V53.5892H136.314V86.0443H86.7775V140.706H49.8811Z"
-              fill="#A55BA4"
-            />
-          </svg>
-        </div>
-        <div class="resources-section__programmatic" data-aos="flip-right">
-          <h2 class="resources-section__human-title">PROGRAMMATIC RESOURCES</h2>
-          <div class="resources-section__item">
-            <div class="resources-section__title-container" data-aos="fade-down">
-              <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
-              <h3 class="resources-section__item-title">NATURE</h3>
-            </div>
-            <p class="resources-section__item-text" data-aos="fade-down">
-              Data-driven algorithms and advanced software solutions
-            </p>
-          </div>
-          <div class="resources-section__item">
-            <div class="resources-section__title-container" data-aos="fade-down">
-              <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
-              <h3 class="resources-section__item-title">FUNCTION</h3>
-            </div>
-            <p class="resources-section__item-text" data-aos="fade-down">
-              Automate tasks and streamline processes
-            </p>
-          </div>
-          <div class="resources-section__item">
-            <div class="resources-section__title-container" data-aos="fade-down">
-              <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
-              <h3 class="resources-section__item-title">CAPABILITIES</h3>
-            </div>
-            <p class="resources-section__item-text" data-aos="fade-down">
-              Process vast data sets at high speed, 24/7 without fatigue
-            </p>
-          </div>
-          <div class="resources-section__item">
-            <div class="resources-section__title-container" data-aos="fade-down">
-              <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
-              <h3 class="resources-section__item-title">APPLICATION</h3>
-            </div>
-            <p class="resources-section__item-text" data-aos="fade-down">
-              Ideal for scalable operations, repetitive tasks, and real-time data analysis
-            </p>
-          </div>
-        </div>
-      </div>
-      <a class="main_button dem" href="#" data-toggle="modal" data-target="#exampleModal">
-        <p>Try It now</p>
-        <svg
-          class="main_but_arrow"
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="19"
-          viewBox="0 0 20 19"
-          fill="none"
-        >
+  <section class="dig-main" id="resources">
+    <div class="dig-main_cover"></div>
+    <div class="dig-main_cover-mob"></div>
+    <video class="dig_video" src="assets/main/aivideo.mp4" autoplay muted playsinline loop></video>
+    <div class="dig-main_wrapper">
+      <h1 class="main_title dig-main_title" data-aos="fade-down">
+        Transform Your Business with AI workforce Solutions
+      </h1>
+      <p class="dig-main_subtitle" data-aos="fade-down" data-aos-delay="300">
+        Leverage AI to automate processes, optimize ad spend, and enhance efficiency with intelligent workforce
+        solutions for smarter results.
+      </p>
+      <a class="main_button white_button" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#resources"
+        data-aos="fade-down" data-aos-delay="600">
+        <p>Explore More</p>
+        <svg class="main_but_arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
+          fill="none">
           <g clip-path="url(#clip0_655_3457)">
             <path
               d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
-              fill="#141751"
-            />
+              fill="#141751" />
           </g>
           <defs>
             <clipPath id="clip0_655_3457">
@@ -394,361 +244,417 @@
           </defs>
         </svg>
       </a>
-      <div class="about__menu">
-        <a href="#blending-resources" class="about__menu-item">Blending Resources</a>
-        <a href="#real-impact-with-ai" class="about__menu-item">Real Impact With AI</a>
-        <a href="#agents" class="about__menu-item">Agents</a>
-        <a href="#projects" class="about__menu-item">Projects</a>
-        <a href="#get-started" class="about__menu-item">Get Started</a>
-      </div>
-    </section>
-    <section class="departures" id="real-impact-with-ai">
-      <h2 class="departures__main-title">Real Impact with AI</h2>
-      <div class="departures__grid">
-        <div class="departures__grid-container sales">
-          <div class="departures__icon-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-              <g clip-path="url(#clip0_1179_6863)">
-                <mask id="mask0_1179_6863" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="-1" width="30" height="31">
-                  <path d="M0 -0.0125408H30V29.9875H0V-0.0125408Z" fill="white"/>
-                </mask>
-                <g mask="url(#mask0_1179_6863)">
-                  <path d="M8.62945 14.6023H2.1102C1.26838 14.6023 0.585938 13.9199 0.585938 13.0781V2.09756C0.585938 1.25574 1.26838 0.573299 2.1102 0.573299H23.7443L26.9084 3.73742" stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M19.9337 23.1401L14.1184 28.9554C13.5232 29.5506 12.5581 29.5506 11.9628 28.9554L4.19844 21.191C3.60313 20.5957 3.60313 19.6306 4.19844 19.0353L19.496 3.73775H27.7979L29.416 5.35594V13.6578L23.6625 19.4113" stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M16.1738 13.421L19.4884 16.7355L20.8142 15.4097" stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M23.6309 12.5923L22.4708 13.7524L19.1562 10.4378L20.3163 9.27772" stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M20.8145 12.0951L21.9746 10.935" stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M17.8312 18.3928L13.4395 16.1555L15.6767 20.5473" stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M15.3496 19.7708L17.0635 18.0569" stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M11.5772 21.3324L11.5337 21.3759C11.0761 21.8335 10.3341 21.8335 9.87646 21.3759C9.41878 20.9182 9.41878 20.1763 9.87646 19.7186L10.7051 18.8899" stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M12.3638 23.8618L13.1924 23.0332C13.6501 22.5755 13.6501 21.8335 13.1924 21.3759C12.7348 20.9182 11.9928 20.9182 11.5352 21.3759" stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M26.8379 7.48775C26.8379 8.13497 26.3132 8.65962 25.666 8.65962C25.0188 8.65962 24.4941 8.13497 24.4941 7.48775C24.4941 6.84052 25.0188 6.31587 25.666 6.31587C26.3132 6.31587 26.8379 6.84052 26.8379 7.48775Z" stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M5.97461 10.9748L9.75396 4.28025" stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M11.6938 9.915C11.6938 9.26766 11.169 8.74295 10.5217 8.74295C9.87437 8.74295 9.34961 9.26766 9.34961 9.915C9.34961 10.5623 9.87437 11.0871 10.5217 11.0871C11.169 11.0871 11.6938 10.5623 11.6938 9.915Z" stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M6.74846 5.26066C6.74846 4.61331 6.22369 4.08861 5.57641 4.08861C4.92906 4.08861 4.4043 4.61331 4.4043 5.26066C4.4043 5.908 4.92906 6.43271 5.57641 6.43271C6.22369 6.43271 6.74846 5.908 6.74846 5.26066Z" stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M26.4844 6.66737L29.4142 3.73757" stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                </g>
-              </g>
-              <defs>
-                <clipPath id="clip0_1179_6863">
-                  <rect width="30" height="30" fill="white" transform="translate(0 -0.0126953)"/>
-                </clipPath>
-              </defs>
-            </svg>
+    </div>
+  </section>
+  <section class="about-section" id="blending-resources">
+    <h2 class="about-section__main-title">Integrating Human Expertise with Programmatic Efficiency</h2>
+    <div class="resources-section__wrapper">
+      <div class="resources-section__human" data-aos="flip-right">
+        <h2 class="resources-section__human-title">HUMAN RESOURCES</h2>
+        <div class="resources-section__item">
+          <div class="resources-section__title-container" data-aos="fade-down">
+            <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
+            <h3 class="resources-section__item-title">NATURE</h3>
           </div>
-          <h3 class="departures__grid-title">Sales</h3>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              AI-driven sales forecasting for more accurate predictions.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Personalized product recommendations for improved customer experience.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Automated lead scoring to prioritize high-potential prospects.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">Chatbots for quick sales inquiries and conversion.</p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Analysis of customer behavior and trends to refine sales strategies.
-            </p>
-          </div>
+          <p class="resources-section__item-text" data-aos="fade-down">
+            People with creativity, intuition, and critical thinking
+          </p>
         </div>
-        <div class="departures__grid-container hr">
-          <div class="departures__icon-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-              <g clip-path="url(#clip0_1179_7669)">
-                <path d="M13 26C15.8645 26 18.5135 25.067 20.6645 23.4915L26.7335 29.5605C27.0165 29.8435 27.3935 30 27.794 30C28.1945 30 28.572 29.844 28.8545 29.5605L29.5605 28.855C29.8435 28.572 30 28.195 30 27.794C30 27.393 29.844 27.0165 29.5605 26.7335L23.4915 20.6645C25.067 18.514 26 15.8645 26 13C26 5.832 20.1685 0 13 0C5.8315 0 0 5.832 0 13C0 20.168 5.8315 26 13 26ZM29 27.794C29 27.928 28.948 28.053 28.8535 28.1475L28.147 28.8535C27.959 29.0425 27.6305 29.0425 27.4405 28.8535L23.1475 24.5605L24.5605 23.1475L28.8535 27.4405C28.9475 27.535 29 27.6605 29 27.794ZM23.8535 22.44L22.4405 23.853L21.4525 22.865C21.959 22.4305 22.431 21.9585 22.8655 21.452L23.8535 22.44ZM13 1C19.6165 1 25 6.3835 25 13C25 19.6165 19.6165 25 13 25C6.3835 25 1 19.6165 1 13C1 6.3835 6.3835 1 13 1Z" fill="#3A8ACA"/>
-                <path d="M13 24C19.0655 24 24 19.0655 24 13C24 7.9135 20.553 3.519 15.6185 2.3135C15.3495 2.249 15.0795 2.4125 15.014 2.6805C14.9485 2.9485 15.113 3.2195 15.381 3.285C19.867 4.38 22.9995 8.375 22.9995 12.9995C22.9995 18.5135 18.5135 22.9995 12.9995 22.9995C7.4855 22.9995 3 18.514 3 13C3 7.486 7.486 3 13 3C13.2765 3 13.5 2.776 13.5 2.5C13.5 2.224 13.2765 2 13 2C6.9345 2 2 6.9345 2 13C2 19.0655 6.9345 24 13 24Z" fill="#3A8ACA"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_1179_7669">
-                  <rect width="30" height="30" fill="white"/>
-                </clipPath>
-              </defs>
-            </svg>
+        <div class="resources-section__item" data-aos="fade-down">
+          <div class="resources-section__title-container">
+            <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
+            <h3 class="resources-section__item-title">FUNCTION</h3>
           </div>
-          <h3 class="departures__grid-title">HR AND RECRUITING</h3>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              AI-based recruitment tools for faster candidate screening.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Employee performance analytics for personalized development plans.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Chatbots for handling employee queries about HR policies.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Automation of administrative tasks like payroll and scheduling.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Predictive analytics for identifying employee engagement trends.
-            </p>
-          </div>
+          <p class="resources-section__item-text" data-aos="fade-down">
+            Bring strategic insights, creativity, and problem-solving
+          </p>
         </div>
-        <div class="departures__grid-container service">
-          <div class="departures__icon-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-              <path d="M22.8773 3.36613C21.2659 1.75822 19.2144 0.663621 16.9815 0.220462C14.7487 -0.222697 12.4346 0.00543773 10.3313 0.876079C8.22803 1.74672 6.42973 3.22086 5.16336 5.11247C3.89699 7.00409 3.2193 9.22842 3.21578 11.5048V11.7814C2.52188 12.028 1.92124 12.4833 1.49623 13.0847C1.07121 13.6861 0.842623 14.4042 0.841797 15.1407V20.1703C0.842882 21.1152 1.21871 22.021 1.88683 22.6891C2.55494 23.3573 3.46079 23.7331 4.40564 23.7341H7.50086C7.62518 23.7341 7.74441 23.6847 7.83232 23.5968C7.92022 23.5089 7.96961 23.3897 7.96961 23.2654V12.0454C7.96961 11.9211 7.92022 11.8019 7.83232 11.714C7.74441 11.6261 7.62518 11.5767 7.50086 11.5767H6.03883V11.505C6.03883 6.70796 9.94152 2.80533 14.7386 2.80533C19.5357 2.80533 23.4383 6.70767 23.4383 11.505V11.5767H21.9763C21.852 11.5767 21.7328 11.6261 21.6449 11.714C21.557 11.8019 21.5076 11.9211 21.5076 12.0454V23.2652C21.5076 23.3895 21.557 23.5088 21.6449 23.5967C21.7328 23.6846 21.852 23.734 21.9763 23.734H24.3417C24.195 24.8712 23.6395 25.9162 22.7789 26.674C21.9183 27.4317 20.8114 27.8505 19.6647 27.852H17.2907V27.1278C17.2907 27.0034 17.2413 26.8842 17.1534 26.7963C17.0655 26.7084 16.9463 26.659 16.822 26.659H13.848C13.4073 26.659 12.9846 26.8341 12.673 27.1457C12.3613 27.4574 12.1862 27.88 12.1862 28.3207C12.1862 28.7615 12.3613 29.1841 12.673 29.4957C12.9846 29.8074 13.4073 29.9825 13.848 29.9825H16.8217C16.946 29.9825 17.0653 29.9331 17.1532 29.8452C17.2411 29.7573 17.2905 29.638 17.2905 29.5137V28.7895H19.6645C21.0611 28.7878 22.4078 28.2699 23.4457 27.3355C24.4837 26.401 25.1396 25.1158 25.2874 23.727C26.1931 23.671 27.0433 23.2721 27.6653 22.6114C28.2872 21.9506 28.634 21.0778 28.6352 20.1704V15.1407C28.6342 14.4043 28.4056 13.6862 27.9805 13.0849C27.5555 12.4835 26.9548 12.0284 26.2609 11.7818V11.5052C26.2631 9.99221 25.9652 8.49381 25.3844 7.09673C24.8036 5.69966 23.9514 4.43165 22.8773 3.36613ZM16.3532 29.045H13.848C13.656 29.0448 13.4719 28.9684 13.3361 28.8326C13.2003 28.6969 13.124 28.5128 13.1237 28.3208C13.124 28.1288 13.2003 27.9447 13.3361 27.8089C13.4719 27.6731 13.656 27.5968 13.848 27.5966H16.353L16.3532 29.045ZM4.15867 22.7845C3.50813 22.7223 2.90405 22.4201 2.46417 21.9368C2.0243 21.4535 1.78014 20.8237 1.7793 20.1702V15.1407C1.78016 14.4871 2.02432 13.8574 2.46419 13.3741C2.90406 12.8908 3.50813 12.5885 4.15867 12.5263V22.7845ZM7.03211 12.5142V22.7965H5.09617V12.5142H7.03211ZM24.381 22.7965H22.4451V12.5142H24.381V22.7965ZM25.0715 11.5767H24.3758V11.505C24.3695 8.9532 23.3514 6.50802 21.5447 4.70582C19.7381 2.90362 17.2904 1.89153 14.7386 1.89153C12.1867 1.89153 9.73905 2.90362 7.93239 4.70582C6.12574 6.50802 5.10762 8.9532 5.10133 11.505V11.5767H4.40564C4.3208 11.5767 4.23689 11.5807 4.15369 11.5866V11.505C4.15352 5.66839 8.90195 0.919955 14.7386 0.919955C20.5752 0.919955 25.3237 5.66839 25.3237 11.505V11.5866C25.2403 11.5807 25.1566 11.5767 25.0715 11.5767ZM27.6979 15.1407V20.1703C27.6971 20.8239 27.4529 21.4537 27.013 21.937C26.5731 22.4203 25.969 22.7225 25.3185 22.7847V12.5261C25.969 12.5883 26.5732 12.8906 27.0131 13.3739C27.453 13.8573 27.6971 14.4871 27.6979 15.1407Z" fill="#3A8ACA"/>
-            </svg>
+        <div class="resources-section__item" data-aos="fade-down">
+          <div class="resources-section__title-container">
+            <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
+            <h3 class="resources-section__item-title">CAPABILITIES</h3>
           </div>
-          <h3 class="departures__grid-title">Customer Service</h3>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              AI chatbots for 24/7 customer support and faster issue resolution.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Sentiment analysis to better understand customer feedback.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Personalized customer interactions through data analysis.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Automated ticket routing for efficient service handling.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">AI-driven self-service portals for quick solutions.</p>
-          </div>
+          <p class="resources-section__item-text" data-aos="fade-down">
+            Offer empathy, relationship-building, and adaptability
+          </p>
         </div>
-        <div class="departures__grid-container techno">
-          <div class="departures__icon-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-              <g clip-path="url(#clip0_1179_6944)">
-                <path d="M27.8926 13.2129C27.0693 13.2129 26.3748 13.7726 26.1683 14.5312H19.5886C19.5412 14.0374 19.42 13.5649 19.2359 13.1249H20.9379C21.0021 13.1249 21.0655 13.1118 21.1244 13.0863L23.215 12.1797C23.5428 12.5886 24.046 12.8511 24.6096 12.8511C25.595 12.8511 26.3967 12.0494 26.3967 11.064C26.3967 10.0787 25.595 9.27691 24.6096 9.27691C23.6241 9.27691 22.8225 10.0787 22.8225 11.064C22.8225 11.151 22.829 11.2363 22.8411 11.32L20.8407 12.1874H18.7143C17.8306 10.9419 16.3783 10.1267 14.7383 10.1267C12.0512 10.1267 9.86504 12.3129 9.86504 15C9.86504 17.6871 12.0512 19.8733 14.7383 19.8733C16.3783 19.8733 17.8306 19.0581 18.7143 17.8125H20.8407L22.8411 18.68C22.829 18.7636 22.8225 18.849 22.8225 18.9359C22.8225 19.9213 23.6241 20.723 24.6096 20.723C25.595 20.723 26.3967 19.9213 26.3967 18.9359C26.3967 17.9505 25.595 17.1488 24.6096 17.1488C24.046 17.1488 23.5428 17.4114 23.215 17.8202L21.1244 16.9137C21.0656 16.8881 21.0021 16.875 20.9379 16.875H19.2359C19.42 16.435 19.5412 15.9625 19.5886 15.4688H26.1683C26.3748 16.2274 27.0694 16.7871 27.8926 16.7871C28.878 16.7871 29.6797 15.9854 29.6797 15C29.6797 14.0146 28.878 13.2129 27.8926 13.2129ZM24.6096 10.2144C25.078 10.2144 25.4592 10.5956 25.4592 11.064C25.4592 11.5325 25.078 11.9136 24.6096 11.9136C24.1411 11.9136 23.76 11.5325 23.76 11.064C23.76 10.5956 24.1411 10.2144 24.6096 10.2144ZM24.6096 18.0863C25.078 18.0863 25.4592 18.4675 25.4592 18.9359C25.4592 19.4044 25.078 19.7855 24.6096 19.7855C24.1411 19.7855 23.76 19.4044 23.76 18.9359C23.76 18.4675 24.1411 18.0863 24.6096 18.0863ZM14.7383 18.9358C12.5681 18.9358 10.8025 17.1702 10.8025 15C10.8025 12.8298 12.5681 11.0642 14.7383 11.0642C16.9085 11.0642 18.6741 12.8298 18.6741 15C18.6741 17.1702 16.9085 18.9358 14.7383 18.9358ZM27.8926 15.8496C27.4241 15.8496 27.043 15.4685 27.043 15C27.043 14.5315 27.4241 14.1504 27.8926 14.1504C28.361 14.1504 28.7422 14.5315 28.7422 15C28.7422 15.4685 28.361 15.8496 27.8926 15.8496ZM26.6799 21.7389C25.6944 21.7389 24.8928 22.5407 24.8928 23.526C24.8928 23.8488 24.9792 24.1516 25.1296 24.4133L23.2643 26.2786L21.8813 24.8955C21.7232 24.7375 21.4755 24.7131 21.2896 24.8371C20.0008 25.6974 18.5783 26.2869 17.0618 26.5894C16.8426 26.6331 16.6847 26.8255 16.6847 27.0491V29.0039H12.7919V27.049C12.7919 26.8255 12.6341 26.633 12.4148 26.5893C10.8993 26.2873 9.47686 25.6976 8.18709 24.837C8.00123 24.7129 7.75355 24.7374 7.59547 24.8955L6.21236 26.2786L3.4598 23.5259L4.84285 22.1429C5.00094 21.9848 5.02537 21.7371 4.90127 21.5511C4.041 20.2622 3.45143 18.8398 3.14902 17.3235C3.10531 17.1043 2.91289 16.9464 2.68936 16.9464H0.734375V13.0536H2.68924C2.91277 13.0536 3.10525 12.8957 3.14896 12.6764C3.45107 11.1608 4.04064 9.73834 4.90121 8.44869C5.02531 8.26277 5.00082 8.01516 4.84273 7.85707L3.45975 6.47402L6.21242 3.72141L7.59541 5.10445C7.7535 5.26248 8.00123 5.28691 8.18709 5.16281C9.47592 4.30248 10.8983 3.71297 12.4149 3.41051C12.6341 3.3668 12.7919 3.17438 12.7919 2.95078V0.996094H16.6847V2.95078C16.6847 3.17432 16.8426 3.3668 17.0618 3.41051C18.5773 3.71256 19.9998 4.30213 21.2896 5.16275C21.4756 5.28691 21.7232 5.26236 21.8813 5.10434L23.2643 3.72135L25.1295 5.58662C24.9791 5.8483 24.8926 6.15117 24.8926 6.47402C24.8926 7.45939 25.6943 8.26113 26.6797 8.26113C27.6652 8.26113 28.4669 7.45939 28.4669 6.47402C28.4669 5.48865 27.6652 4.68691 26.6797 4.68691C26.3569 4.68691 26.0541 4.7734 25.7924 4.92375L23.5957 2.72707C23.4127 2.54396 23.1159 2.54402 22.9329 2.72701L21.4861 4.17369C20.2897 3.42586 18.9931 2.8885 17.6221 2.57215V0.527344C17.6221 0.268477 17.4123 0.0585938 17.1534 0.0585938H12.3231C12.0642 0.0585938 11.8544 0.268477 11.8544 0.527344V2.57215C10.4826 2.88879 9.18611 3.42621 7.99051 4.17375L6.54383 2.72707C6.36084 2.54414 6.06406 2.54408 5.88096 2.72707L2.46541 6.14256C2.28236 6.32561 2.28236 6.62238 2.46541 6.80549L3.91221 8.25229C3.16443 9.44848 2.62701 10.745 2.31066 12.1161H0.265625C0.0067578 12.1161 -0.203125 12.326 -0.203125 12.5848V17.4151C-0.203125 17.674 0.0067578 17.8839 0.265625 17.8839H2.31066C2.62725 19.2554 3.16461 20.5519 3.91215 21.7476L2.46535 23.1943C2.2823 23.3774 2.2823 23.6742 2.46535 23.8572L5.88084 27.2728C5.96873 27.3608 6.08797 27.4102 6.2123 27.4102C6.33664 27.4102 6.45588 27.3608 6.54377 27.2729L7.99062 25.826C9.18687 26.5737 10.4836 27.1112 11.8544 27.4276V29.4727C11.8544 29.7315 12.0643 29.9414 12.3232 29.9414H17.1535C17.4123 29.9414 17.6222 29.7315 17.6222 29.4727V27.4277C18.9939 27.1111 20.2905 26.5737 21.4861 25.8263L22.9329 27.273C23.116 27.456 23.4127 27.456 23.5958 27.273L25.7925 25.0763C26.0542 25.2266 26.3571 25.3131 26.6799 25.3131C27.6653 25.3131 28.467 24.5113 28.467 23.526C28.467 22.5406 27.6653 21.7389 26.6799 21.7389ZM26.6797 5.62441C27.1482 5.62441 27.5294 6.00557 27.5294 6.47402C27.5294 6.94248 27.1482 7.32363 26.6797 7.32363C26.2113 7.32363 25.8301 6.94248 25.8301 6.47402C25.8301 6.00557 26.2113 5.62441 26.6797 5.62441ZM26.6799 24.3756C26.2114 24.3756 25.8303 23.9945 25.8303 23.526C25.8303 23.0576 26.2114 22.6764 26.6799 22.6764C27.1483 22.6764 27.5295 23.0576 27.5295 23.526C27.5295 23.9945 27.1483 24.3756 26.6799 24.3756ZM20.4697 10.5188C21.4552 10.5188 22.2569 9.71707 22.2569 8.7317C22.2569 7.74633 21.4552 6.94459 20.4697 6.94459C20.0546 6.94459 19.6723 7.08732 19.3686 7.32568C17.9737 6.48199 16.3812 6.03721 14.7382 6.03721C9.79613 6.03721 5.77543 10.0579 5.77543 15.0001C5.77543 19.9421 9.79613 23.9629 14.7382 23.9629C16.3811 23.9629 17.9737 23.5181 19.3685 22.6744C19.6723 22.9128 20.0546 23.0555 20.4697 23.0555C21.4551 23.0555 22.2568 22.2538 22.2568 21.2684C22.2568 20.283 21.4551 19.4813 20.4697 19.4813C19.4843 19.4813 18.6826 20.283 18.6826 21.2684C18.6826 21.4976 18.7264 21.7165 18.8053 21.918C17.5756 22.643 16.1788 23.0254 14.7382 23.0254C10.313 23.0254 6.71287 19.4252 6.71287 15.0001C6.71287 10.5749 10.313 6.97471 14.7382 6.97471C16.1788 6.97471 17.5756 7.35709 18.8053 8.08201C18.7264 8.28352 18.6826 8.50254 18.6826 8.7317C18.6826 9.71707 19.4844 10.5188 20.4697 10.5188ZM20.4697 20.4187C20.9382 20.4187 21.3194 20.7998 21.3194 21.2683C21.3194 21.7368 20.9382 22.1179 20.4697 22.1179C20.0013 22.1179 19.6201 21.7368 19.6201 21.2683C19.6201 20.7998 20.0013 20.4187 20.4697 20.4187ZM20.4697 7.88209C20.9382 7.88209 21.3194 8.26324 21.3194 8.7317C21.3194 9.20016 20.9382 9.58131 20.4697 9.58131C20.0013 9.58131 19.6201 9.20016 19.6201 8.7317C19.6201 8.26324 20.0013 7.88209 20.4697 7.88209ZM14.7383 12.9199C13.5913 12.9199 12.6582 13.853 12.6582 15C12.6582 16.147 13.5913 17.0801 14.7383 17.0801C15.8853 17.0801 16.8184 16.147 16.8184 15C16.8184 13.853 15.8853 12.9199 14.7383 12.9199ZM14.7383 16.1426C14.1083 16.1426 13.5957 15.63 13.5957 15C13.5957 14.37 14.1083 13.8574 14.7383 13.8574C15.3683 13.8574 15.8809 14.37 15.8809 15C15.8809 15.63 15.3683 16.1426 14.7383 16.1426Z" fill="#3A8ACA"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_1179_6944">
-                  <rect width="30" height="30" fill="white" transform="translate(-0.261719)"/>
-                </clipPath>
-              </defs>
-            </svg>
+        <div class="resources-section__item">
+          <div class="resources-section__title-container" data-aos="fade-down">
+            <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
+            <h3 class="resources-section__item-title">APPLICATION</h3>
           </div>
-          <h3 class="departures__grid-title">Technological</h3>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Automation of routine IT tasks and system maintenance.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Enhanced cybersecurity through AI-based threat detection.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Machine learning for optimizing software performance.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">Predictive maintenance in hardware and machinery.</p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              AI integration in IoT for smarter, connected devices.
-            </p>
-          </div>
-        </div>
-        <div class="departures__grid-container marketing">
-          <div class="departures__icon-container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-              <g clip-path="url(#clip0_1179_6957)">
-                <path d="M4.99782 29.4693H2.34292C1.71444 29.4693 1.20508 28.9599 1.20508 28.3314V19.6082C1.20508 18.9797 1.71444 18.4703 2.34292 18.4703H4.99782C5.6263 18.4703 6.13565 18.9797 6.13565 19.6082V28.3314C6.13565 28.9599 5.62624 29.4693 4.99782 29.4693ZM2.34292 19.2289C2.13356 19.2289 1.96364 19.3988 1.96364 19.6082V28.3314C1.96364 28.5408 2.13356 28.7107 2.34292 28.7107H4.99782C5.20717 28.7107 5.37709 28.5408 5.37709 28.3314V19.6082C5.37709 19.3988 5.20717 19.2289 4.99782 19.2289H2.34292Z" fill="#3A8ACA"/>
-                <path d="M25.4783 29.4692H22.8234C22.1949 29.4692 21.6855 28.9599 21.6855 28.3314V14.2983C21.6855 13.6698 22.1949 13.1605 22.8234 13.1605H25.4783C26.1068 13.1605 26.6161 13.6698 26.6161 14.2983V28.3314C26.6161 28.9599 26.1067 29.4692 25.4783 29.4692ZM22.8233 13.919C22.614 13.919 22.444 14.0889 22.444 14.2983V28.3314C22.444 28.5408 22.614 28.7107 22.8233 28.7107H25.4782C25.6876 28.7107 25.8575 28.5408 25.8575 28.3314V14.2983C25.8575 14.0889 25.6876 13.919 25.4782 13.919H22.8233Z" fill="#3A8ACA"/>
-                <path d="M11.824 29.4693H9.16909C8.54061 29.4693 8.03125 28.9599 8.03125 28.3314V16.1947C8.03125 15.5662 8.54061 15.0569 9.16909 15.0569H11.824C12.4525 15.0569 12.9618 15.5662 12.9618 16.1947V28.3314C12.9618 28.9599 12.4525 29.4693 11.824 29.4693ZM9.16909 15.8154C8.95973 15.8154 8.78981 15.9854 8.78981 16.1947V28.3314C8.78981 28.5408 8.95973 28.7107 9.16909 28.7107H11.824C12.0333 28.7107 12.2033 28.5408 12.2033 28.3314V16.1947C12.2033 15.9854 12.0333 15.8154 11.824 15.8154H9.16909Z" fill="#3A8ACA"/>
-                <path d="M18.6521 29.4692H15.9972C15.3687 29.4692 14.8594 28.9598 14.8594 28.3313V21.1252C14.8594 20.4967 15.3687 19.9874 15.9972 19.9874H18.6521C19.2806 19.9874 19.7899 20.4967 19.7899 21.1252V28.3313C19.7899 28.9598 19.2806 29.4692 18.6521 29.4692ZM15.9972 20.7459C15.7879 20.7459 15.6179 20.9158 15.6179 21.1252V28.3313C15.6179 28.5407 15.7879 28.7106 15.9972 28.7106H18.6521C18.8614 28.7106 19.0314 28.5407 19.0314 28.3313V21.1252C19.0314 20.9158 18.8614 20.7459 18.6521 20.7459H15.9972Z" fill="#3A8ACA"/>
-                <path d="M16.8253 16.6373C16.5234 16.638 16.234 16.5182 16.0209 16.3043L9.86909 10.1525C9.7212 10.0046 9.48073 10.0046 9.33278 10.1525L3.75937 15.7263C3.30919 16.156 2.60032 16.156 2.15008 15.7263L0.333371 13.9092C-0.111124 13.465 -0.111124 12.7445 0.333371 12.2999L8.79647 3.83681C9.24137 3.39384 9.96085 3.39384 10.4058 3.83681L16.5572 9.9886C16.707 10.1323 16.9437 10.1323 17.0935 9.9886L22.6643 4.41783C22.8122 4.26953 22.8122 4.02947 22.6643 3.88152L22.3897 3.60694C21.9452 3.16245 21.9456 2.44221 22.3897 1.99766C22.5486 1.83875 22.7508 1.73064 22.9711 1.68664L28.639 0.552962C29.2553 0.42968 29.8546 0.829467 29.9778 1.44576C30.0074 1.59289 30.0074 1.74465 29.9778 1.89178L28.8441 7.55964C28.7209 8.17594 28.1216 8.57531 27.5053 8.45209C27.285 8.40809 27.0828 8.29963 26.9239 8.14107L26.6265 7.84371C26.4767 7.70033 26.2405 7.70033 26.0906 7.84371L17.6298 16.3043C17.417 16.5182 17.1272 16.638 16.8253 16.6373ZM9.6009 9.28354C9.90278 9.28278 10.1926 9.4026 10.4057 9.61618L16.5571 15.7676C16.707 15.9114 16.9436 15.9114 17.0934 15.7676L25.5539 7.30751C26.0041 6.87778 26.7126 6.87778 27.1628 7.30751L27.4601 7.60488C27.608 7.75318 27.8485 7.75318 27.9965 7.60523C28.0495 7.55214 28.0856 7.48464 28.1004 7.41105L29.2341 1.7443C29.2758 1.5391 29.1434 1.33883 28.9382 1.29675C28.8882 1.2865 28.8366 1.2865 28.7869 1.29675L23.1201 2.43037C22.9146 2.47057 22.7807 2.67008 22.8209 2.87563C22.8353 2.94999 22.8721 3.01825 22.926 3.07169L23.2005 3.34626C23.6447 3.7904 23.6447 4.51099 23.2005 4.95514L17.6298 10.5244C17.1796 10.9545 16.4707 10.9545 16.0205 10.5244L9.86903 4.37312C9.72114 4.22523 9.48067 4.22523 9.33272 4.37312L0.869624 12.8362C0.721323 12.9841 0.721323 13.2242 0.869273 13.3725L0.869624 13.3729L2.68633 15.19C2.83423 15.3383 3.07434 15.3383 3.22265 15.1904L3.223 15.19L8.79834 9.61466C9.01151 9.40225 9.30014 9.28319 9.6009 9.28354Z" fill="#3A8ACA"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_1179_6957">
-                  <rect width="30" height="30" fill="white"/>
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <h3 class="departures__grid-title">Marketing</h3>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              AI-based content creation and social media scheduling.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Predictive analytics for identifying customer trends.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Personalized marketing campaigns based on customer data.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Programmatic advertising for more targeted ad placements.
-            </p>
-          </div>
-          <div class="departures__grid-item">
-            <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
-            <p class="departures__grid-text">
-              Sentiment analysis for real-time brand perception monitoring.
-            </p>
-          </div>
+          <p class="resources-section__item-text" data-aos="fade-down">
+            Essential for complex decision-making, creativity, and client relationships
+          </p>
         </div>
       </div>
-      <div class="departures__scroll-container">
-        <img
-          class="departures__scroll"
-          src="../digital-marketing/assets/img/industries/scroll.png"
-        />
+      <div class="resources-section__plus">
+        <svg xmlns="http://www.w3.org/2000/svg" width="137" height="141" viewBox="0 0 137 141" fill="none"
+          class="resources-section__plus-image">
+          <path
+            d="M49.8811 140.706V86.0443H0.686035V53.5892H49.8811V0.294495H86.7775V53.5892H136.314V86.0443H86.7775V140.706H49.8811Z"
+            fill="#A55BA4" />
+        </svg>
       </div>
-      <div class="departures__cta">
-        <p class="departures__cta-text">
-          We use custom AI and programmatic solutions to automate workflows and optimize ad spend.
-          Contact us to find out how we can help.
-        </p>
-        <a
-          class="main_button white_button dem dem-pad"
-          href="#"
-          data-toggle="modal"
-          data-target="#exampleModal"
-        >
-          <p>Contact Us</p>
-          <svg
-            class="main_but_arrow"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="19"
-            viewBox="0 0 20 19"
-            fill="none"
-          >
-            <g clip-path="url(#clip0_655_3457)">
-              <path
-                d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
-                fill="#141751"
-              />
+      <div class="resources-section__programmatic" data-aos="flip-right">
+        <h2 class="resources-section__human-title">PROGRAMMATIC RESOURCES</h2>
+        <div class="resources-section__item">
+          <div class="resources-section__title-container" data-aos="fade-down">
+            <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
+            <h3 class="resources-section__item-title">NATURE</h3>
+          </div>
+          <p class="resources-section__item-text" data-aos="fade-down">
+            Data-driven algorithms and advanced software solutions
+          </p>
+        </div>
+        <div class="resources-section__item">
+          <div class="resources-section__title-container" data-aos="fade-down">
+            <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
+            <h3 class="resources-section__item-title">FUNCTION</h3>
+          </div>
+          <p class="resources-section__item-text" data-aos="fade-down">
+            Automate tasks and streamline processes
+          </p>
+        </div>
+        <div class="resources-section__item">
+          <div class="resources-section__title-container" data-aos="fade-down">
+            <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
+            <h3 class="resources-section__item-title">CAPABILITIES</h3>
+          </div>
+          <p class="resources-section__item-text" data-aos="fade-down">
+            Process vast data sets at high speed, 24/7 without fatigue
+          </p>
+        </div>
+        <div class="resources-section__item">
+          <div class="resources-section__title-container" data-aos="fade-down">
+            <img src="assets/resources/icon.png" alt="human" class="resources-section__icon" />
+            <h3 class="resources-section__item-title">APPLICATION</h3>
+          </div>
+          <p class="resources-section__item-text" data-aos="fade-down">
+            Ideal for scalable operations, repetitive tasks, and real-time data analysis
+          </p>
+        </div>
+      </div>
+    </div>
+    <a class="main_button dem" href="#" data-toggle="modal" data-target="#exampleModal">
+      <p>Try It now</p>
+      <svg class="main_but_arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
+        fill="none">
+        <g clip-path="url(#clip0_655_3457)">
+          <path
+            d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
+            fill="#141751" />
+        </g>
+        <defs>
+          <clipPath id="clip0_655_3457">
+            <rect width="20" height="18" fill="white" transform="translate(0 0.5)" />
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
+    <div class="about__menu">
+      <a href="#blending-resources" class="about__menu-item">Blending Resources</a>
+      <a href="#real-impact-with-ai" class="about__menu-item">Real Impact With AI</a>
+      <a href="#agents" class="about__menu-item">Agents</a>
+      <a href="#projects" class="about__menu-item">Projects</a>
+      <a href="#get-started" class="about__menu-item">Get Started</a>
+    </div>
+  </section>
+  <section class="departures" id="real-impact-with-ai">
+    <h2 class="departures__main-title">Real Impact with AI</h2>
+    <div class="departures__grid">
+      <div class="departures__grid-container sales">
+        <div class="departures__icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <g clip-path="url(#clip0_1179_6863)">
+              <mask id="mask0_1179_6863" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="-1" width="30"
+                height="31">
+                <path d="M0 -0.0125408H30V29.9875H0V-0.0125408Z" fill="white" />
+              </mask>
+              <g mask="url(#mask0_1179_6863)">
+                <path
+                  d="M8.62945 14.6023H2.1102C1.26838 14.6023 0.585938 13.9199 0.585938 13.0781V2.09756C0.585938 1.25574 1.26838 0.573299 2.1102 0.573299H23.7443L26.9084 3.73742"
+                  stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M19.9337 23.1401L14.1184 28.9554C13.5232 29.5506 12.5581 29.5506 11.9628 28.9554L4.19844 21.191C3.60313 20.5957 3.60313 19.6306 4.19844 19.0353L19.496 3.73775H27.7979L29.416 5.35594V13.6578L23.6625 19.4113"
+                  stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16.1738 13.421L19.4884 16.7355L20.8142 15.4097" stroke="#3A8ACA" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M23.6309 12.5923L22.4708 13.7524L19.1562 10.4378L20.3163 9.27772" stroke="#3A8ACA"
+                  stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M20.8145 12.0951L21.9746 10.935" stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M17.8312 18.3928L13.4395 16.1555L15.6767 20.5473" stroke="#3A8ACA" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15.3496 19.7708L17.0635 18.0569" stroke="#3A8ACA" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M11.5772 21.3324L11.5337 21.3759C11.0761 21.8335 10.3341 21.8335 9.87646 21.3759C9.41878 20.9182 9.41878 20.1763 9.87646 19.7186L10.7051 18.8899"
+                  stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M12.3638 23.8618L13.1924 23.0332C13.6501 22.5755 13.6501 21.8335 13.1924 21.3759C12.7348 20.9182 11.9928 20.9182 11.5352 21.3759"
+                  stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M26.8379 7.48775C26.8379 8.13497 26.3132 8.65962 25.666 8.65962C25.0188 8.65962 24.4941 8.13497 24.4941 7.48775C24.4941 6.84052 25.0188 6.31587 25.666 6.31587C26.3132 6.31587 26.8379 6.84052 26.8379 7.48775Z"
+                  stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M5.97461 10.9748L9.75396 4.28025" stroke="#3A8ACA" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M11.6938 9.915C11.6938 9.26766 11.169 8.74295 10.5217 8.74295C9.87437 8.74295 9.34961 9.26766 9.34961 9.915C9.34961 10.5623 9.87437 11.0871 10.5217 11.0871C11.169 11.0871 11.6938 10.5623 11.6938 9.915Z"
+                  stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M6.74846 5.26066C6.74846 4.61331 6.22369 4.08861 5.57641 4.08861C4.92906 4.08861 4.4043 4.61331 4.4043 5.26066C4.4043 5.908 4.92906 6.43271 5.57641 6.43271C6.22369 6.43271 6.74846 5.908 6.74846 5.26066Z"
+                  stroke="#3A8ACA" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M26.4844 6.66737L29.4142 3.73757" stroke="#3A8ACA" stroke-miterlimit="10"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </g>
             </g>
             <defs>
-              <clipPath id="clip0_655_3457">
-                <rect width="20" height="18" fill="white" transform="translate(0 0.5)" />
+              <clipPath id="clip0_1179_6863">
+                <rect width="30" height="30" fill="white" transform="translate(0 -0.0126953)" />
               </clipPath>
             </defs>
           </svg>
-        </a>
-      </div>
-    </section>
-    <section class="agent-section" id="agents">
-      <div class="agent-section__grid">
-        <div class="agent-section__title-container">
-          <h3 class="agent-section__main-title">agents</h3>
         </div>
-        <div class="agent-section__scrollable-row">
-          <div class="agent-section__item create">
-            <div class="agent-section__wrap first"></div>
-            <div class="agent-section__header-container">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                class="agent-section__icon"
-              >
-                <circle cx="10" cy="10" r="9" stroke="#141751" stroke-width="2" />
-              </svg>
-              <h2 class="agent-section__header-title">Create and train</h2>
-            </div>
-            <h3 class="agent-section__subtitle">Build AI Agents Tailored to Your Needs</h3>
-            <p class="agent-section__text">
-              We develop custom AI agents that are designed to fit your specific requirements,
-              training them with your unique data to ensure optimal performance. From initial setup
-              to deep learning integration, we create AI agents that deliver results from day one.
-            </p>
-          </div>
-          <div class="agent-section__item manage">
-            <div class="agent-section__wrap second"></div>
-            <div class="agent-section__header-container">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                class="agent-section__icon"
-              >
-                <circle cx="10" cy="10" r="9" stroke="#141751" stroke-width="2" />
-              </svg>
-              <h2 class="agent-section__header-title">Manage and update</h2>
-            </div>
-            <h3 class="agent-section__subtitle">Optimize and Evolve Your AI Agents</h3>
-            <p class="agent-section__text">
-              Let us handle the ongoing management and updates of your AI agents, ensuring they
-              remain effective and adaptable. We monitor performance, fine-tune settings, and
-              integrate the latest advancements to keep your AI agents running at their best.
-            </p>
-          </div>
+        <h3 class="departures__grid-title">Sales</h3>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            AI-driven sales forecasting for more accurate predictions.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Personalized product recommendations for improved customer experience.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Automated lead scoring to prioritize high-potential prospects.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">Chatbots for quick sales inquiries and conversion.</p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Analysis of customer behavior and trends to refine sales strategies.
+          </p>
         </div>
       </div>
-      <a class="main_button dem dem-agent" href="#" data-toggle="modal" data-target="#exampleModal">
-        <p>Try It now</p>
-        <svg
-          class="main_but_arrow"
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="19"
-          viewBox="0 0 20 19"
-          fill="none"
-        >
+      <div class="departures__grid-container hr">
+        <div class="departures__icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <g clip-path="url(#clip0_1179_7669)">
+              <path
+                d="M13 26C15.8645 26 18.5135 25.067 20.6645 23.4915L26.7335 29.5605C27.0165 29.8435 27.3935 30 27.794 30C28.1945 30 28.572 29.844 28.8545 29.5605L29.5605 28.855C29.8435 28.572 30 28.195 30 27.794C30 27.393 29.844 27.0165 29.5605 26.7335L23.4915 20.6645C25.067 18.514 26 15.8645 26 13C26 5.832 20.1685 0 13 0C5.8315 0 0 5.832 0 13C0 20.168 5.8315 26 13 26ZM29 27.794C29 27.928 28.948 28.053 28.8535 28.1475L28.147 28.8535C27.959 29.0425 27.6305 29.0425 27.4405 28.8535L23.1475 24.5605L24.5605 23.1475L28.8535 27.4405C28.9475 27.535 29 27.6605 29 27.794ZM23.8535 22.44L22.4405 23.853L21.4525 22.865C21.959 22.4305 22.431 21.9585 22.8655 21.452L23.8535 22.44ZM13 1C19.6165 1 25 6.3835 25 13C25 19.6165 19.6165 25 13 25C6.3835 25 1 19.6165 1 13C1 6.3835 6.3835 1 13 1Z"
+                fill="#3A8ACA" />
+              <path
+                d="M13 24C19.0655 24 24 19.0655 24 13C24 7.9135 20.553 3.519 15.6185 2.3135C15.3495 2.249 15.0795 2.4125 15.014 2.6805C14.9485 2.9485 15.113 3.2195 15.381 3.285C19.867 4.38 22.9995 8.375 22.9995 12.9995C22.9995 18.5135 18.5135 22.9995 12.9995 22.9995C7.4855 22.9995 3 18.514 3 13C3 7.486 7.486 3 13 3C13.2765 3 13.5 2.776 13.5 2.5C13.5 2.224 13.2765 2 13 2C6.9345 2 2 6.9345 2 13C2 19.0655 6.9345 24 13 24Z"
+                fill="#3A8ACA" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1179_7669">
+                <rect width="30" height="30" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <h3 class="departures__grid-title">HR AND RECRUITING</h3>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            AI-based recruitment tools for faster candidate screening.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Employee performance analytics for personalized development plans.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Chatbots for handling employee queries about HR policies.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Automation of administrative tasks like payroll and scheduling.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Predictive analytics for identifying employee engagement trends.
+          </p>
+        </div>
+      </div>
+      <div class="departures__grid-container service">
+        <div class="departures__icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <path
+              d="M22.8773 3.36613C21.2659 1.75822 19.2144 0.663621 16.9815 0.220462C14.7487 -0.222697 12.4346 0.00543773 10.3313 0.876079C8.22803 1.74672 6.42973 3.22086 5.16336 5.11247C3.89699 7.00409 3.2193 9.22842 3.21578 11.5048V11.7814C2.52188 12.028 1.92124 12.4833 1.49623 13.0847C1.07121 13.6861 0.842623 14.4042 0.841797 15.1407V20.1703C0.842882 21.1152 1.21871 22.021 1.88683 22.6891C2.55494 23.3573 3.46079 23.7331 4.40564 23.7341H7.50086C7.62518 23.7341 7.74441 23.6847 7.83232 23.5968C7.92022 23.5089 7.96961 23.3897 7.96961 23.2654V12.0454C7.96961 11.9211 7.92022 11.8019 7.83232 11.714C7.74441 11.6261 7.62518 11.5767 7.50086 11.5767H6.03883V11.505C6.03883 6.70796 9.94152 2.80533 14.7386 2.80533C19.5357 2.80533 23.4383 6.70767 23.4383 11.505V11.5767H21.9763C21.852 11.5767 21.7328 11.6261 21.6449 11.714C21.557 11.8019 21.5076 11.9211 21.5076 12.0454V23.2652C21.5076 23.3895 21.557 23.5088 21.6449 23.5967C21.7328 23.6846 21.852 23.734 21.9763 23.734H24.3417C24.195 24.8712 23.6395 25.9162 22.7789 26.674C21.9183 27.4317 20.8114 27.8505 19.6647 27.852H17.2907V27.1278C17.2907 27.0034 17.2413 26.8842 17.1534 26.7963C17.0655 26.7084 16.9463 26.659 16.822 26.659H13.848C13.4073 26.659 12.9846 26.8341 12.673 27.1457C12.3613 27.4574 12.1862 27.88 12.1862 28.3207C12.1862 28.7615 12.3613 29.1841 12.673 29.4957C12.9846 29.8074 13.4073 29.9825 13.848 29.9825H16.8217C16.946 29.9825 17.0653 29.9331 17.1532 29.8452C17.2411 29.7573 17.2905 29.638 17.2905 29.5137V28.7895H19.6645C21.0611 28.7878 22.4078 28.2699 23.4457 27.3355C24.4837 26.401 25.1396 25.1158 25.2874 23.727C26.1931 23.671 27.0433 23.2721 27.6653 22.6114C28.2872 21.9506 28.634 21.0778 28.6352 20.1704V15.1407C28.6342 14.4043 28.4056 13.6862 27.9805 13.0849C27.5555 12.4835 26.9548 12.0284 26.2609 11.7818V11.5052C26.2631 9.99221 25.9652 8.49381 25.3844 7.09673C24.8036 5.69966 23.9514 4.43165 22.8773 3.36613ZM16.3532 29.045H13.848C13.656 29.0448 13.4719 28.9684 13.3361 28.8326C13.2003 28.6969 13.124 28.5128 13.1237 28.3208C13.124 28.1288 13.2003 27.9447 13.3361 27.8089C13.4719 27.6731 13.656 27.5968 13.848 27.5966H16.353L16.3532 29.045ZM4.15867 22.7845C3.50813 22.7223 2.90405 22.4201 2.46417 21.9368C2.0243 21.4535 1.78014 20.8237 1.7793 20.1702V15.1407C1.78016 14.4871 2.02432 13.8574 2.46419 13.3741C2.90406 12.8908 3.50813 12.5885 4.15867 12.5263V22.7845ZM7.03211 12.5142V22.7965H5.09617V12.5142H7.03211ZM24.381 22.7965H22.4451V12.5142H24.381V22.7965ZM25.0715 11.5767H24.3758V11.505C24.3695 8.9532 23.3514 6.50802 21.5447 4.70582C19.7381 2.90362 17.2904 1.89153 14.7386 1.89153C12.1867 1.89153 9.73905 2.90362 7.93239 4.70582C6.12574 6.50802 5.10762 8.9532 5.10133 11.505V11.5767H4.40564C4.3208 11.5767 4.23689 11.5807 4.15369 11.5866V11.505C4.15352 5.66839 8.90195 0.919955 14.7386 0.919955C20.5752 0.919955 25.3237 5.66839 25.3237 11.505V11.5866C25.2403 11.5807 25.1566 11.5767 25.0715 11.5767ZM27.6979 15.1407V20.1703C27.6971 20.8239 27.4529 21.4537 27.013 21.937C26.5731 22.4203 25.969 22.7225 25.3185 22.7847V12.5261C25.969 12.5883 26.5732 12.8906 27.0131 13.3739C27.453 13.8573 27.6971 14.4871 27.6979 15.1407Z"
+              fill="#3A8ACA" />
+          </svg>
+        </div>
+        <h3 class="departures__grid-title">Customer Service</h3>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            AI chatbots for 24/7 customer support and faster issue resolution.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Sentiment analysis to better understand customer feedback.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Personalized customer interactions through data analysis.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Automated ticket routing for efficient service handling.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">AI-driven self-service portals for quick solutions.</p>
+        </div>
+      </div>
+      <div class="departures__grid-container techno">
+        <div class="departures__icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <g clip-path="url(#clip0_1179_6944)">
+              <path
+                d="M27.8926 13.2129C27.0693 13.2129 26.3748 13.7726 26.1683 14.5312H19.5886C19.5412 14.0374 19.42 13.5649 19.2359 13.1249H20.9379C21.0021 13.1249 21.0655 13.1118 21.1244 13.0863L23.215 12.1797C23.5428 12.5886 24.046 12.8511 24.6096 12.8511C25.595 12.8511 26.3967 12.0494 26.3967 11.064C26.3967 10.0787 25.595 9.27691 24.6096 9.27691C23.6241 9.27691 22.8225 10.0787 22.8225 11.064C22.8225 11.151 22.829 11.2363 22.8411 11.32L20.8407 12.1874H18.7143C17.8306 10.9419 16.3783 10.1267 14.7383 10.1267C12.0512 10.1267 9.86504 12.3129 9.86504 15C9.86504 17.6871 12.0512 19.8733 14.7383 19.8733C16.3783 19.8733 17.8306 19.0581 18.7143 17.8125H20.8407L22.8411 18.68C22.829 18.7636 22.8225 18.849 22.8225 18.9359C22.8225 19.9213 23.6241 20.723 24.6096 20.723C25.595 20.723 26.3967 19.9213 26.3967 18.9359C26.3967 17.9505 25.595 17.1488 24.6096 17.1488C24.046 17.1488 23.5428 17.4114 23.215 17.8202L21.1244 16.9137C21.0656 16.8881 21.0021 16.875 20.9379 16.875H19.2359C19.42 16.435 19.5412 15.9625 19.5886 15.4688H26.1683C26.3748 16.2274 27.0694 16.7871 27.8926 16.7871C28.878 16.7871 29.6797 15.9854 29.6797 15C29.6797 14.0146 28.878 13.2129 27.8926 13.2129ZM24.6096 10.2144C25.078 10.2144 25.4592 10.5956 25.4592 11.064C25.4592 11.5325 25.078 11.9136 24.6096 11.9136C24.1411 11.9136 23.76 11.5325 23.76 11.064C23.76 10.5956 24.1411 10.2144 24.6096 10.2144ZM24.6096 18.0863C25.078 18.0863 25.4592 18.4675 25.4592 18.9359C25.4592 19.4044 25.078 19.7855 24.6096 19.7855C24.1411 19.7855 23.76 19.4044 23.76 18.9359C23.76 18.4675 24.1411 18.0863 24.6096 18.0863ZM14.7383 18.9358C12.5681 18.9358 10.8025 17.1702 10.8025 15C10.8025 12.8298 12.5681 11.0642 14.7383 11.0642C16.9085 11.0642 18.6741 12.8298 18.6741 15C18.6741 17.1702 16.9085 18.9358 14.7383 18.9358ZM27.8926 15.8496C27.4241 15.8496 27.043 15.4685 27.043 15C27.043 14.5315 27.4241 14.1504 27.8926 14.1504C28.361 14.1504 28.7422 14.5315 28.7422 15C28.7422 15.4685 28.361 15.8496 27.8926 15.8496ZM26.6799 21.7389C25.6944 21.7389 24.8928 22.5407 24.8928 23.526C24.8928 23.8488 24.9792 24.1516 25.1296 24.4133L23.2643 26.2786L21.8813 24.8955C21.7232 24.7375 21.4755 24.7131 21.2896 24.8371C20.0008 25.6974 18.5783 26.2869 17.0618 26.5894C16.8426 26.6331 16.6847 26.8255 16.6847 27.0491V29.0039H12.7919V27.049C12.7919 26.8255 12.6341 26.633 12.4148 26.5893C10.8993 26.2873 9.47686 25.6976 8.18709 24.837C8.00123 24.7129 7.75355 24.7374 7.59547 24.8955L6.21236 26.2786L3.4598 23.5259L4.84285 22.1429C5.00094 21.9848 5.02537 21.7371 4.90127 21.5511C4.041 20.2622 3.45143 18.8398 3.14902 17.3235C3.10531 17.1043 2.91289 16.9464 2.68936 16.9464H0.734375V13.0536H2.68924C2.91277 13.0536 3.10525 12.8957 3.14896 12.6764C3.45107 11.1608 4.04064 9.73834 4.90121 8.44869C5.02531 8.26277 5.00082 8.01516 4.84273 7.85707L3.45975 6.47402L6.21242 3.72141L7.59541 5.10445C7.7535 5.26248 8.00123 5.28691 8.18709 5.16281C9.47592 4.30248 10.8983 3.71297 12.4149 3.41051C12.6341 3.3668 12.7919 3.17438 12.7919 2.95078V0.996094H16.6847V2.95078C16.6847 3.17432 16.8426 3.3668 17.0618 3.41051C18.5773 3.71256 19.9998 4.30213 21.2896 5.16275C21.4756 5.28691 21.7232 5.26236 21.8813 5.10434L23.2643 3.72135L25.1295 5.58662C24.9791 5.8483 24.8926 6.15117 24.8926 6.47402C24.8926 7.45939 25.6943 8.26113 26.6797 8.26113C27.6652 8.26113 28.4669 7.45939 28.4669 6.47402C28.4669 5.48865 27.6652 4.68691 26.6797 4.68691C26.3569 4.68691 26.0541 4.7734 25.7924 4.92375L23.5957 2.72707C23.4127 2.54396 23.1159 2.54402 22.9329 2.72701L21.4861 4.17369C20.2897 3.42586 18.9931 2.8885 17.6221 2.57215V0.527344C17.6221 0.268477 17.4123 0.0585938 17.1534 0.0585938H12.3231C12.0642 0.0585938 11.8544 0.268477 11.8544 0.527344V2.57215C10.4826 2.88879 9.18611 3.42621 7.99051 4.17375L6.54383 2.72707C6.36084 2.54414 6.06406 2.54408 5.88096 2.72707L2.46541 6.14256C2.28236 6.32561 2.28236 6.62238 2.46541 6.80549L3.91221 8.25229C3.16443 9.44848 2.62701 10.745 2.31066 12.1161H0.265625C0.0067578 12.1161 -0.203125 12.326 -0.203125 12.5848V17.4151C-0.203125 17.674 0.0067578 17.8839 0.265625 17.8839H2.31066C2.62725 19.2554 3.16461 20.5519 3.91215 21.7476L2.46535 23.1943C2.2823 23.3774 2.2823 23.6742 2.46535 23.8572L5.88084 27.2728C5.96873 27.3608 6.08797 27.4102 6.2123 27.4102C6.33664 27.4102 6.45588 27.3608 6.54377 27.2729L7.99062 25.826C9.18687 26.5737 10.4836 27.1112 11.8544 27.4276V29.4727C11.8544 29.7315 12.0643 29.9414 12.3232 29.9414H17.1535C17.4123 29.9414 17.6222 29.7315 17.6222 29.4727V27.4277C18.9939 27.1111 20.2905 26.5737 21.4861 25.8263L22.9329 27.273C23.116 27.456 23.4127 27.456 23.5958 27.273L25.7925 25.0763C26.0542 25.2266 26.3571 25.3131 26.6799 25.3131C27.6653 25.3131 28.467 24.5113 28.467 23.526C28.467 22.5406 27.6653 21.7389 26.6799 21.7389ZM26.6797 5.62441C27.1482 5.62441 27.5294 6.00557 27.5294 6.47402C27.5294 6.94248 27.1482 7.32363 26.6797 7.32363C26.2113 7.32363 25.8301 6.94248 25.8301 6.47402C25.8301 6.00557 26.2113 5.62441 26.6797 5.62441ZM26.6799 24.3756C26.2114 24.3756 25.8303 23.9945 25.8303 23.526C25.8303 23.0576 26.2114 22.6764 26.6799 22.6764C27.1483 22.6764 27.5295 23.0576 27.5295 23.526C27.5295 23.9945 27.1483 24.3756 26.6799 24.3756ZM20.4697 10.5188C21.4552 10.5188 22.2569 9.71707 22.2569 8.7317C22.2569 7.74633 21.4552 6.94459 20.4697 6.94459C20.0546 6.94459 19.6723 7.08732 19.3686 7.32568C17.9737 6.48199 16.3812 6.03721 14.7382 6.03721C9.79613 6.03721 5.77543 10.0579 5.77543 15.0001C5.77543 19.9421 9.79613 23.9629 14.7382 23.9629C16.3811 23.9629 17.9737 23.5181 19.3685 22.6744C19.6723 22.9128 20.0546 23.0555 20.4697 23.0555C21.4551 23.0555 22.2568 22.2538 22.2568 21.2684C22.2568 20.283 21.4551 19.4813 20.4697 19.4813C19.4843 19.4813 18.6826 20.283 18.6826 21.2684C18.6826 21.4976 18.7264 21.7165 18.8053 21.918C17.5756 22.643 16.1788 23.0254 14.7382 23.0254C10.313 23.0254 6.71287 19.4252 6.71287 15.0001C6.71287 10.5749 10.313 6.97471 14.7382 6.97471C16.1788 6.97471 17.5756 7.35709 18.8053 8.08201C18.7264 8.28352 18.6826 8.50254 18.6826 8.7317C18.6826 9.71707 19.4844 10.5188 20.4697 10.5188ZM20.4697 20.4187C20.9382 20.4187 21.3194 20.7998 21.3194 21.2683C21.3194 21.7368 20.9382 22.1179 20.4697 22.1179C20.0013 22.1179 19.6201 21.7368 19.6201 21.2683C19.6201 20.7998 20.0013 20.4187 20.4697 20.4187ZM20.4697 7.88209C20.9382 7.88209 21.3194 8.26324 21.3194 8.7317C21.3194 9.20016 20.9382 9.58131 20.4697 9.58131C20.0013 9.58131 19.6201 9.20016 19.6201 8.7317C19.6201 8.26324 20.0013 7.88209 20.4697 7.88209ZM14.7383 12.9199C13.5913 12.9199 12.6582 13.853 12.6582 15C12.6582 16.147 13.5913 17.0801 14.7383 17.0801C15.8853 17.0801 16.8184 16.147 16.8184 15C16.8184 13.853 15.8853 12.9199 14.7383 12.9199ZM14.7383 16.1426C14.1083 16.1426 13.5957 15.63 13.5957 15C13.5957 14.37 14.1083 13.8574 14.7383 13.8574C15.3683 13.8574 15.8809 14.37 15.8809 15C15.8809 15.63 15.3683 16.1426 14.7383 16.1426Z"
+                fill="#3A8ACA" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1179_6944">
+                <rect width="30" height="30" fill="white" transform="translate(-0.261719)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <h3 class="departures__grid-title">Technological</h3>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Automation of routine IT tasks and system maintenance.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Enhanced cybersecurity through AI-based threat detection.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Machine learning for optimizing software performance.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">Predictive maintenance in hardware and machinery.</p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            AI integration in IoT for smarter, connected devices.
+          </p>
+        </div>
+      </div>
+      <div class="departures__grid-container marketing">
+        <div class="departures__icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <g clip-path="url(#clip0_1179_6957)">
+              <path
+                d="M4.99782 29.4693H2.34292C1.71444 29.4693 1.20508 28.9599 1.20508 28.3314V19.6082C1.20508 18.9797 1.71444 18.4703 2.34292 18.4703H4.99782C5.6263 18.4703 6.13565 18.9797 6.13565 19.6082V28.3314C6.13565 28.9599 5.62624 29.4693 4.99782 29.4693ZM2.34292 19.2289C2.13356 19.2289 1.96364 19.3988 1.96364 19.6082V28.3314C1.96364 28.5408 2.13356 28.7107 2.34292 28.7107H4.99782C5.20717 28.7107 5.37709 28.5408 5.37709 28.3314V19.6082C5.37709 19.3988 5.20717 19.2289 4.99782 19.2289H2.34292Z"
+                fill="#3A8ACA" />
+              <path
+                d="M25.4783 29.4692H22.8234C22.1949 29.4692 21.6855 28.9599 21.6855 28.3314V14.2983C21.6855 13.6698 22.1949 13.1605 22.8234 13.1605H25.4783C26.1068 13.1605 26.6161 13.6698 26.6161 14.2983V28.3314C26.6161 28.9599 26.1067 29.4692 25.4783 29.4692ZM22.8233 13.919C22.614 13.919 22.444 14.0889 22.444 14.2983V28.3314C22.444 28.5408 22.614 28.7107 22.8233 28.7107H25.4782C25.6876 28.7107 25.8575 28.5408 25.8575 28.3314V14.2983C25.8575 14.0889 25.6876 13.919 25.4782 13.919H22.8233Z"
+                fill="#3A8ACA" />
+              <path
+                d="M11.824 29.4693H9.16909C8.54061 29.4693 8.03125 28.9599 8.03125 28.3314V16.1947C8.03125 15.5662 8.54061 15.0569 9.16909 15.0569H11.824C12.4525 15.0569 12.9618 15.5662 12.9618 16.1947V28.3314C12.9618 28.9599 12.4525 29.4693 11.824 29.4693ZM9.16909 15.8154C8.95973 15.8154 8.78981 15.9854 8.78981 16.1947V28.3314C8.78981 28.5408 8.95973 28.7107 9.16909 28.7107H11.824C12.0333 28.7107 12.2033 28.5408 12.2033 28.3314V16.1947C12.2033 15.9854 12.0333 15.8154 11.824 15.8154H9.16909Z"
+                fill="#3A8ACA" />
+              <path
+                d="M18.6521 29.4692H15.9972C15.3687 29.4692 14.8594 28.9598 14.8594 28.3313V21.1252C14.8594 20.4967 15.3687 19.9874 15.9972 19.9874H18.6521C19.2806 19.9874 19.7899 20.4967 19.7899 21.1252V28.3313C19.7899 28.9598 19.2806 29.4692 18.6521 29.4692ZM15.9972 20.7459C15.7879 20.7459 15.6179 20.9158 15.6179 21.1252V28.3313C15.6179 28.5407 15.7879 28.7106 15.9972 28.7106H18.6521C18.8614 28.7106 19.0314 28.5407 19.0314 28.3313V21.1252C19.0314 20.9158 18.8614 20.7459 18.6521 20.7459H15.9972Z"
+                fill="#3A8ACA" />
+              <path
+                d="M16.8253 16.6373C16.5234 16.638 16.234 16.5182 16.0209 16.3043L9.86909 10.1525C9.7212 10.0046 9.48073 10.0046 9.33278 10.1525L3.75937 15.7263C3.30919 16.156 2.60032 16.156 2.15008 15.7263L0.333371 13.9092C-0.111124 13.465 -0.111124 12.7445 0.333371 12.2999L8.79647 3.83681C9.24137 3.39384 9.96085 3.39384 10.4058 3.83681L16.5572 9.9886C16.707 10.1323 16.9437 10.1323 17.0935 9.9886L22.6643 4.41783C22.8122 4.26953 22.8122 4.02947 22.6643 3.88152L22.3897 3.60694C21.9452 3.16245 21.9456 2.44221 22.3897 1.99766C22.5486 1.83875 22.7508 1.73064 22.9711 1.68664L28.639 0.552962C29.2553 0.42968 29.8546 0.829467 29.9778 1.44576C30.0074 1.59289 30.0074 1.74465 29.9778 1.89178L28.8441 7.55964C28.7209 8.17594 28.1216 8.57531 27.5053 8.45209C27.285 8.40809 27.0828 8.29963 26.9239 8.14107L26.6265 7.84371C26.4767 7.70033 26.2405 7.70033 26.0906 7.84371L17.6298 16.3043C17.417 16.5182 17.1272 16.638 16.8253 16.6373ZM9.6009 9.28354C9.90278 9.28278 10.1926 9.4026 10.4057 9.61618L16.5571 15.7676C16.707 15.9114 16.9436 15.9114 17.0934 15.7676L25.5539 7.30751C26.0041 6.87778 26.7126 6.87778 27.1628 7.30751L27.4601 7.60488C27.608 7.75318 27.8485 7.75318 27.9965 7.60523C28.0495 7.55214 28.0856 7.48464 28.1004 7.41105L29.2341 1.7443C29.2758 1.5391 29.1434 1.33883 28.9382 1.29675C28.8882 1.2865 28.8366 1.2865 28.7869 1.29675L23.1201 2.43037C22.9146 2.47057 22.7807 2.67008 22.8209 2.87563C22.8353 2.94999 22.8721 3.01825 22.926 3.07169L23.2005 3.34626C23.6447 3.7904 23.6447 4.51099 23.2005 4.95514L17.6298 10.5244C17.1796 10.9545 16.4707 10.9545 16.0205 10.5244L9.86903 4.37312C9.72114 4.22523 9.48067 4.22523 9.33272 4.37312L0.869624 12.8362C0.721323 12.9841 0.721323 13.2242 0.869273 13.3725L0.869624 13.3729L2.68633 15.19C2.83423 15.3383 3.07434 15.3383 3.22265 15.1904L3.223 15.19L8.79834 9.61466C9.01151 9.40225 9.30014 9.28319 9.6009 9.28354Z"
+                fill="#3A8ACA" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1179_6957">
+                <rect width="30" height="30" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <h3 class="departures__grid-title">Marketing</h3>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            AI-based content creation and social media scheduling.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Predictive analytics for identifying customer trends.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Personalized marketing campaigns based on customer data.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Programmatic advertising for more targeted ad placements.
+          </p>
+        </div>
+        <div class="departures__grid-item">
+          <img src="assets/resources/icon.png" alt="sales" class="departures__grid-icon" />
+          <p class="departures__grid-text">
+            Sentiment analysis for real-time brand perception monitoring.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="departures__scroll-container">
+      <img class="departures__scroll" src="../digital-marketing/assets/img/industries/scroll.png" />
+    </div>
+    <div class="departures__cta">
+      <p class="departures__cta-text">
+        We use custom AI and programmatic solutions to automate workflows and optimize ad spend.
+        Contact us to find out how we can help.
+      </p>
+      <a class="main_button white_button dem dem-pad" href="#" data-toggle="modal" data-target="#exampleModal">
+        <p>Contact Us</p>
+        <svg class="main_but_arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
+          fill="none">
           <g clip-path="url(#clip0_655_3457)">
             <path
               d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
-              fill="#141751"
-            />
+              fill="#141751" />
           </g>
           <defs>
             <clipPath id="clip0_655_3457">
@@ -757,225 +663,217 @@
           </defs>
         </svg>
       </a>
-      <div class="agent__scroll-container">
-        <img
-          class="agent__scroll"
-          src="../digital-marketing/assets/img/industries/scroll.png"
-        />
+    </div>
+  </section>
+  <section class="agent-section" id="agents">
+    <div class="agent-section__grid">
+      <div class="agent-section__title-container">
+        <h3 class="agent-section__main-title">agents</h3>
       </div>
-    </section>
-    <section class="cory-section" id="projects" data-aos="fade-down">
-      <div class="cory-section__text-container">
-        <h2 class="cory-section__title">Cory AI by Ironsail</h2>
-        <p class="cory-section__text">
-          At Ironsail, we developed Cory, a powerful AI chatbot that automates interactions and streamlines communication processes. Cory integrates seamlessly with various platforms, adapts to client needs, and continuously learns through machine learning, delivering real-time support and reducing operational workload.
-        </p>
+      <div class="agent-section__scrollable-row">
+        <div class="agent-section__item create">
+          <div class="agent-section__wrap first"></div>
+          <div class="agent-section__header-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+              class="agent-section__icon">
+              <circle cx="10" cy="10" r="9" stroke="#141751" stroke-width="2" />
+            </svg>
+            <h2 class="agent-section__header-title">Create and train</h2>
+          </div>
+          <h3 class="agent-section__subtitle">Build AI Agents Tailored to Your Needs</h3>
+          <p class="agent-section__text">
+            We develop custom AI agents that are designed to fit your specific requirements,
+            training them with your unique data to ensure optimal performance. From initial setup
+            to deep learning integration, we create AI agents that deliver results from day one.
+          </p>
+        </div>
+        <div class="agent-section__item manage">
+          <div class="agent-section__wrap second"></div>
+          <div class="agent-section__header-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+              class="agent-section__icon">
+              <circle cx="10" cy="10" r="9" stroke="#141751" stroke-width="2" />
+            </svg>
+            <h2 class="agent-section__header-title">Manage and update</h2>
+          </div>
+          <h3 class="agent-section__subtitle">Optimize and Evolve Your AI Agents</h3>
+          <p class="agent-section__text">
+            Let us handle the ongoing management and updates of your AI agents, ensuring they
+            remain effective and adaptable. We monitor performance, fine-tune settings, and
+            integrate the latest advancements to keep your AI agents running at their best.
+          </p>
+        </div>
       </div>
-      <div class="cory-section__image-container">
-        <img src="assets/cory/main-image.png" alt="photo" class="photo-main" />
-        <img src="assets/cory/image-mobile.png" alt="photo" class="photo-main-mobile" />
-      </div>
-      <div class="cory-section__title-container">
-        <h2>AI CHATS</h2>
-      </div>
-    </section>
-    <section class="astrid-section" data-aos="fade-down">
-      <div class="astrid-section__text-container">
-        <h2 class="astrid-section__title">Astrid AI by Ironsail</h2>
-        <p class="astrid-section__text">
-          Ironsail designed and implemented Astrid AI - an advanced AI chatbot capable of training on any database and seamlessly integrating with any chat tool through API connections. Whether it’s customer support, internal training, or sales inquiries, Astrid AI adapts to your unique needs, delivering smart, efficient responses across all your communication channels.
-        </p>
-      </div>
-      <div class="astrid-section__image-container">
-        <img src="assets/astrid/main-image.png" alt="photo" class="photo" />
-        <img src="assets/astrid/image-mob.png" alt="photo" class="photo-mob" />
-      </div>
-      <div class="astrid-section__title-container">
-        <h2>SUPPORT AI</h2>
-      </div>
-    </section>
-    <section class="form" id="get-started">
-      <div class="form_wrapper">
-        <script
-          type="text/javascript"
-          src="https://form.jotform.com/jsform/243053802326348"
-        ></script>
-      </div>
-    </section>
-    <footer>
-      <div class="footer_wrapper">
-        <a href="#" class="footer-go-up">
-          <svg
-            class="footer-go-up-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            width="109"
-            height="109"
-            viewBox="0 0 109 109"
-            fill="none"
-          >
-            <rect width="109" height="109" rx="54.5" fill="#3A8ACA" />
-            <path
-              d="M32.3477 52.654L54.5 30.5016L76.6524 52.654M54.5 33.5783V78.4984"
-              stroke="white"
-              stroke-width="4"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </a>
-        <div class="footer_content">
-          <div class="footer-logo-links_wrapper">
-            <a href="/">
-              <img src="../assets/img/global/logo.png" alt="logo" class="footer-logo" />
-            </a>
-            <p class="footer_text">Follow us</p>
-            <div class="footer-icons_wrapper">
-              <a class="footer_icon" href="https://www.facebook.com/ironsailsolutions/">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="37"
-                  height="37"
-                  viewBox="0 0 37 37"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+    </div>
+    <a class="main_button dem dem-agent" href="#" data-toggle="modal" data-target="#exampleModal">
+      <p>Try It now</p>
+      <svg class="main_but_arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"
+        fill="none">
+        <g clip-path="url(#clip0_655_3457)">
+          <path
+            d="M16.586 11.5339L16.8456 4.10138L9.41312 3.84186L9.36952 5.0911L14.6695 5.27615L2.72834 16.4114L3.58083 17.3256L15.5219 6.19042L15.3368 11.4902L16.586 11.5339Z"
+            fill="#141751" />
+        </g>
+        <defs>
+          <clipPath id="clip0_655_3457">
+            <rect width="20" height="18" fill="white" transform="translate(0 0.5)" />
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
+    <div class="agent__scroll-container">
+      <img class="agent__scroll" src="../digital-marketing/assets/img/industries/scroll.png" />
+    </div>
+  </section>
+  <section class="cory-section" id="projects" data-aos="fade-down">
+    <div class="cory-section__text-container">
+      <h2 class="cory-section__title">Cory AI by Ironsail</h2>
+      <p class="cory-section__text">
+        At Ironsail, we developed Cory, a powerful AI chatbot that automates interactions and streamlines communication
+        processes. Cory integrates seamlessly with various platforms, adapts to client needs, and continuously learns
+        through machine learning, delivering real-time support and reducing operational workload.
+      </p>
+    </div>
+    <div class="cory-section__image-container">
+      <img src="assets/cory/main-image.png" alt="photo" class="photo-main" />
+      <img src="assets/cory/image-mobile.png" alt="photo" class="photo-main-mobile" />
+    </div>
+    <div class="cory-section__title-container">
+      <h2>AI CHATS</h2>
+    </div>
+  </section>
+  <section class="astrid-section" data-aos="fade-down">
+    <div class="astrid-section__text-container">
+      <h2 class="astrid-section__title">Astrid AI by Ironsail</h2>
+      <p class="astrid-section__text">
+        Ironsail designed and implemented Astrid AI - an advanced AI chatbot capable of training on any database and
+        seamlessly integrating with any chat tool through API connections. Whether it’s customer support, internal
+        training, or sales inquiries, Astrid AI adapts to your unique needs, delivering smart, efficient responses
+        across all your communication channels.
+      </p>
+    </div>
+    <div class="astrid-section__image-container">
+      <img src="assets/astrid/main-image.png" alt="photo" class="photo" />
+      <img src="assets/astrid/image-mob.png" alt="photo" class="photo-mob" />
+    </div>
+    <div class="astrid-section__title-container">
+      <h2>SUPPORT AI</h2>
+    </div>
+  </section>
+  <section class="form" id="get-started">
+    <div class="form_wrapper">
+      <script type="text/javascript" src="https://form.jotform.com/jsform/243053802326348"></script>
+    </div>
+  </section>
+  <footer>
+    <div class="footer_wrapper">
+      <a href="#" class="footer-go-up">
+        <svg class="footer-go-up-icon" xmlns="http://www.w3.org/2000/svg" width="109" height="109" viewBox="0 0 109 109"
+          fill="none">
+          <rect width="109" height="109" rx="54.5" fill="#3A8ACA" />
+          <path d="M32.3477 52.654L54.5 30.5016L76.6524 52.654M54.5 33.5783V78.4984" stroke="white" stroke-width="4"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+      <div class="footer_content">
+        <div class="footer-logo-links_wrapper">
+          <a href="/">
+            <img src="../assets/img/global/logo.png" alt="logo" class="footer-logo" />
+          </a>
+          <p class="footer_text">Follow us</p>
+          <div class="footer-icons_wrapper">
+            <a class="footer_icon" href="https://www.facebook.com/ironsailsolutions/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M20.5392 32.0088V20.067H24.6242L25.2371 15.4116H20.5392V12.4399C20.5392 11.0925 20.9191 10.1742 22.8913 10.1742L25.4025 10.1732V6.00929C24.9682 5.95394 23.4775 5.82703 21.7424 5.82703C18.1193 5.82703 15.6389 7.99615 15.6389 11.9788V15.4116H11.5415V20.067H15.6389V32.0088H20.5392Z"
+                  fill="white" />
+                <mask id="mask0_639_4927" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="11" y="5"
+                  width="15" height="28">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M20.5392 32.0088V20.067H24.6242L25.2371 15.4116H20.5392V12.4399C20.5392 11.0925 20.9191 10.1742 22.8913 10.1742L25.4025 10.1732V6.00929C24.9682 5.95394 23.4775 5.82703 21.7424 5.82703C18.1193 5.82703 15.6389 7.99615 15.6389 11.9788V15.4116H11.5415V20.067H15.6389V32.0088H20.5392Z"
-                    fill="white"
-                  />
-                  <mask
-                    id="mask0_639_4927"
-                    style="mask-type: luminance"
-                    maskUnits="userSpaceOnUse"
-                    x="11"
-                    y="5"
-                    width="15"
-                    height="28"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M20.5392 32.0088V20.067H24.6242L25.2371 15.4116H20.5392V12.4399C20.5392 11.0925 20.9191 10.1742 22.8913 10.1742L25.4025 10.1732V6.00929C24.9682 5.95394 23.4775 5.82703 21.7424 5.82703C18.1193 5.82703 15.6389 7.99615 15.6389 11.9788V15.4116H11.5415V20.067H15.6389V32.0088H20.5392Z"
-                      fill="white"
-                    />
-                  </mask>
-                  <g mask="url(#mask0_639_4927)"></g>
-                </svg>
-              </a>
+                    fill="white" />
+                </mask>
+                <g mask="url(#mask0_639_4927)"></g>
+              </svg>
+            </a>
 
-              <a class="footer_icon" href="https://www.instagram.com/ironsail/">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="37"
-                  height="37"
-                  viewBox="0 0 37 37"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+            <a class="footer_icon" href="https://www.instagram.com/ironsail/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.9007 4.0166H25.0984C29.5807 4.0166 33.2272 7.6631 33.227 12.145V25.3428C33.227 29.8247 29.5807 33.4711 25.0984 33.4711H11.9007C7.41878 33.4711 3.77246 29.8248 3.77246 25.3428V12.145C3.77246 7.6631 7.41878 4.0166 11.9007 4.0166ZM25.0986 30.8578C28.1397 30.8578 30.6138 28.3838 30.6138 25.3428H30.6137V12.145C30.6137 9.1041 28.1395 6.62995 25.0984 6.62995H11.9007C8.85978 6.62995 6.38581 9.1041 6.38581 12.145V25.3428C6.38581 28.3838 8.85978 30.858 11.9007 30.8578H25.0986ZM10.7852 18.7438C10.7852 14.4899 14.2457 11.0293 18.4994 11.0293C22.7532 11.0293 26.2137 14.4899 26.2137 18.7438C26.2137 22.9974 22.7532 26.4579 18.4994 26.4579C14.2457 26.4579 10.7852 22.9974 10.7852 18.7438ZM13.4417 18.7439C13.4417 21.5328 15.7109 23.8017 18.4997 23.8017C21.2886 23.8017 23.5578 21.5328 23.5578 18.7439C23.5578 15.9547 21.2888 13.6857 18.4997 13.6857C15.7107 13.6857 13.4417 15.9547 13.4417 18.7439Z"
+                  fill="white" />
+                <mask id="mask0_639_4932" style="mask-type: luminance" maskUnits="userSpaceOnUse" x="3" y="4" width="31"
+                  height="30">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M11.9007 4.0166H25.0984C29.5807 4.0166 33.2272 7.6631 33.227 12.145V25.3428C33.227 29.8247 29.5807 33.4711 25.0984 33.4711H11.9007C7.41878 33.4711 3.77246 29.8248 3.77246 25.3428V12.145C3.77246 7.6631 7.41878 4.0166 11.9007 4.0166ZM25.0986 30.8578C28.1397 30.8578 30.6138 28.3838 30.6138 25.3428H30.6137V12.145C30.6137 9.1041 28.1395 6.62995 25.0984 6.62995H11.9007C8.85978 6.62995 6.38581 9.1041 6.38581 12.145V25.3428C6.38581 28.3838 8.85978 30.858 11.9007 30.8578H25.0986ZM10.7852 18.7438C10.7852 14.4899 14.2457 11.0293 18.4994 11.0293C22.7532 11.0293 26.2137 14.4899 26.2137 18.7438C26.2137 22.9974 22.7532 26.4579 18.4994 26.4579C14.2457 26.4579 10.7852 22.9974 10.7852 18.7438ZM13.4417 18.7439C13.4417 21.5328 15.7109 23.8017 18.4997 23.8017C21.2886 23.8017 23.5578 21.5328 23.5578 18.7439C23.5578 15.9547 21.2888 13.6857 18.4997 13.6857C15.7107 13.6857 13.4417 15.9547 13.4417 18.7439Z"
-                    fill="white"
-                  />
-                  <mask
-                    id="mask0_639_4932"
-                    style="mask-type: luminance"
-                    maskUnits="userSpaceOnUse"
-                    x="3"
-                    y="4"
-                    width="31"
-                    height="30"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M11.9007 4.0166H25.0984C29.5807 4.0166 33.2272 7.6631 33.227 12.145V25.3428C33.227 29.8247 29.5807 33.4711 25.0984 33.4711H11.9007C7.41878 33.4711 3.77246 29.8248 3.77246 25.3428V12.145C3.77246 7.6631 7.41878 4.0166 11.9007 4.0166ZM25.0986 30.8578C28.1397 30.8578 30.6138 28.3838 30.6138 25.3428H30.6137V12.145C30.6137 9.1041 28.1395 6.62995 25.0984 6.62995H11.9007C8.85978 6.62995 6.38581 9.1041 6.38581 12.145V25.3428C6.38581 28.3838 8.85978 30.858 11.9007 30.8578H25.0986ZM10.7852 18.7438C10.7852 14.4899 14.2457 11.0293 18.4994 11.0293C22.7532 11.0293 26.2137 14.4899 26.2137 18.7438C26.2137 22.9974 22.7532 26.4579 18.4994 26.4579C14.2457 26.4579 10.7852 22.9974 10.7852 18.7438ZM13.4417 18.7439C13.4417 21.5328 15.7109 23.8017 18.4997 23.8017C21.2886 23.8017 23.5578 21.5328 23.5578 18.7439C23.5578 15.9547 21.2888 13.6857 18.4997 13.6857C15.7107 13.6857 13.4417 15.9547 13.4417 18.7439Z"
-                      fill="white"
-                    />
-                  </mask>
-                  <g mask="url(#mask0_639_4932)"></g>
-                </svg>
-              </a>
+                    fill="white" />
+                </mask>
+                <g mask="url(#mask0_639_4932)"></g>
+              </svg>
+            </a>
 
-              <a class="footer_icon" href="https://www.linkedin.com/company/ironsail/">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  viewBox="0 0 28 28"
-                  fill="none"
-                >
-                  <path
-                    d="M24.8 0.181641H3.2C1.715 0.181641 0.5 1.39664 0.5 2.88164V24.4816C0.5 25.9666 1.715 27.1816 3.2 27.1816H24.8C26.285 27.1816 27.5 25.9666 27.5 24.4816V2.88164C27.5 1.39664 26.285 0.181641 24.8 0.181641ZM8.6 23.1316H4.55V10.9816H8.6V23.1316ZM6.575 8.68664C5.225 8.68664 4.145 7.60664 4.145 6.25664C4.145 4.90664 5.225 3.82664 6.575 3.82664C7.925 3.82664 9.005 4.90664 9.005 6.25664C9.005 7.60664 7.925 8.68664 6.575 8.68664ZM23.45 23.1316H19.4V15.9766C19.4 14.8967 18.455 13.9516 17.375 13.9516C16.295 13.9516 15.35 14.8967 15.35 15.9766V23.1316H11.3V10.9816H15.35V12.6016C16.025 11.5216 17.51 10.7116 18.725 10.7116C21.29 10.7116 23.45 12.8716 23.45 15.4366V23.1316Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
+            <a class="footer_icon" href="https://www.linkedin.com/company/ironsail/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path
+                  d="M24.8 0.181641H3.2C1.715 0.181641 0.5 1.39664 0.5 2.88164V24.4816C0.5 25.9666 1.715 27.1816 3.2 27.1816H24.8C26.285 27.1816 27.5 25.9666 27.5 24.4816V2.88164C27.5 1.39664 26.285 0.181641 24.8 0.181641ZM8.6 23.1316H4.55V10.9816H8.6V23.1316ZM6.575 8.68664C5.225 8.68664 4.145 7.60664 4.145 6.25664C4.145 4.90664 5.225 3.82664 6.575 3.82664C7.925 3.82664 9.005 4.90664 9.005 6.25664C9.005 7.60664 7.925 8.68664 6.575 8.68664ZM23.45 23.1316H19.4V15.9766C19.4 14.8967 18.455 13.9516 17.375 13.9516C16.295 13.9516 15.35 14.8967 15.35 15.9766V23.1316H11.3V10.9816H15.35V12.6016C16.025 11.5216 17.51 10.7116 18.725 10.7116C21.29 10.7116 23.45 12.8716 23.45 15.4366V23.1316Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer_menus_wrapper">
+          <div class="footer_menu_links_wrapper">
+            <p class="footer_menu_name">MENU</p>
+            <div class="footer_menu_links">
+              <a href="../web-design-and-development/" class="footer_menu_item_link">Web Design & Development</a>
+              <a href="../digital-marketing" class="footer_menu_item_link">Digital Marketing</a>
+              <a href="../influencer-marketing/" class="footer_menu_item_link">Influencer Marketing</a>
+              <a href="../ai-solutions" class="footer_menu_item_link">AI Workforce Solutions</a>
+              <a href="../software-development/" class="footer_menu_item_link">Software development</a>
+              <a href="../about-us/" class="footer_menu_item_link">About Us</a>
             </div>
           </div>
-          <div class="footer_menus_wrapper">
-            <div class="footer_menu_links_wrapper">
-              <p class="footer_menu_name">MENU</p>
-              <div class="footer_menu_links">
-                <a href="../web-design-and-development/" class="footer_menu_item_link">Web Design & Development</a>
-                <a href="../digital-marketing" class="footer_menu_item_link">Digital Marketing</a>
-                <a href="../influencer-marketing/" class="footer_menu_item_link">Influencer Marketing</a>
-                <a href="../ai-solutions" class="footer_menu_item_link">AI Workforce Solutions</a>
-                <a href="../software-development/" class="footer_menu_item_link">Software development</a>
-                <a href="../about-us/" class="footer_menu_item_link">About Us</a>
-              </div>
-            </div>
-            <div class="footer_menu_ctas">
-              <p class="footer_menu_name">Contacts</p>
+          <div class="footer_menu_ctas">
+            <p class="footer_menu_name">Contacts</p>
 
-              <div class="footer_menu_links">
-                <a href="tel:+15165486759" class="icon_ph_wrap">
-                  <img src="../assets/img/footer/ph.svg" alt="phone" class="footer_cta_icon" />
-                  <p class="footer_cta_text">+1 516-548-6759</p>
-                </a>
-                <a href="tel:+15165486759" class="icon_ph_wrap">
-                  <img src="../assets/img/footer/mail.svg" alt="mail" class="footer_cta_icon" />
-                  <p class="footer_cta_text">contact@ironsail.ai</p>
-                </a>
-                <a href="tel:+15165486759" class="icon_ph_wrap">
-                  <img
-                    src="../assets/img/footer/location.png"
-                    alt="location"
-                    class="footer_cta_icon"
-                  />
-                  <p class="footer_cta_text">
-                    158-01 Cross Bay Blvd, Queens, NY, United States, New York
-                  </p>
-                </a>
-              </div>
+            <div class="footer_menu_links">
+              <a href="tel:+15165486759" class="icon_ph_wrap">
+                <img src="../assets/img/footer/ph.svg" alt="phone" class="footer_cta_icon" />
+                <p class="footer_cta_text">+1 516-548-6759</p>
+              </a>
+              <a href="tel:+15165486759" class="icon_ph_wrap">
+                <img src="../assets/img/footer/mail.svg" alt="mail" class="footer_cta_icon" />
+                <p class="footer_cta_text">contact@ironsail.ai</p>
+              </a>
+              <a href="tel:+15165486759" class="icon_ph_wrap">
+                <img src="../assets/img/footer/location.png" alt="location" class="footer_cta_icon" />
+                <p class="footer_cta_text">
+                  158-01 Cross Bay Blvd, Queens, NY, United States, New York
+                </p>
+              </a>
             </div>
           </div>
         </div>
-        <img src="../assets/img/footer/Ironsail.png" alt="ironsail" class="ironsail-tag" />
       </div>
-      <div class="foot_copy">© 2024 Ironsail</div>
-    </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../js/script.js"></script>
-    <script src="./js/ai-solution.js"></script>
-  </body>
+      <img src="../assets/img/footer/Ironsail.png" alt="ironsail" class="ironsail-tag" />
+    </div>
+    <div class="foot_copy">© 2024 Ironsail</div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+  <script src="./js/ai-solution.js"></script>
+</body>
+
 </html>
